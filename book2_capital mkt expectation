@@ -1,13 +1,13 @@
 Reading 10-11
 
 1. challenges in forecasting
-[1] limitations to econmic data
+[1] limitations to economic data
     time lag/ revision/ rebase
 [2] data measurement errors and biases
     survivorship bias/ appraisal data - under-estimated variance and correlation with other
 [3] limitations of historical estimates
     non-stationary data comes from regime changes
-[4] ex post risk as a biased risk measure of ex ante risk
+[4] ex post risk is a biased risk measure of ex ante risk
 [5] biases in analysts method
     data-mining/ time-period bias (specific period)
 [6] failure to account for conditioning info
@@ -28,10 +28,10 @@ L: labor input
 
 4. anchoring asset returns to trend growth
 mkt value of equity V = GDP * (earnings/GDP) * PE
-d_V% = d_GDP% + d_S% + d_PE% + d_divdend%
+d_V% = d_GDP% + d_S% + d_PE% + d_dividend%
 
-5. approaches to economic forecsting
-[1] econometric modeling
+5. approaches to economic forecasting
+[1] econometric modelling
     structural models / reduced-form models
     pros: many variables/ reusable models/ quantified
     cons: complex and time-consuming/ relationship can change/ open to interpretation
@@ -45,7 +45,7 @@ d_V% = d_GDP% + d_S% + d_PE% + d_divdend%
     cons: subjective/ time-consuming
     
 6. business cycle
-   output gap = potential GDP - acutal GDP
+   output gap = potential GDP - actual GDP
    [1] initial recovery
    falling inflation, large output gap, bond yields bottom out, stock price rise
    [2] early expansion
@@ -60,7 +60,7 @@ d_V% = d_GDP% + d_S% + d_PE% + d_divdend%
 
 7. monetary policy
 goal - long-run sustainable growth - balance between growth and inflation
-neutral rate - equlibrium int rate = real-growth + inflation
+neutral rate - equilibrium interest rate = real-growth + inflation
 Taylor rule
 target = (real_neutral rate + inflation) + 
          0.5*(expected real growth - target real growth) + 
@@ -69,25 +69,25 @@ target = (real_neutral rate + inflation) +
 8. fiscal policy
 tax and government spending
 budget deficit = fiscal policy + business cycle
-- on int rate (after the policy has taken effect)
-monetary affects inflation, fisical affects real rate
+- on interest rate (after the policy has taken effect)
+monetary affects inflation, fiscal affects real rate
 loose monetary - 
-inflation, loose fisical - high real rates
+inflation, loose fiscal - high real rates
 - on yield curve (during the policy)
-monetary affects short-term yield largely, fisical affects long-term yield mildly
-loose monetary - lower short-term yield, loose fisical - high long-term rate
+monetary affects short-term yield largely, fiscal affects long-term yield mildly
+loose monetary - lower short-term yield, loose fiscal - high long-term rate
 
 9. forecast risk and return
 - sample stat
-- shrinkage estimate (weighted between historical var and analyst var)
+- shrinkage estimate (weighted between historical VAR and analyst VAR)
   same method in de-smoothing
   Rt = (1-lambda)rt_observed + rt_unobserved
-  var(r) = (1+lambda/1-lambda)*var(R)
+  VAR(r) = (1+lambda/1-lambda)*VAR(R)
 - time-series estimate (ARCH/GARCH)
   sigma_t = alpha*sigma_t-1 + beta*epsilon(unexpected component) + gamma
 - multi-factor
   forecasting portfolio volatility (Barra risk model)
-  sigma_i^2 = beta(i,m)*beta(i,n)*cor(m,n) (cov mat) + res_i^2
+  sigma_i^2 = beta(i,m)*beta(i,n)*corr(m,n) (cov mat) + res_i^2
 - DCF
 - risk premium
 
@@ -129,7 +129,7 @@ higher quality properties are less cyclical
 P0 = NOI1(net operating income)/(r-g)
 cap rate: NOI1/P0  or  r-g
 r = (NOI1/P0) + g = cap rate + NOI growth rate
-in fintie period
+in finite period
 r = cap rate + NOI growth rate - d%cap rate
 (- d%cap rate) - capital gain, as P0 increase if cap rate decrease
 cap rate - positively related to int rate (r-g) and vacancy (higher risk, higher discount rate)
@@ -208,9 +208,9 @@ dV/V = dGDP/GDP + d(earnings/GDP)/(earnings/GDP) + dPE/PE + dDiv/Div
 17. projected long-term total domestic equity return = capital gains + dividend yield
     capital gains = d%nominal GDP + d%profits/GDP + d%PE
     nominal GDP growth = real GDP growth + inflation
-    labor-based method GDP growth = employment + labor productivity
-                                  = (growth in potential labor force + growth in labor force participation) + growth in labor producitivity
-                                  (labor productivity is a sub-component of total labor productivity)
+    labor-based method GDP growth = employment + labour productivity
+                                  = (growth in potential labour force + growth in labour force participation) + growth in labour productivity
+                                  (labour productivity is a sub-component of total labour productivity)
     G-K on stock return = (D1/P0 - d%Shares) + d%Earnings + d%P/E
 18. Dornbusch overshooting -> countries with higher investment return will attract capital with higher expectation, s.t. it will overshoot can depreciate a little in the end
     F/S = (1+r_dc)/(1+r_fc) -> quote in dc/fc
@@ -218,7 +218,7 @@ dV/V = dGDP/GDP + d(earnings/GDP)/(earnings/GDP) + dPE/PE + dDiv/Div
     (F-S)/S = (r_dc - r_fc)/(1+r_fc) = r_dc - r_fc
     r_dc here is not the risk-free rate of dc, 
     but r = rf + term premium + credit premium + equity risk premium + liquidity premium
-19. when regressing GDP against labor and capital, the intercept is the total factor productivity
+19. when regressing GDP against labour and capital, the intercept is the total factor productivity
     when asked which factor has the greatest impact, multiply the beta with the actual growth rate of both labor and capital, and compare them with the intercept
 20. H-model -> (D/r-g)*[(1+long-term g) + (N/2)*(short-term g - long-term g)]
     fed model -> forward earnings yield = long-term treasury yield. if >, then undervalued
