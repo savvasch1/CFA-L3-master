@@ -1,0 +1,185 @@
+Reading 12 - 14
+
+1. investment governance
+- governance hierarchy
+  investment committee - approve, delegate, oversight, audit
+  investment staff - draft, research, evaluate, create, assess
+  third-party resources - consult
+- governance models 
+  
+2. enonomic balance sheet
+- asset
+  domestic equity + PV of expected future income
+- libility
+  short-term borrowing + PV of expected future consumption
+- equtiy
+  economic net worth
+  
+3. approaches to asset allocation
+- asset-only
+  for ones without debts
+  risk measure: volatility/tracking error/max drawdown/VaR
+- ALM
+  for most institutional investors
+  risk measure: shortfall risk
+- goal-based
+  for individual
+  risk measure: prob(not achieve goal)
+  
+4. asset classes
+criteria: homogeneous (within)/ mutually exclusive/ diversifying/ largely exhaustive
+
+5. isolate risk factor (pure-factor portfolio)
+- inflation
+  long nominal Treasuries, short inflation-linked bond
+  -> TIPS is a kind of inflation-linked bond, whose value is only affected by real int rate, and not affected by inflation
+  -> inflation factor = nominal Treasuries (real int rate + inflation) - inflation-linked bond (real int rate)
+- real int rates
+  inflation-linked bond
+- US volatility
+  VIX future
+- credit spread
+  long high-spread bond, short Treasuries
+- duration
+  long 10-year Treasuies, short 1-year Treasuries
+ 
+6. strategic asset allocation
+ - TAA (tactical)
+   short-term deviation
+ - DAA (dynamic)
+   long-term changes due to changes in CME
+   
+7. rebalancing
+ - calendar/ percent-range (trigger points or range)
+ - range are affected by (wider range - less likely to rebalance)
+   core -> prob(deviation from SAA)/ do less rebalancing
+   pos relative -> transanction cost/ risk tolerance/ asset class correlation/ belief in momentum
+   neg relative -> volatility(not quite intuitive)/ taxes (rebalance with loss can create a tax shield)/ belief in mean-reversion
+ - effects
+   better diversification/ short volatility
+
+8. asset-only
+MVO
+- no short selling
+  i.e. not negative weights, some points on the frontier are not attainable
+  interpolation may be used to synthesize the target return
+- with risk-free asset
+  choose a portfolio on the frontier, with which it forms the highest sharpe ratio
+cons:  
+- highly concentrated   (add constraints)
+- highly sensitive to inputs (resamplesd MVO, reversed MVO, BL)
+  resampled MVO = MVO + MCS - run many frontiers, then average
+  cons: could have concave bumps/ over-diversifed/ inherit the estimation errors/ no foundation in theory
+  reversed MVO: use global portfolio wgts to reversely calculate implied risk and return
+                global -> include all investable asset, minimizes diversifiable risk
+- not account for skewness and kurtosis (non-normal optimization)
+  mean-semivariance/ mean-conditional VaR/ mean-variance-skewness-kurtosis
+- liquidity
+  exclude less liquid asset/ replace with liquid similar asset
+- risk factor may not be diversified (risk-budgeting and factor-based model)
+  factor—based model - construct the frontier of risk factors, run the optimized combo, then map back to assets
+- single-period framework (MCS method)
+  cons: frequent rebalancing/ path dependent (next path depends on previous path)
+- not account for liability or consumption
+
+9. ALM
+[1] surplus optimization
+surplus return = (d_asset - d_liability)/asset
+- return of liability use corporate bond as proxy
+- compare to AO, ALM could have negative-value frontier, risk-free asset is corporate bond
+[2] hedging/return-seeking portfolio approach
+hedging covers liability, return-seeking is managed separately
+may require an over-funded status
+
+10. goal-based
+[1] determine discount rate
+    time horizon/ required probability of success
+[2] allocate capital to sub-portfolios
+    calculate the lowest initally required capital for each goal
+[3] if have excess capital
+    bring forward the timing or raise the sucess probability of current goals/ get additional goals
+
+11. heuristic approaches
+120 - age% to stocks
+60/40 stock/bond
+Yale model - higher allocations to non-traditional assets (liquidity premium)
+1/N - naive diversification
+
+12. risk budgeting and risk parity
+risk budgeting
+MCTR (marginal contribution to total risk) = beta_i * sigma_p
+excess return to MCTR = (expected return - risk-free rate)/MCTR
+choose the asset with highest ratio
+ACTR (absolute contribution to total risk) = w_i * MCTR = w_i * beta_i * sigma_p
+
+risk parity
+equal ACTR among all asset
+ACTR = w_i * beta_i * sigma_p = (1/n) * sigma_p
+cons: ignores expected return/ no available leverage to increase the return/ look-back bias
+
+13. constraints
+[1] asset size
+- cons of large asset
+  illiquidity/ mkt impact in small-cap/ outside of core investment thesis/ slow down decision making
+- cons of small asset
+  threshold/ lower governance capacity/ lower fees/ hard to diversify
+[2] liquidity
+- people have different liquidity needs
+- liquidity needs can change
+[3] time horizon
+- changing human capital
+- changing character of liabilities
+[4] regulatory
+[5] tax
+- after-tax portfolio optimization
+  less tax on price appreciation than dividend income
+  tax can reduce risk
+  smaller rebalancing range for taxable portfolio
+- tax loss harvesting
+  only realized gains are taxable, realized loss are tax-deductable
+- TA/TDA/TEA
+  higher tax put in TEA/TDA, lower tax put in TA
+  bond put in TDA (coupon), stock put in TA (price appreciation)
+  
+14. SAA v. TAA
+ways to evaluate TAA decisions
+Sharpe ratio or info ratio/ t-stat of difference/ plot risk and return on SAA frontier
+
+
+Note:
+1. a young women with no debt and expected inheritence starting a job is considered high capacity for risk and no financial capital
+2. for preexistent positions of a client
+   [1] ignoring the positions and running MVO for the rest of the client’s portfolio
+   [2] modeling the specific characteristics of what that client actually owns
+   [3] using data on public funds but realizing that such data will not reflect the specific characteristics of the client’s positions
+3. for incorporating client risk preferences into asset allocations
+   [1] specifying additional constraints
+   [2] specifying a risk aversion factor for the investor
+   [3] using MCS
+4. MVO can address taxes in a single- period model and MCS is not necessary
+   MCS becomes useful in dealing with a multi- period framework, where the analysis of taxes and rebalancing becomes much more mathematically challenging otherwise
+5. ALM 
+   Integrated asset-liability approach -> take liability as a variable
+   Surplus efficient frontier approach/Two-portfolio approach -> take the liabilities as a given and only focus on managing the assets
+5. deviation(rebalancing range)_pretax = deviation(rebalancing range)_aftertax  * (1-tax rate)
+6. within the same goal's layer, investment horizon affect the risk tolerance level of each goal
+   education/medical is not necessarily more risk-averse than charity
+7. max sharpe ratio given a range of volatility -> AO, use law of large numbers to decide liability -> ALM
+8. insurance companies often segement their general acconut asset into sub-portfolios with specific lines of business or liabilities,
+   each with its own return objective
+9. low pairwise correlations with other asset classes is not enough
+10. rf_AO -> cash or asset that has low correlation with other assets
+    rf_ALM -> asset that has high correlation with liability
+    benchmark_ALM -> liability
+11. to mimic the liability of DB plan
+    inactive - inflation-hedged -> TIPS, not hedged -> nominal bonds
+    active - accured -> TIPS or nominal bonds, future wage growth -> TIPS (inflation) + equities
+12. pre-tax range -> a, tax rate -> t, after-tax range?
+    higher tax rate -> higher transaction cost -> wider range -> a/(1-t)
+13. range increase with higher cost, lower prob of deviation
+    -> asset correlation (one rise, others may rise after a period of time -> less likely to deviate)
+    -> illiquidity -> higher transaction cost
+    -> belief in momentum, A rise, rebalancing requires to reduce the position, but you believe it would rise more 
+                           A down, rebalacning requires to add the position, but you believe it would down more
+14. when credit spreads are high -> corporate bond YTM are high -> corporate bond prices are low -> long corporate bond
+    GDP growth ok -> equities will be ok

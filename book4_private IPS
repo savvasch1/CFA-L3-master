@@ -1,0 +1,322 @@
+Reading 28-32
+
+1. understanding private client
+[1] info needed
+- personal info
+  family/marital status/children
+  proof of client ID
+  employment and career info/ source of client wealth
+  investment background - return/liquidity/ESG
+  financial objectives and risk tolerance
+- financial info
+  assets/ liabilities
+- tax considerations
+  tax on income/ wealth/ consumption
+  tax avoidance/ reduction/ deferral
+[2] client goals
+- planned goals (can be reasonably estimated)
+  retirement/ specific purchases/ education/ family events/ wealth transfer/ philanthropy
+- unplanned goals (timing or amount cannot be esimated)
+  property repairs/ medical expenses
+[3] private client risk tolerance
+- risk tolerance (willingness)
+  reflected by: past investment/ emotion/ self-assessment
+- risk capacity (ability)
+  reflected by: importance, amount, and investment horizon of goals
+[4] technical and soft skills for wealth managers
+
+
+2. return calculation
+[1] next year's return and maintain real value of investment
+    CF needs / TIA (total investable asset) + inflation
+    assumptions:
+    - salary/expense happens at the end of period
+    - current portfolio can be cashed without cost
+    - all TIA and expenses are after-tax
+    - living expense and intuition often account for inflation
+[2] return for next 10 years
+    IRR
+[3] similar to [1], but TIA is in the future
+    - you may have to estimate the return of the current portfolio
+
+3. investment planning
+[1] capital sufficiency analysis
+- straight-line
+  assume a deterministic growth
+  con: unrealistic w.r.t variability in future outcomes
+- MCS
+[2] retirement planning
+- mortality table
+- annuities
+- MCS
+- biases
+  consumption gaps: retirees spend less than expected
+  annuity puzzle: individuals tend not to invest in annuities
+
+4. IPS
+[1] background and investment objectives
+    detailed and quantified objectives
+[2] investment parameters
+    risk tolerance and capacity/ time horizon/ asset class preference
+    liquidity preference - short-term gap (inflow - outflow)
+[3] portfolio asset allocation
+    SAA + TAA
+[4] portfolio mgt
+    - discretionary authority (full discretion - trade without approval)
+    - rebalancing (time-based/ threshold-based)
+    - tactical changes
+    - implementation (third-parth money managers/ proprietary investment)
+[5] duties and responsibilities
+    - IPS review (at least annually)
+[6] IPS Appendix
+    - modeled portfolio behavior
+    - capital mkt expectations
+ 
+5. portfolio construction and monitoring
+[1] portfolio construction
+    traditional approach/ goal-based investing approach
+[2] portfolio reporting and review
+    portfolio reporting/ portfolio review
+[3] evaluating the success of an investment program
+    - goal achievement
+    meet long-term objective with an acceptable amount of risk
+    - process consistency
+    good recommendation for third-party manager/ follow the prescribed process for rebalancing/ reduce cost
+    - portfolio performance
+    better than benchmark
+    - definitions of success
+    pre-agreed criteria
+
+6. ethical and compliance consideration
+- fiduciary duty and suitability
+- KYC
+- confidentiality
+- conflicts of interest
+
+7. private client segments
+[1] mass affluent segment (0.25 - 1mil)
+    not customize
+[2] high-net-worth (1 - 50 mil)
+    customized investment mgt, tax planning, wealth transfer issues
+[3] ultra-high-net-worth (>50 mil)
+    multi-generational time horizons, complext tax, estate planing, anything
+[4] robo-advisors (<0.25mil)
+
+8. tax calculation
+[1] simple tax
+- accrual taxation (every year on income)
+  FV = (1 + r - r*t)^n = (1+r*(1-t))^n
+  tax drag = (FV_pt - FV_at)/(FV_pt - I_0) - reduction in return due to tax on capital gain
+  - tax drag > tax rate  (compounded tax)
+  - tax drag increase as investment horizon increase
+  - tax drag increase as investment return increase
+- deferred capital gain (one-time on gain)
+  FV = (1+r)^n - ((1+r)^n - 1)*t
+     = (1+r)^n*(1-t) + t
+  tax drag = ((1+r)^n - 1)*t
+  - tax drag = tax rate
+  when you bought sth from past, and it cost B instead of 1
+  FV = (1+r)^n - ((1+r)^n - 1)*t - (1-B)*t
+     = (1+r)^n*(1-t) + B*t
+- wealth-based (every year on wealth)
+  FV = [(1+r)(1-t)]^n
+  - tax drag > tax rate
+  - tax drag increase as investment horizion increase
+  - tax drag$ increase, tax drag% decrease as investment return increase
+[2] blended tax
+return on a portfolio can be divided into: interest + dividend + realized capital gain(RCG) + unrealized capital gain(UCG)
+UCG of which can be deferred, int + div + rcg + ucg = 100% (total return)
+
+return after realized tax R_art = r*(1 - int*t_int - div*t_div - rcg*t_cg)
+effective capital gain tax rate on ucg t_ecg * [1- int*t_int - div*t_div - rcg*t_cg] = t_cg * ucg
+FV = (1+r_art)^n - ((1+r_art)^n-1)*t_ecg - (1-B)*t_cg
+
+[3] accrual equivlent tax rate (t_ae) and return (r_ae)
+r_ae = r_pt*(1-t_ae)
+
+9. types of investment accounts
+[1] taxable account
+    after-(ordinary) tax in, taxed during trading
+    FV = (1+r*(1-t))^n
+[2] tax-deferred account
+    before-(ordinary) tax in, taxed @ withdraw
+    FV = (1+r)^n * (1 - t_withdrawn)
+[3] tax-exempt account
+    after-(ordinary) tax in, no tax during or withdraw
+    FV = (1+r)^n
+    
+10. tax alpha
+[1] tax location
+put equity in taxable (stock's capital gain are inherently tax-deferred), put bond in tax-deferred (int happend every year)
+[2] time period mgt
+capital gain tax rate =17% if horizon<1 yr, 7% of horizon>1 yr
+[3] tax loss harvesting
+realize unrealized loss, to lower tax
+[4] HIFO
+sell the security with highest cost
+
+11. estate planning
+testator -> testment (will) -> beneficiary
+[1] probate - legal process to comfirm the validity of the will
+to avoid the probate
+- joint ownership/ living trusts/ retirement plans/ insurance policy
+[2] ownership right
+- forced heirship rules/ community property rights/ separate property rights
+[3] core capital
+pv of future liabilities of the family (using risk-free rate)
+core capital + surplus = total asset
+[4] monte carlo simulation
+probaility of ruin (hazard rate) - spending is unsustainable
+
+[5] relative after-tax values
+RV = FV_gift/FV_bequest
+A -> B
+- if the gift if tax-free
+  RV = [1 + r_b*(1-t_b)]^n / [1 + r_a*(1-t_a)]^n * (1-t_estate)
+- if the gift is taxable
+  RV = (1-t_gift) * [1 + r_b*(1-t_b)]^n / [1 + r_a*(1-t_a)]^n * (1-t_estate)
+- if the gift is taxable and A pays the tax
+  RV = (1-t_gift + t_gift*t_estate) * [1 + r_b*(1-t_b)]^n / [1 + r_a*(1-t_a)]^n * (1-t_estate)
+  where the t_gift*t_estate is a tax sheild, as you have less asset as estate
+- if B is a charity
+  no gift tax, t_b=0, and tax shield
+  
+[6] estate planning strategies
+- generational skipping
+- spouse exemption
+- valuation discounts (liquidity and minority)
+- trust
+  settlor/grantor -> trustee -> beneficiary
+  revocable - ownership -> settlor  ->  tax on settlor
+  inrevocable - ownership -> beneficiary   ->  tax on beneficiary  ->  protect claim
+  fixed trust -> fixed amount/timing
+  discretionary trust -> decided by trustee
+  spendthrift trust -> to unable or unwilling to manage the asset
+- life insurance
+  lower tax/ beneficiary could be a trust
+
+[7] tax jurisdiction
+- source jurisdiction/ residence jurisdiciton
+- residence-source conflict
+  principle: source first, residence provides tax benefit
+  - credit method
+  max(T_source, T_residence)
+  - exemption method
+  T_source
+  - deduction method
+  T_source + (1 - T_source)*T_residence
+
+12. concentrated single-asset position
+- mostly public stock, private equity, and real estate
+[1] objectives
+- risk reduction/ increase liquidity/ maximize after-tax return
+[2] constraints
+- mandated to hold shares/ voting control/ retain growth potential/ illiquid/ big immediate tax/ legal/ margin lending rules
+[3] psy bias
+- cognitive: conservatism/ confirmation/ illusion of control/ anchoring and adjustment/ availability
+- emotional: overconfidence and familiarity/ status quo/ naive extrapolation of past returns/ endowment effect/ loyalty effects
+[4] estate tax freezing (transfer wealth while not losing control)
+- recapitalization - split shares into voting preferred shares(hold) + non-voting common shares(transfer)
+[5] techniques for public stocks
+- outright sales
+- monetization strategies (stock lending to produce liquidity)
+  hedge to increase load-to-value ratio
+  short sale/ total return equity swap/ short forward/ long put, short call
+- hedging 
+  protective puts/ a pair of puts/ knock-out put/ collar/ prepaid variable forwards (PVF) = short forward + loan
+- yield enhancement
+  long stock + short call (covered calls)
+- tax-optimization
+  index tracking with active tax mgt (take loan to buy index)
+  completeness portfolio (long low cor. stock)
+- cross hedge
+  short a security or a basket of securities with high cor.
+  short a borad or targeted index
+  long put
+- exchange fund
+[6] techniques for private equity
+- sell to strategic buyers/ PE/ mgt/ family member/ divestiture
+- recapitalization - staged exit
+  pro: provide liquidity/ lower risk/ retain incentives
+  con: lose control/ 
+[7] techniques for real estate
+- mortgage financing
+- charitably inclined
+- sale and leaseback
+  
+13. risk mgt for individuals
+[1] net worth/wealth
+    net worth = assets - liability
+    net wealth (enonomic net worth) = net worth + human capital (pv of wages) + pv of pension (unvested) - pv of consumption - pv of bequest
+[2] implementation
+    high freq, high severity -> risk avoidance
+    high freq, low severity -> risk reduction
+    low freq, high severity -> risk transfer (insurance)
+    low freq, low severity -> risk retention
+[3] risk exposures
+    earnings risk (insure with disability insurance)
+    premature death risk (insure with life insurance)
+    longevity risk (insure with annuities)
+    property risk (insure with property insurance)
+    liability risk - with third party (insure with liability insurance)
+    health risk (insure with health insurance)
+[4] insurance
+    types
+    - life
+      death: term/whole, participating/non-participating (with/without dividend)
+      annuity: immediate/deferred, fixed/variable
+      univerisal: insurance/investment accounts
+    - non-life
+    elements
+    policy owner -> insured -> beneficiary
+    elimination/waiting period - 180 days
+    non-forfeiture clause -> cash value -> premium - net premium (f(coverage, mortality risk))
+    guaranteed insurability -> flat premium for life
+    gross premium = net premium + expense + profit + cash value
+[5] annuities
+    inflation concerns - all to owner
+    payout method - joint life, period-certain annuity (fixed x years), life annuity with period certrain (at least x years), life annuity with refund
+    annuity benefit taxation 
+
+Note:
+1. A possible explanation for retirees preferring to spend investment income rather than liquidate securities is that retirees consider this a self-control mechanism
+2. The success of an investment program should be evaluated in terms of goal achievement, process consistency, and portfolio performance
+   failure to meet up with benchmark is considered failure in goal achievement
+3. ask I.D. like passport or bank a/c details is not considered a matter of confidentiality, but a requirement of KYC
+4. common progressive tax regime, with a surprise, provides favorable tax treatment for int, div and cg, like flag and light
+5. tax consideration, in the favor of passive investors -> active investors -> traders
+6. core capital -> use MCS/ disconut future real needs @ real rf/ discount future nominal needs @ nominal rf
+7. charitable gift of appreciated securities -> avoid gift transfer taxes + take an income tax deduction 
+8. short sale against the box -> shorting the company stock that you own
+9. exchange fund -> exchange concentrated share with others who also own concentrated shares
+10. prepaid variable forward (PVFs) -> like collar -> own 1000 shares @ 50, lend @ X = 45, if S_t<50, deliver, if S_t>50, deliver less shares
+11. level premium -> same premium for each year, annual premium -> different premium for each year.  
+    Usually level premium charges higher, as the insurance company bears more risk
+12. Net payment cost index -> the individual dies at the end of the horizon and cash value is not considered
+    Net surrender cost index -> the individual terminates the policy (insurance ceases) at the end of the horizon and the cash value is received
+13. need for life insurance -> highest human capital (career development)
+14. motality table -> past experience and future projections
+15. investment constraints for private clients -> time horizon, portfolio scale (or size), and tax planning. Does not include risk tolerance
+16. vested pension value -> traditional BS  unvested pension value -> economic BS
+17. HC = f(prob(survival), wage growth rate, rf + HC risk premium)
+18. life insurance -> mortality risk (loss of HC)  /   annuities -> longevity risk
+19. irrevocable trust can not only protect claims to settlor, but also to beneficiary to some extent
+20. to avoid probate -> joint ownership/ trust/ life insurance
+    will/testment does not avoid probate
+21. wealth tax -> accumlated each year, t_wealth * cost basis * T_year
+               -> paid each year, (1+r)^n - [(1+r)(1-t_wealth)]^n
+22. R_ae(accural equivlent) = (FV/PV)^(1/n) - 1
+    T_ae = 1 - R_ae/R_pt
+23. primary capital = personal (residence, CDs, cash) + mkt (equity and bond). secondary = aspirational (concentraded positions)
+24. sale and lease back with rent payable immediately -> price - (price - cost)*T_cg - rent + rent * T_income
+25. mismatch in character -> tax mismatch
+    e.g. on collars -> premium received -> income, premium paid -> later as deduction when realizing capital gains
+    or different tax types -> on capital gain and income
+26. flat and heavy tax regime -> flat -> on salary,  heavy -> on dividend and capital gains.  so int-paying asset is better
+27. MVO can consider taxable and tax-exempt together, R_tax = R_exp*(1-t) -> sigma_tax = sigma_exp*(1-t)
+28. death benefit are tax-exempt in most countries
+29. probaility of ruin -> spend all money
+30. consider wage growth rate and discount rate together, adjusted discount rate = (1+discount rate)/(1+growth rate) - 1
+31. to calculate insurance needs
+    -> 1. needs method -> total expense discounted - current coverage
+    -> 2. human life method -> (future earnings - expenses) discounted - current coverage

@@ -1,0 +1,132 @@
+Behavioral finance
+0. when given the name of bias to decide client's possible action, place more weight in the meaning of bias than which category it belongs to
+   e.g. people with availability bias are harder to change, despite it is a cognitive error
+1. heurstics/rule of thumb -> when you do something from hearsay or easy rule
+2. herding -> actions often caused by regret aversion
+3. state a cognitive bias to belief perservance (RICCH) or information-processing (FAMA)
+4. to overcome behavioral bias -> seek contrary viewpoints/ look for new info/ do not rely on past/ use Bayes' theorem to incorporate new info
+
+
+Economics
+1. permanent income hypothesis 
+   consumer spending is based on long-term predictions of income, short-term deviations (GDP decrease) does not affect the spending
+2. G-K model (alternative)
+   d%Y = d%A + alpha*d%K + (1-alpha)*d%L
+   A -> total factor productivity / K -> growth in capital stock / L -> growth in labor input
+   alpha -> output elasticity of capital / 1-alpha -> output elasticity of labor
+3. factors may positively affect inflation
+   consumer confidence index / inventory/sales / GDP output gap (actual GDP - potential GDP)/potential GDP
+   
+Individual
+1. life-insurance, trust and charity can reduce total estate, resulting in a lower future estate tax
+2. factors that increase ability to take risk
+   -> long horizon(10 yrs or longer)/ stable income and expense (net savers)/ mortgage-free house/ fully vested pension plan
+   factors that decrease ability to take risk
+   -> short horizon/ concentrated position/ reduced human capital (disability)/ donation (or other cash outflow)/ small asset base
+   with passage of time, factors that may have changed
+   -> shorter horizon/ larger asset base/ accomplished cash outflow
+3. accural equivalent tax rate
+   -> calculate after-tax return r_at = (FV_at/PV) xexp (1/T) - 1
+   -> calculate equivalent tax rate ->  T_ae = 1 - (r_at/r_pt)
+4. tax liability = tax base * tax rate
+5. pay attention to the timing of cash flow (coming year, then inflation not considered) 
+                and the nature of cash flow (if it is taxable)
+6. IPS for time-horizon 
+   long/short, how many stages
+7. IPS for uniqueness
+   personal investment outside advisor-managed portfolio
+8. shortfall risk = pre-tax nominal return - 2*nominal standard deviation
+9. CFA calculator can input PV and PMT
+10. pro of MCS -> simulate the probaility of distribution, allowing the client to determine the likelihood of accomplishing his goals
+                  can consider multi-period effect of tax changes (if there is any)
+    con of MCS -> does not reflect expection/ long period data subject to regime changes
+11. conversion from DB to DC shifts risk to employees, therefore increasing their longevity risk
+12. mortgage financing. net proceeds =  asset value * LTV
+13. a retired man does not need disability insurance
+    a rich man with no dependents or testamentary intentions does not need life insurance
+14. establish a collar/ sell a forward/ buy a put will not eliminate the whole mkt risk, so it would not trigger tax
+15. you have 3 mil, can gift or estate, both @ 50% tax
+    if gift can you pay tax -> gift 2 mil, tax 1 mil
+    if estate -> total 3 min, tax 1.5 mil
+
+
+
+Institutional
+1. factors that increase ability to take risk
+   for foundations or endowment, goals like funding a project or meet min spending rate, are just goals, not binding requirement
+2. liquidity requirement decrease the ability to take risk and require higher cash reverse, despite it would reduce return
+3. a hire freeze or decrease minimum retirement age would shorten the investment horizon
+4. fewer people in a pension plan would increase the liability noise, because acturial model follows law of large numbers
+5. when comparing projects to take, take the one with lower required rate of return, giving it some cushion for volatilies in return or other variables (inflation)
+6. a general spending rate can take more risks than a specific purpose
+7. to manage liquidity risk
+   -> liquidity profiling and time-to-cash tables/ rebalancing and commitment strategies/ stress testing analyses/ derivatives
+
+
+Asset allocation
+1. to ALM or not to ALM
+   to -> fix-amt considered as liability
+   not to -> floting-amt(5%) not considered as liability/ willingness to operate in perpetuity by investing in higher return
+2. to MCS or MVO
+   to MCS -> multi-period framework considering a lot of variables
+             rebalacning policy can be incorporated
+             non-normal distribution properties like skewness can incorporated
+
+Equity
+1. to full replication or to stratified sampling
+   if the benchmark has high liquidity and low number of stocks (IH) -> better to use full replication
+2. approaches to portfolio construction
+   systematic/discretionary * top-down/bottom-up
+   systematic -> diverisified portfolio/ large subset of securities examined
+   discretionary -> concentrated portfolio/ small subset of securities examined/ greater depth of understanding company fundamentals
+   top-down -> start with macro/sector
+   bottom-up -> start with company-specific factors and investment style
+3. a efficient portfolio can be [1] efficient in performance -> higher sharpe ratio
+                                [2] risk exposures that align with investor expectation
+                                [3] low idiosyncratic risk relative to total risk
+                                [4] achieve a good replication of an index (low tracking error) with fewer stocks
+
+
+Trading and evaluation
+1. IS in bps = (paper return - actual return)%total value in initiation
+2. opportunistic strategy -> less urgent, large order compared to daily volume
+   IS -> urgent, regardless of the relative order size
+   vwap -> less urgent, small order compared to daily volume
+3. holding-based -> appropriate when holding info is not available with sufficient frequency
+                    low accuracy/ vunlerable to data manipulation
+   return-based -> appropriate when investment with low turnover/ extensive data with shorter time intervals
+                   fail to capture impact of transactions/ may not reconcile to actual portfolio return
+4. sortino ratio = (R_p - minimum acceptable return)/down-side standard deviation
+
+
+
+Fixed income
+1. to fully immunize a portfolio
+   PV_A = PV_L/ D_A = D_L/ minimize portfolio convexity
+2. when calculate next year's coupon return, (coupon rate * 100)/this year's mkt value
+3. when choosing bond portfolio with a yield curve changes, see the portoflio as barbell/bullet/laddered
+   don't pay too much attention on the figure, as the change in the long term is far more important than the change in the short term
+4. to immunize a single liability  
+   -> PV_A = PV_L/ D_A = D_L/ minimize portfolio convexity (to make the cash flow as close as to the liability -> bullet)
+   to immunize multiple liabilities 
+   -> PV_A = PV_L/ D_A = D_L/ durations of the portfolio have a wider range than the durations of the liabilities (conv_A>conv_L)
+5. callable bond -> to buy back the bond -> bond issuer's right -> bond value = bond - call -> increase when yield decrease
+   putable bond -> to sell the bond -> bond holder's right -> bond value = bond + put -> increase when yield increase
+6. rebate rate = collateral earnings rate - security lending rate
+7. to benefit from stable yield curve -> sell convexity -> long bonds with negative convexity (MBS or callable bond)
+8. return = yield income (coupon and coupon RI) + roll down return + capital gain (from curve) + expected credit loss + currency gain/loss
+9. excess return over the target horizon = (Credit spread x Target horizon) – [(Expected spread – Current spread) x Spread duration]
+
+
+Derivatives
+1. Domestic currency return = (1+ RFC) (1+ RFX) – 1 (PLZ PAY ATTENTION TO THIS BIT)
+
+Alternative 
+1. benefits of mkt neutral over long-short
+   more diversification from quantitative method/ no constraints stemming from the need for an event or expertise in a specific sector
+   lower standard deviation (beta)/ more liquidity since shorter rebalancing window
+
+
+ 
+
+

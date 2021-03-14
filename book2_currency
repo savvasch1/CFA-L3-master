@@ -1,0 +1,117 @@
+1. currency swaps
+[1] cross-currency basis swap
+    - you need a loan in fx - you borrow local, then swap it with fx
+    - principals switched at the begining, int pmt not netted
+    - basis stands for financial cost for using swap
+[2] synthetic borrowing
+    - you receice fx, change it into local - you swap it with local
+    - no principals switched
+    - swapRate_A = 3%, swapRate_B = 5% - NP_A * 3% = NP_B * 5%
+    
+2. currency forward and future 
+- you need to exchange currency A to B @ pre-specified rate
+- hedge ratio = amount of currency to be exchanged/future contract size
+
+3. volatility derivatives
+VIX - implied volatility in S&P 500 for 30 days
+VIX return negatively correlates with equity return
+- VIX futures - cannot buy spot VIX, buy futures
+- variance swap
+  fixed exchange for implied volatility^2
+  settlement amt = notional variance * (sigma^2 - K^2)
+  MtM variance valuation
+  - expected variance = realized var*t/T + K^2*(T-t)/T  (time-wighted variance)
+  - expected payoff = notional variance * (expected variance - K^2)
+                    = notional variance * (Var_realized^2 - K^2) * t/T
+  - discount with rf
+  
+4. other derivatives
+[1] fed funds futures
+    contract price = 100 - expected FFE rate
+[2] eurodollar futures
+    contract price = 100 - future int rate
+[3] CPI swaps
+     
+5. currency basics
+- MtM value of a forward
+  @ maturity - Vt = (St - FP) * contract size
+  @ t - Vt = (FPt - FP0)*contract size/(1 + rf*(days/360))
+- FX swap
+  close the forward contract, open another one - roll forwards
+- retuen decompose
+  r_FC - foreign-currency return
+  r_FX - change in currency pair
+  r_DC - return in domestic perspective
+  
+  r_DC = (1+r_FC)(1+r_FX) - 1
+  on portfolio, r_DC = sum over wi*(1+r_FCi)*(1+r_FXi) - 1
+- variance decompose  (assume r_DC = r_FC + r_FX)
+  var_DC = var_FC + var_FX + 2*sigma_FC*sigma_FX*correlation(FC, FX)
+  
+6. should you hedge FX risk?
+[1] no hedge
+    mean-reverting fundamental values
+    zero-sum game
+    management and transaction cost
+[2] short-term: hedge, long-term: no hedge
+    pricing inefficiencies in short term
+    affected by international trade and capital flows in short term
+    may be operated by central banks
+
+7. IPS-related currency mgt are ignored
+
+8. carry trade
+- borrow low-yield currencies and invest in high-yield currencies
+- covered int rate parity (CIRP)
+  (F - S)/S = (i_P - i_B)/(1 + i_B) = i_P - i_B
+  uncovered int rate parity (UIRP)
+  
+Note:
+1. manager’s market views -> TAA
+  correlation between asset and currency returns / investor’s time horizon, risk aversion, and liquidity needs -> SAA
+2. EUR/KRW 0.00067/0.00068,  forward points –1.2/–1.1
+   to long, 0.00068 - 1.1/100,000 (by the quote of 5-digit) -> 0.000669
+   to short, 0.00067 - 1.2/100,000 -> 0.000658
+3. R_dc = (1+R_fc) * (1+R_ret) - 1  -> do not use R_fc + R_ret
+4. Currencies with higher relative interest rates tend to attract capital and appreciate in value
+   Note that a common misconception is that the forward currency exchange rate is a valid predictor of what will happen to the value of a currency
+5. gamma -> d_delta/d_S -> peaks @ ATM
+6. a u.s. investor with euro stock
+   to get rf_euro -> short euro futures
+   to get rf_usd -> short euro futures and short euro forward
+7. cross hedge -> underlying does not match
+8. min variance hedge ratio -> euro stock return in terms of USD ~ b0 + b1*spot rate + epsilon
+   where b1 -> MVHR -> cov(y,x)/var_y   -> riskier than one-on-one hedge as it is based on historical data
+9. 1% change in volatility for a variance swap -> P&L vega notional
+   variance notional = vega notional / 2*X
+   mtm value = notional variance * (expected variance - K^2)
+             = notional variance * (realized variance * t/T + K^2 * (T-t)/T - K^2)
+             = notional variance * (realized variance * t/T - K^2 * t/T)
+             = notional variance * (realized variance - K^2) * t/T
+             -> payoff of a variance swap is convex to changes in volatility (volatility^2 = variance)
+10. to long EUR/GBP -> if 1 EUR/GBP -> 1.1 EUR/GBP -> you take a profit when GBP ↑
+    -> to long GBP
+11. short a straddle -> short ATM call + short ATM put
+    delta -> ATM option delta = 0.5 ->  +0.5 - 0.5 = 0
+    gamma -> long = pos gamma  short = neg gamma (draw delta(-1~1) ~ stock price) -> - - = negative
+    theta -> long = neg theta  short = pos theta -> + + = positive
+    vega  -> long = pos vega   short = neg vega  -> - - = negative
+12. volatility smile(skew) -> implied volatility (option value) ~ X
+    -> left OTM put and ITM call  /   right OTM call and ITM put
+13. currency overlay -> hire a currency expert while following the same IPS guildlines (they work together)
+    separate asset allocation -> hire a currency expert while following different guildlines (they work separately)
+14. to eliminate the potential basis risk -> exactly match the maturity (do not roll short-term or use long-term)
+15. to completely hedge downside risk of JPY, the cost effective method using option of JPY/EUR would be 
+    long ITM JPY put + short OTM JPY call -> long ITM JPY/EUR call + short OTM JPY/EUR put
+16. to calculate the return of a long currency and a future position
+    -> (END currency value - BGN currency value + P&L on future)/BGN currency value
+17. factors that cause appreciation
+    higher real rates/ healthy debt situation/ increase in trade surplus/ decline in trade deficit
+18. to calculate the cash required to close out USD/EUR, 
+    value * (forward_t - forward_0) / (1 + US Libor * t/360)
+19. currency roll yield -> positive if sell @ premium or buy @ discount, + if sell depreciated or buy appreciated
+20. non-deliverable forwards(NDFs) is cash settled and have smaller credit risk compared to outright forward,
+    as no notional principle is exchanged at the maturity
+21. to hedge two long foreign curreny position with high correlation, you directly hedge each one.
+    The high correlation only help if you long one and short one, in that case you may use cross-hedge or MVHR
+22. currency overlay will only add value if the currency alpha has a low correlation with domestic asset returns

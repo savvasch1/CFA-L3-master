@@ -1,0 +1,188 @@
+Reading 22-25
+
+1. role of equity in a portfolio
+capital appreciation/ dividend income/ diversification/ inflation hedge
+negative screening/ positive screening/ thematic investing
+
+2. equity universe
+- by size and style
+large/mid/small * value/blend/growth
+con: size and style drift
+- by location
+developed/ emerging/ froniter
+con: currency risk/ overestimation of diversification
+- by economic activity
+mkt-oriented/ production-oriented
+con: hard to assgin big complex company to one sector
+- by equity indices and benchmarks
+
+3. income of equity
+- capital appreciation (no or low tax)
+- dividend (high tax)
+- securities lending
+- covered-call (stock - call) / cash-covered put (cash - put)
+- dividend capture
+
+4. cost of equity
+- mgt fees + performance fees (high water marks)
+- admin fees (custody/ depository/ registration)
+- trading cost (explict + implict)
+- investment strategy cost (momentum strategies - demand liqudity/ contrarian strategy - supply liquidity)
+
+5. shareholder engagement
+- corporate strategy/ capital allocation/ governance/ compensation/ board of directors
+- cons: focus on short-term/ non-public info/ conflicts of interest
+
+6. active or positive?
+- confidence/ client preferences/ ESG
+- risk for active mgt
+  reputation risk/ key person risk/ higher portfolio turnover (tax burdens)
+  
+7. index
+- rule-based/ transparent/ investable
+- buffering (breakpoint)/ packeting (split between indices)
+- determine the mkt exposure
+  mkt segment/ capitalization/ style
+- construct and maintain
+  weighting: mkt-cap(liquidity)/ price/ equal/ fundamental
+  rebalancing/ reconsitution
+- stock concentration
+  HHI = sum over w_i^2
+  effective no. of stocks = 1/HHI 
+  
+8. vehicles for passive equity
+- pooled investment
+  ETF
+- derivatives based
+  to rebalance the portfolio using stock futures
+  compeletion overlay(adjust beta)/ rebalancing overlay(adjust stock)/ currency overlay
+  cons: basis risk/ position limits
+- separately managed account
+
+9. passive portfolio construction
+- full replication
+  U-shaped tracking error as no. of stocks increase = decreasing tracking error + increasinig trading cost
+- stratified sampling
+  sample by fundamental styles (exclusive and exhaustive)
+- optimization
+  factor-based replication: lowest tracking error
+  tracking error is a trade-off between benefits of larger sample size and increased costs
+- blended approach
+- factor-based semi-active (smart beta)
+  factor: growth-value/ size/ div yield/ momentum/ quality/ volatility
+  alter certain factor exposures
+  return-oriented: div yield, momentum
+  risk-oriented: volatility-weighting, minimum-variance investing
+  diversfication-oriented: equal-weighting, max-diversification weighting
+  
+10. active strategies
+[1] top down - CME/ asset class
+[2] bottom up - fundamental
+- value based
+relative value/ contrarian investing/ income (divdend) investing/ high-quality value
+deep-value (low PE/distressed) investing/ restructuring and distressed debt/ special situations
+- growth based
+GARP (growth at a reasonable price)/ PEG (PE to growth)
+[3] factor-based
+- long/short
+rewarded/unreward factor - q10 - q1
+cons: nonlinear relation cannot be detected/ middel q overlooked/ exposure to other factors
+- factor timing
+equity style rotation
+[4] others
+- activist (minimal shareholder engagement)
+- statistical arbitrage
+- mkt microstructure
+- pairs trading
+- event-driven
+
+11. style classification
+[1] holdings-based
+morningstar style box (size*value)
+cons: style definitions may vary
+[2] return-based
+return of portfolio ~ indices
+cons: extreme styles/ style drfit
+
+12. source of active returns
+rewarded factors / mispricing / idiosyncratic risk
+Ra = sum over (beta_p - beta_b)*factor + alpha + epsilon
+- building blocks of construction
+  factor weighting + alpha skills + sizing positions
+- fundamental law of active mgt
+  E(Ra) = IC * sqrt(BR) * active risk * TC(transfer coef)
+  
+13. active share and risk
+- active risk (tracking error)
+  = sigma_factor + sigma_alpha
+- active share (share deviation)
+  = 1/2 * sum over |wgt_p,i - wgt_b,i|
+- low to high
+  pure indexing / closet indexing / factor-neutral&diversified stock picks / diversified factor bets / 
+  concentrated factor bets / concentrated stock picks
+  
+14. risk budgeting
+- absolute measure
+  var_p = sum over w_i * w_j * cov_i,j
+- relative measure
+  TE_p = sum over (w_i - b_i) * (w_j - b_j) * Rcov_i,j
+  
+15. considerations in equity portfolio
+- leverage
+  R_geometric = R_arithmetic - sigma^2/2
+- AUM / portfolio turnover&investment horizons / mkt impact 
+- slippage
+  time delay/mkt impact
+  empirical studies: slippage higher than explicit/ higher in small-cap/ higher during high mkt volatility
+
+16. what is a well-constructed portfolio
+- can achieve desired risk exposures with fewer positions
+- for similar risk factor exposures, have lower absolute/relative risk/ higher active share
+
+17. long-only v. long-short
+- gross exposure = long + short
+  net exposure = long - short
+- long extension portfolio = long 130 + short 30
+- mkt neutral portfolio (pairs trading)
+- short squeeze
+  stock lender may require higher margin/collateral
+
+
+Notes
+1. ESG constraints -> active mgt, narrowly defined benchmark -> passive mgt
+2. pro of derivative -> quick, efficient, cheap, liquid
+   con of derivative -> have to roll over, position limit, not flexible, counterparty risk, basis risk
+3. pro of ETF -> cheap and efficient than mutual open fund, reduce taxable gains and losses to existing holders
+   con of ETF -> trading cost, bid-ask spread
+4. relative value -> low P/E compare to sector-average
+5. replication of an index
+   full replication -> liquid, small #stock
+   stratified sampling -> no obvious con
+   (factor-based) optimization -> based on historical relations, do not work if factors are uncorrelated?
+6. construction of an index
+   value-weighted -> biased toward large stock, minimize tracking error, self-rebalancing, minimal rebalancing cost
+   equal-weighted -> biased toward small stock
+7. concern about growth / value
+   growth -> P = EPS * P/E -> 1. EPS less than expected, 2. P/E contract -> Davis double click (kill)
+   value -> undervaluation will not correct
+8. Investors are more likely to be willing to pay higher fees for higher Active Share as an indicator of greater active management.
+   Not active risk.
+9. diversified multi-factor approach -> low single-security risk (1%), modest overall portfolio risk, flexibility on sector risk
+   stock-picking -> high active risk, high exposure to risk from a single security, low sector deviations
+   sector rotation -> high active risk, high tolerance for sector deviations
+10. risk-efficient -> lowest active risk using fewer securities and higher active share
+11. when you add a fund to a bigger portfolio, high covariance with the fund may increase the total volatility but likely decrease the active risk
+12. passive factor-based strategies tend to be transparent in terms of factor selection, weighting, and rebalancing, can be easily copied
+    relative to boark-mkt-cap-weighting, it tend to concentrate risk exposures
+13. large tracking error stems from -> smaller number of stocks/ delay in reinvesting dividends/ less frequently rebalancing or reconstituting
+14. buffering -> as long as stocks remain in the buffer zone, they stay in the current index -> #holdings > #index
+    reconstituting -> delete names that are not longer in and adding names approved
+    packeting -> if a mid-cap stock's cap increase above the breakpoint between the mid-cap/large-cap, it is split into 2
+15. in calculating a portfolio's risk and return characteritics
+    return-related -> sum over w_i * return_i
+    risk-related (variance, tracking error) -> (sum over (w_i * risk_i)**2)**0.5
+16. buy-and-hold outperforms rebalancing strategy in an upward trending market.
+    buy-and-hold is not for conservative risk profile 
+17. core-satellite differs from alpha beta separation in that the satellite also carrys beta
+18. a fund provides exposure to the factors of size, value and quality -> have different mkt cap, P/E, debt-to-equity from benchmark (index)
+19. Private real estate funds typically report details on all properties owned, making it more transparent than hedge funds

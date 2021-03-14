@@ -1,0 +1,184 @@
+Reading 26-27
+1. Hedge Funds
+- key features
+  low regulatory constraints/ flexible mandates/ aggressive exposure/ larger investment universe
+  free use of leverage/ liquidity constaints/ higher costs/ lock-up period/ notice period
+
+2. Equity 
+[1] long/short - (net long pos)
+    specialist L/S managers (sector-specific focus)
+    generalist L/S managers
+    
+[2] (dedicated) short bias - (net short pos)
+    dedicated short-selling (only short)
+    short-biased (mostly short)
+    active short selling (muddy waters mode)
+
+[3] equity mkt neutral 
+    pairs trading (long/short 2 stocks)
+    stub trading (long/short parent/son company)
+    multi-class trading (long/short bond/stock of same company)
+by leverage: short bias < long/short < equity mkt neutral
+
+3. event-driven 
+[1] soft-catalyst
+    make investments when event has not happened
+[2] hard-catalyst
+    make investments upon event
+- merger arbitrage
+  [1] cash-for-stock
+  Acquiring company buy target company with cash
+  - so you should long T
+  [2] stock-for-stock
+  Acquiring company buy target company with stock
+  - so you should long T and short A
+- distressed scurities
+  bad competiveness/high leverage/poor governance/fraud and irregularities
+
+4. relative-value (FI)
+[1] fixed-income arbitrage
+    duration/ credit quality/ liquidity/ optionality
+    yield curve trade - long/short @ different points on yield curve, to bet on curve flattening or steepening
+    carry trade - long high yield and short low yield, e.g. on/off-the-run
+[2] convertible bond arbitrage
+    long convertible bond, short stocks - convertible bond goes more like stock than bond
+    
+5. opportunistic
+[1] global macro -> discretionary
+top-down, bet on macro things like exchange rate, central bank policy
+[2] managed futures -> systematic
+time-series momentum /cross-sectional momentum
+- both have high leverage/volatility/liquidity/ right-tailed return/ low correlation with mkt
+
+6. specialist
+[1] volatility trading (by option)
+time-zone arbitrage (same underlying, different countries)
+cross-asset arbitrage (macro-oriented ?)
+[2] reinsurance / life settlements
+    - low surrender value/ low premium pmts/ high prob of people die
+    
+7. multi-manager 
+[1] FOF
+    diversification/ small investments/ low tail risk/ high mgt fee/ high leverage
+[2] multi-strategy
+    low mgt fee/ efficient TAA/ transparent/ high op risk/ high tail risk
+
+8. conditional factor risk model (like barra)
+return of HF ~ alpha + risk factor + dummy variable (0 if normal, 1 if distress) + error
+- risk factor
+  equity risk/ currency risk/ credit risk/ volatility risk(VIX)/ liquidity risk
+- risk measure
+  [1] sharpe ratio/ sortino ratio (downside risk)
+  good: managed futures/ equity mkt netural/ global macro/ event-driven
+  not so good: fof/ multi-strategy (diversification effect overvalued)
+  [2] standard deviation
+  good: short-biased/ mkt neutral/ managed future/ fof
+  not so good: event-driven/ relative value
+  [3] drawdown
+  good: global macro/ managed futures/ merger arbitrage/ mkt neutral
+  not so good: LS/ event-driven/ relative value
+  
+9. roles of alternatives
+- capital growth/ income generation/ risk diversification/ safety
+- diversification
+  apprisal value are often used in alternatives, so diversification may be over-estimated
+  
+10. investment opportunity set
+[1] traditional approach
+- by liqudity
+  FI: cash - bond - private equity
+  equity: public - equity HF - private equity
+  other: commodity - REIT - private real estate - private real asset
+- by economy/inflation
+  bad/deflation: non-indexed bond (FI)
+  bad/high inflation: indexed bond/ gold
+  good/moderate inflation: equity and private credit
+  good/high inflation: commodities/ real estate
+- pros
+  easy to interpret
+- cons
+  over-estimation of diversification
+[2] risk-factor approach
+- private equity = public equity
+  private credit = public high-yield bond
+- pros
+  risk-factor identification/ integrated framework
+- cons
+  use of historical data - time lag
+  
+11. considerations
+[1] risk
+- option-like pattern because of illiquidity and valuation
+  so, we cannot assume normally-distributed return
+- unable to achieve the target weight because of illiquidity
+[2] expected return
+- limited validity of data - smoothing
+[3] vehicles
+- limited partnership - LP + GP
+- SMA (separately managed accounts)
+- open-ended mutual funds
+[4] liqudiity
+- drawdown structure
+  calldown period - distribution period - termination
+[5] expense and fees
+- HF - mgt fee@AUM, incentive fee@each year, high-water, hurdle
+- PE - mgt fee@committed capital, incentive fee@termination
+[6] tax
+[7] in-house programs (build)
+    intermediaries (buy)
+    
+12. asset allocation
+- to avoid normality assumption in alternatives
+  [1] empirically observed returns
+  [2] model a fat-tailed distribution
+- models
+  [1] monte carlo (by risk factors)
+  [2] optimization (mean-variance)
+  [3] risk factor based optimization
+  
+13. liquidity planning
+[1] maintain the desired allocation
+NAV_t = NAV_t-1 * (1 + growth rate) + contribution_t - distribution_t
+contribution_t = rate of contribution_t * (capital commitment - paid-in capital)
+distribution_t = rate of distribution_t * (NAV_t-1 * (1 + growth rate))
+
+[2] handle capital calls
+invest in liquid securities
+
+[3] plan for the unexpected
+do stress-test
+
+14. monitoring
+- key persons/ interest aligned with investors' interest/ style drift/ risk mgt/ client and asset turnover
+
+15. evaluation
+IRR - affected by the timing of CFs
+MOIC(multiple on invested capital) - (NAV + distribution)/total invested capital
+
+Note:
+1. long bias means net long position overall
+2. Assets that are not subject to a fund’s redemption terms are said to be held in a side pocket
+   A gate is a maximum amount an investor may redeem at one time
+   A lock-up is a restriction on redemptions during a period of time
+3. asset valuations for many alternative investments are based on appraisals, returns data are likely to be artificially smoothed and are often stale
+   If serial correlation is present, statistical techniques exist that can be used to unsmooth the data
+   relatively short history of alternative investments, which may result in small-sample and time-period biases
+   One method for modeling a distribution with fat tails (positive excess kurtosis) is to define risk and return properties for two or more distinct market environments, 
+   for example, a normal period and a high-volatility period. Returns for each of these can be described with a normal distribution with its own assumed mean and variance, 
+   Combining the distributions, using an assumed probability of each environment occurring, results in a non-normal distribution.
+4. to achieve a target allocation to alternative investments, an investor needs to account for the expected growth rate of the portfolio
+5. Because some alternative investments have relatively short histories of returns data, 
+   use of historical data (even unsmoothed data) alone may introduce time-period and small-sample biases
+6. right-tail return/ right-tailed skewness -> crisis alpha, performs good when bad economy
+7. in CFA, equity or distressed debt is not thought to have specific inflation-hedging function
+8. drawback of risk-factor based approach: risk factors may change, and the model is sensitive to inputs
+   drawback of traditional MVO: over-estimation of diversification effect
+9. custom index proxy is unlikely to have the same risk-return characteritic of actual investment
+   providers of peer group benchmark use very different construction rules
+10. due to the high correlation between private equity and public-traded equities, the diversification effect is limited
+    you can expect higher returns from the portfolio
+11. clawback provison -> in private equity, to return incentive fees from profitable investment sold earlier and if later investment sold at a loss
+12. limited partnership are used in hedge fund and managed futures 
+13. benefits of fof -> selection skill/ diversification (not useful if you have a lot of money)/ access to closed funds (that fof has invested)
+14. mgt fees in PE often scales down in later years to reflect a lower workload as the fund becomes fully invested
+15. for distress debt -> overstated sharpe ratio because of the stale valuation/ high due diligence cost/ liquidity risk greater than mkt risk

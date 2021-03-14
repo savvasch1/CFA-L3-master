@@ -1,0 +1,211 @@
+Reading33
+
+1. framework change
+old framework RRTTLLU
+new framework SLLERIA = RRTTLLU + stakeholder + asset allocation
+
+2. common characterstic
+[1] scale
+[2] long-term investment horizon
+    low liquidity needs: pension/ swf/ endowments and foundations
+    adequacy of capital(LDI): bank and insurers
+[3] governance framework
+    board of directors set up investment committe, who writes IPS
+[4] regulatory framework
+[5] principal-agent issues
+
+3. invesment approaches
+[1] Norway model (swf)
+    60% equity + 40% bond
+    passive investments, low tracking error
+[2] Endowment model (yale university endowment)
+    high alternatives exposure, active mgt and outsourcing
+[3] Canada model (pension)
+    high alternatives exposure, active mgt and internally managed
+[4] LDI model (bank and insurers)
+    duration-matched, fixed-income exposure. some stocks
+    
+4. pension
+DB
+contract-defined pmts/ employer as major contributor/ third-party makes investment/ employer bears the risk/ pooled mortality risk
+[1] stakeholders
+    plan sponsors (employers)/ plan beneficiaries(employees and retirees)/ investment committee
+    governments/ shareholders
+[2] time horizon
+    - liability
+    to estimate the liability, assumptions include growth rate of salaries/ expected vesting/ mortality
+    funded ratio = fair value of plan assets/ PBO (pv of defined benefit obligation)
+    factors increasing liability: years worked/ salary/ longevity/ additional contributions
+    factors decreasing liability: employee turnover/ expected investment return/ discount rate
+    - investment horizon
+    ratio of active employee and retirees
+[3] liability
+[4] risk
+    - plan funded status 
+    - sponsor financial status and profitability
+    - correlation of profitability and investment
+    - plan features (early retirement/ lump sum distribution)
+    - workforce characteristics (age of workforce/ active v. retired)
+[5] objective
+    - primary objective
+      meet pension liabilities
+      fully funded - return on asset = actuarial discount rate
+      underfunded - return on asset > actuarial discount rate (you have to make higher return to meet deficit/ or make additional contributions)
+    - secondary objective
+      minimize pv of expected cash contributions
+[6] liquidity needs
+    active v. retired/ age of workforce/ funded status/ withdraw when switch jobs
+DC: pmts based on performance/ employee as major contributor/ employee makes investment/ employee bears the risk/ individual mortality risk
+[1] stakeholders
+    plan sponsors (employers)/ plan beneficiaries(employees and retirees)/ board/ governments
+[2] liabilities and investment horizon
+    liabilities = required contribution
+    due to rise to scale and long-term horizon, DC plan may invest in PE or HF
+    life-cycle (target-date) options
+    - participant-switching options
+      switch to more conservative asset allocation as aging
+    - participant/cohort(群体) options
+      offer different portfolio according to different retirement dates
+[3] objective
+    prudently grow assets to support spending needs in retirement
+    can be in-house/ externally  or  passive/ actively
+[4] liqudity
+    age of workforce
+
+5. sovereign wealth funds (SWFs)
+5 types
+- budget stabilization funds
+  insulate budget from commodity price volatility (Chile/Russia)
+- development funds
+  allocate resources to priority infrastructure (Iran/UAE)
+- savings funds
+  share wealth across generations by transforming non-renewable assets (Temasek/Qatar/Kuwait/Russia)
+- reserve funds
+  reduce negative carry costs of holding reserves (China/Singapore)
+- pension reserve funds
+  pension-related contingent-type liabilities (China/Aussie/Kiwi)
+[1] stakeholders
+citizens/ investment offices/ board/ governments
+[2] liability and time horizon
+budget stab - uncertain liabilities and short horizon 
+dev - not clearly defined liabilities
+saving - long-term
+reserve - long-term
+pension - long-term
+[3] liqudity
+from low to high: saving dev reserve budget   (pension depends on accumulation or decummulaton)
+[4] external
+tax exempt
+[5] risk
+varies
+[6] objective
+budget sub - capital perservation/ try to outperform inflation rate/ low correlation with government revenues
+dev - raise long-term economic growth
+saving - real return objective/ long-term gov. budget
+reserve - higher return on FX reserves to reduce negative carry cost
+pension - meet future unfunded pension
+[7] asset allocation
+budget stab - fixed income and cash
+dev - infrastructure project
+saving - equities and alternatives
+reserve - lower alternatives due to potentially liquidity needs
+pension - based on accumulation or decumulation
+
+6. endowments
+[1] stakeholders
+students, alumni, university employees
+[2] liabilities and investment horizon
+perpetual horizon
+liabilities - future payouts promised, presented in spending policy, with smoothing payouts
+liabilities factors: fundraising (you may have a lower spending rate when there is incoming donation)
+                     reliance of the university on spending/ capacity of university to issue debt
+Spending rule (usually between 4%~6%)
+spending_t+1 = w*spending_t*(1+inflation) + (1-w)*spending_rate*average_AUM
+w=1 - constant growth rule
+w=0 - (avg) mkt value rule
+[3] liquidity - annual spending - incoming gifts and donations
+[4] external - tax exempt
+[5] risk - high risk tolerance
+[6] objective
+    return = spending rate + inflation(HEPI) + mgt fee
+[7] asset allocation
+    yale endowment model (>50% to alternatives)
+    
+7. private foundations
+types
+commuinity - like endowment (no spending rate)
+operating - set up to fund non-profit
+corporate 
+private grant-making - min 5% spending rate + flow through (spend all the donations of that year)
+[1] stakeholders
+    doners, recipients, community, government, board
+[2] liabilities and investment horizon
+    typically perpetutal, there is trend toward limited-life foundations (spending rate + flow through) 
+[3] liquidity
+    near-term liquidity + capital call + margin call
+[4] objective
+    real return - spending + inflation(CPI) + investment expense
+[5] risk
+    lower risk tolerance due to higher liqudity requirements
+[6] external
+    tax-exempt when meet min spending rule
+[7] asset allocation
+    long-term objective beating inflation
+
+8. banks
+[1] stakeholders - shareholders, customers, empolyee
+[2] liabilities and investment horizon
+    demand deposits/ term deposits
+    long-term illiquid assets, short-term liquid liabilities
+[3] liquidity - liquidity mgt is core
+..
+[6] external - reg: capital adequacy, liquidity, leverage   tax: taxable   systematically important financial institutions(SIFIs)
+
+9. insurers
+types: life insurers / property and casualty insurers
+       publicly listed company/ mutual company(相互宝)
+general a/c - life insurance and annuity policies - LDI
+separate a/c - variable life policies(投资连结险) - mostly in equities
+[1] stakeholders
+[2] liabilities and horizon
+    life insurers - 20-40 yrs
+    P&C insurers - shorter duration and higher uncertainty
+[3] liquidity
+    internal liquidity (cash from operations and investment) and external liquidity (ability to borrow in debt mkt)
+    in times of high interest rates, contracts with historically low-yielding contracts may cash in
+    general a/c = reserve portfolio + surplus portfolio
+
+10. bal. sheet mgt
+[1] A = L + E   dA = dL + dE
+    dE/E = dA/E - dL/E = (dA/A)*(A/E) - (dL/L)*(A/E - 1)
+[2] - assume dy - yield on asset, di - yield on liability
+      dE/ E*dy = (dA/ A*dy)*(A/E) - (dL/ L*di)*(di/dy)*(A/E - 1)
+    - duration: dP/P = -D*dy, which measures the sensitivity of the price change of an asset to its yield change
+      so D = -dP/P*dy
+    - DurationE = DurationA*(A/E) - DurationL*(di/dy)*(A/E - 1)
+    - duration of equity ~ degree of leverage, duration of asset and liability, sensitivity of changes in yields of asset and liability
+[3] if you see equity as a portfolio of asset and liability
+    wA = A/E, wL = L/E = 1 - A/E = - (A/E - 1)
+    then the volatility of percent changes in the mkt value of equity
+    sigma2_dE/E = sigma2_dA/A * (A/E)^2 + sigma2_dL/L * (A/E-1)^2 - 2*(A/E)*(A/E - 1)*cor*sigma_dA/A*sigma_dE/E
+    so, to lower the volatilityE, you need to reduce volatility of asset and equity, to increase the cor of asset and liability (ALM)
+
+11. managing liquidity risk
+methods
+[1] liquidity profiling and time-to-cash table
+    threshold: 1 week - 1 quarter - 0.5 year - 1 year
+[2] rebalancing and commitments
+    systematic rebalancing - calendar/percent-range 
+    automatic rebalancing - use liquid public asset to replace illiquid private asset
+[3] stress testing
+    historical/ statistical/ scenario
+[4] derivatives
+illiquidity premium = expected return on illiquid asset - expected return on marketable asset of same characteristic
+
+Note:
+1. Despite some smaller asset classes or strategies to be inaccessible due to capacity issues for institutional investors
+generally, the larger scale of institutional clients opens up more asset classes (e.g., private equity and real estate) that are not generally available to individual investors
+2. foundations and endowment have long term horizon, despite the liquidity needs
+3. maximizing sharpe Ratio is contradicting to LDI or ALM, as maximize sharpe ratio is an action of AO
+
+

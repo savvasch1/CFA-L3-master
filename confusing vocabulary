@@ -1,0 +1,98 @@
+disposition effect (sell winners and hold on to losers)
+
+social proof (peer pressure)
+
+adaptive mkt hypothesis (AMH) -> apply heuristics until they no long work, and then adjust
+
+recallability trap -> overweight castrophic/dramatic event
+
+factor—based model - construct the frontier of risk factors, run the optimized combo, then map back to assets
+
+risk budgeting -> excess return to MCTR = (expected return - risk-free rate)/MCTR
+
+Integrated asset-liability approach -> take liability as a variable
+Surplus efficient frontier approach/Two-portfolio approach -> take the liabilities as a given and only focus on managing the assets
+
+shrinkage estimate (weighted between historical var and analyst var)
+
+uncovered int rate parity (UIP) -> d%S(d,f) = rf(d) - rf(f)
+
+Dornbusch overshooting -> countries with higher investment return will attract capital with higher expectation, s.t. it will overshoot can depreciate a little in the end
+
+synthetic cash (beta_target=0) = stock - future
+synthetic equity (beta_portfolio=0) = risk-free + future
+
+V_p*(D_p - D_cash)/D_futures*V_futures
+
+Macaulay duration -> pv-weighted average repay period -> measure price risk or calc convexity/ single liability immunization
+modified duration -> 1% change in yield - ? % change in price,  (d_p/p)/d_y -> use futures to hedge
+effective duration -> ex post facto, (pv_ + pv+)/(2*pv0*(r+ - r_)) -> measure bonds with embedded option/ parallel change in yield curve (int rate risk)
+dollar duratin -> d_p/d_y = modified duratio * p
+
+(repo) dollar interest = principal * repo rate * (term of repo days/360)
+
+type II - known amount/ unknown timing -> callable/putable bond, life insurance
+type IV - unknown amount/timing -> property insurance, DB plan
+
+structure trade -> trade security with and without option
+
+zero replication -> D_A = D_L, s.t. the int rate risk has been immunized
+
+cash flow yield (internal rate of return)
+
+Butterfly spread = – (Short-term yield) + (2 x Medium-term yield) – Long-term yield
+
+A total return receiver swap would entitle the investor to receive the cash flows and compensation for the appreciation in the index 
+in exchange for paying a floating rate plus a spread
+
+- holding-period excess return
+  XR = spread_beg*t + spread_duration*delta_spread
+- expected excess return
+  EXR = XR - expected loss(t*PD*LGD)
+  
+buffering -> as long as stocks remain in the buffer zone, they stay in the current index -> #holdings > #index
+reconstituting -> delete names that are not longer in and adding names approved
+packeting -> if a mid-cap stock's cap increase above the breakpoint between the mid-cap/large-cap, it is split into 2
+  
+risk-efficient -> lowest active risk using fewer securities and higher active share
+  
+Assets that are not subject to a fund’s redemption terms are said to be held in a side pocket
+A gate is a maximum amount an investor may redeem at one time
+A lock-up is a restriction on redemptions during a period of time
+  
+right-tail return/ right-tailed skewness -> crisis alpha, performs good when bad economy
+
+clawback provison -> in private equity, to return incentive fees from profitable investment sold earlier and if later investment sold at a loss
+
+[1] arithmetic attribution
+    alpha = return - benchmark
+[2] geometric attribution
+    (1+alpha)*(1+benchmark) = 1+return (multiple periods)
+    
+hiring a bad manager is type I error （more serious 拒真 更严重）, rejecting a good manager is type II error （存伪， 只是2）
+
+recapitalization - split shares into voting preferred shares(hold) + non-voting common shares(transfer)
+recapitalization - staged exit
+
+elimination/waiting period - 180 days
+non-forfeiture clause -> cash value -> premium - net premium (f(coverage, mortality risk))
+guaranteed insurability -> flat premium for life
+level premium -> same premium for each year, annual premium -> different premium for each year
+gross premium = net premium + expense + profit + cash value
+
+short sale against the box -> shorting the company stock that you own
+
+probaility of ruin -> spend all money
+
+consider wage growth rate and discount rate together, adjusted discount rate = (1+discount rate)/(1+growth rate) - 1
+
+to calculate insurance needs
+-> 1. needs method -> total expense discounted - current coverage
+-> 2. human life method -> (future earnings - expenses) discounted - current coverage
+prepaid variable forward (PVFs) -> like collar -> own 1000 shares @ 50, lend @ X = 45, if S_t<50, deliver, if S_t>50, deliver less shares
+
+mortgage financing. net proceeds =  asset value * LTV
+
+rebate rate = collateral earnings rate - security lending rate (Securities lending income - securities lending costs）
+
+excess return over the target horizon = (Credit spread x Target horizon) – [(Expected spread – Current spread) x Spread duration]

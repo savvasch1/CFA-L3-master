@@ -1,0 +1,134 @@
+Reading 15-16
+
+1. option basics
+- option value = intrinsic value + time value
+  option value = f(S, X, T, rf, sigma), all can be almost certain except sigma, which is the core of pricing
+- profits = payoff - premium
+- synthetic asset
+  forward = call -  put
+  call = asset + put
+  
+2. option strategies
+- covered call = asset - call
+  expectation: stock will rise, but to a certain degree
+  profit = (St - S0) - max(0, St-X) + c
+  [1] yield enhancement
+  short deep OTM call, collect premium
+  [2] reduce position
+  short ITM call, close in the near future
+  [3] target price realization
+  short OTM call, close in the future
+  
+- protective put = asset + put
+  expectation: stock will rise, but do not want to lose
+  profit = (St - S0) + max(0, X-St) - p
+  
+- collar = asset - call + put
+  profit = (St - S0) + max(0, Xp-St) - max(0, St-Xc) - p + c
+  expectation: stock will rise, do not want to lose, but do not want to pay premium
+
+- bull call = call_low - call high (reduce fee)
+  bull put = - put_high + put_low (control risk)
+  bear put = put_high - put_low (reduce fee)
+  bear call = - call_low + call high (control risk)
+  
+- straddle = call + put @ same maturity and X
+
+- calendar spread = long-term option - short-term option
+  which longs the "forward volatility", as time value decays more in short-term than long-term
+
+- by volatility
+  high: long call/put
+  low: short call/put
+  mid: long and short call/put
+  
+3. greeks (option price change / ...)
+[1] delta - underlying
+    c = S*N(d1) - K*exp(-rT)*N(d2) 
+    p = S*N(-d1) - K*exp(-rT)*N(-d2)
+    delta_call = N(d1) ~ (0,1)
+    delta_put = N(-d1) ~ (-1,0)
+    draw option value ~ X, delta_OTM = 0, 1 = abs delta ITM
+[2] vega > 0 - volatility
+[3] rho - risk-free rate
+    rho_call > 0
+    rho_put < 0
+[4] theta < 0 - passage of time
+    except for deep ITM put
+[5] gamma - delta ~ underlying
+    draw option value ~ X
+    call: delta from 0 to 1, put: from -1 to 0
+    for both, gamma > 0, largest ATM
+    
+4. volatility smile
+implied volatility ~ X
+- foreign currency, symmetric smile
+- equity, skewed to the right
+  leverage/ volatility feedback/ crashphobia
+  strategy: long options with high implied vol, short with low vol
+  [1] OTM call - OTM put = long forward 
+  [2] ITM put - ITM call = short forward
+  
+
+5. int rate derivatives
+[1] int rate swap
+    - duration of floating bond = reset period (*0.5)
+      as the next pmt has been set, so the int rate will have full impact on single cf
+    - duration_fix > duration_floating
+      so duration_receiver = duration_fix - duration_float > 0
+      
+[2] forward rate agreement
+    virtually borrow money at a pre-specified rate in the future
+    long - floating (mkt) - X  (positively with int rate)
+
+[3] short-term int rate (STIR) futures
+    eurodollar futures - quotes 1 million @ 100 - annualized forward rate, ususally quarterly
+    1bp -> 1 mil * 0.0001 * 90/360 = $25
+    long - 100 - forward rate  (negatively with int rate)
+    
+[4] longer-dated FI futures
+    underlying: hypothetical 30 yr T-bond with 6% coupon rate
+    delivery: physical settlement, designated by shorter, CTD with maturity > 15 yrs
+    to adjust duration, D_Target * P_portfolio = D_portfolio * P_portfolio + N * D_future * P_future
+                        D_future = D_CTD / CF
+                        N = (D_target - D_portfolio)/D_future  *  P_portfolio/P_future
+                          = (DD_target - DD_portfolio)/DD_CTD  *  CF
+                          
+6. Equity derivatives
+[1] equity swap
+    receive equity return, pay fixed rate/ floating rate/ another equity return
+
+[2] equtiy futures and forward
+    to adjust beta, beta_target * P_portfolio = beta_portfolio * P_portflio + Nf * beta_future * P_future
+                    P_future = index_future * multiplier
+                    N = (beta_target-beta_portoflio)/beta_future  *  P_portoflio/(index_future*multipler)
+    synthetic cash (beta_target=0) = stock - future
+    synthetic equity (beta_portfolio=0) = risk-free + future
+    
+- Equity/bond transform 
+  stock - (decrease beta) - cash - (add duration) - bond 
+
+Note:
+1. The more ITM is an option, the higher is its (absolute) delta (closer to 1)
+   The more OTM is an option, the lower is its (absolute) delta (closer to 0)
+2. for yield-enhancement purpose, do not take adverse position, and use OTM option
+3. a short put is said to have a positive delta
+4. the delta of a covered call -> delta of underlying - call >0
+   the delta of a protective put -> delta of underlying + put >0
+5. fix-rate duration -> 0.75 * T 
+   floating-rate duration -> 0.5 * reset period
+6. hedge ratio for Bond using future
+   N = (D_t - D_p)/D_f  *  V_p/V_f
+   N = (D_t - D_p)/(D_CTD/CF)  *  V_p/V_CTD
+7. when fixed received increase (duration increase), cash flow risk goes down, mkt value risk goes up
+8. a floating loan with a payer swapation, you do not commit(lock) @ X, you could end up with paying less when int rate goes down
+9. when you try to increase the allocation of a bond, if you are given the duration of cash, use V_p*(D_p - D_cash)/D_futures*V_futures
+10. to cancel a swap -> to enter a reverse swap or swapation (may not cancel)
+11. if given the duration of cash, then the #futures needed
+    (D_cash - D_p)*(V_target - V_p)/(D_future*V_future)
+12. to adjust bond duration with future contract, use modified duration of future
+13. a long straddle breakeven point is X - c - p or X + c + p, which has nothing to do with underlying asset price S0
+14. with asset -> covered call, protective put, collar
+    without asset -> straddle, bull/bear call/put spread
+15. when adjust an asset allocation back to target, say Vbond0, Vstock0 -> Vbond1, Vstock0
+    if adjust bond, it is (Vbond1 + Vstock0) * (Vbond0/Vbond0+Vstock0)

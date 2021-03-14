@@ -1,0 +1,284 @@
+Reading 18~19
+
+1. Durations
+[1] Macaulay duration
+pv-weighted average repay period
+[2] modified duration
+1% change in yield - ? % change in price,  (d_p/p)/d_y
+[3] effective duration
+ex post facto, (pv_ + pv+)/(2*pv0*(r+ - r_))
+[4] dollar duration
+1 unit change in yield - ? dollar change in price, d_p/d_y
+[5] dv01
+1 bp change in yield - ? dollar change in price, 0.0001*dollar duration
+[6] duration of portfolio (parallel shift)
+Dp = w1D1 + w2D2
+DDp = DD1 + DD2
+[7] key rate duration (non-parallel shift)
+KDRi = WiDi
+
+2. factors affecting duration
+- maturity, positive
+- coupon rate, negative
+- interest rate, negative (convexity)
+- option, negative
+
+3. convexity
+- price ~ yield, negatively inverted to axies
+  therefore, for certain d_y, prices goes higher than lower
+- d_p = - D * d_y + (1/2) * Conv * (d_y)**2
+- callable: part negative convexity - lower convexity over all -> cheaper
+  putable: part higher convexity - higher convexity over all -> expensive
+
+4. realized return
+RR = coupon + coupon reinvestment (RI risk) + capital gain/loss (price risk)
+when int rate up, coupon RI up, captial gain down
+
+- to measure RI risk - investment horizon
+          price risk - macaulay duration
+if investment horizon > macaulay duration, higher RI risk, and vice versa
+
+5. FI risk factors
+primary:
+- int rate risk
+parallel shift in yield, measured by effective duraton
+- yield curve risk
+non-parallel shift in yield, measured by key rate duration
+- spread risk
+spread between treasuries and non-treasuries, measured by spread duration
+
+non-primary:
+- credit risk
+- liquidity risk
+- optionality risk
+
+6. 3 bonds
+laddered portfolio - averagely dispersed CF
+bullet portfolio - concentrated CF
+barbell portfolio - like a barbell
+
+- higher dispersion(barbell>laddered>bullet) - higher convexity
+- convexity = (Mac.D**2 + Mac.D + dispersionCF)/(1 + yieldCF)**2
+
+7. 3 effects of FI
+[1] diversification
+- high-yield bond like t-bond during stress, like stock during boom
+- when int rate volatility increase, near-term vol > average vol
+[2] regular cash flow
+- better for ALM, balance RI risk and price risk, build an immu portfolio to changes in int rate
+[3] hedge for inflation (only for certain types)
+- R_nominal = R_real + inflation rate
+- fixed-coupon, unprotected
+- floating-coupon, protected coupon, not but principal
+- inflation-linked coupon 
+  like TIPS (principal linked to inflation, coupon rate fixed)
+  both principal and coupon are protected
+  
+8. ALM mandates
+[1] duration matching - immunization
+goal: FV_A = FV_L
+conds: PV_A = PV_L and r_A = r_L (to lock an r_A)
+       r_A = coupon (fixed) + coupon RI (float) + capital gain/loss (float)
+       to offset the last 2 parts, D_A = D_L 
+       therefore DD_A = DD_L
+risks after immunization
+- int rate risk,  convexity unhedged
+- yield curve risk, above assume parallel shift
+- rebalancing risk, if int rate change, D_A and D_L will change and may not have to be equal
+  may result in liquidity risk and high portfolio turnover
+- credit risk
+
+[2] cash flow matching - all CFs matched precisely
+backward propagation - match from the last CF
+pros: easier, no parallel shift assumption, no rebalancing
+cons: maturities(timing) may not match
+
+[3] contingent immunization
+when PV_A > PV_L, actively manage the surplus with AO
+
+[4] horizon matching
+for short term: use CF matching
+for long term: use duration matching
+
+9. AO mandates
+benchmark: index
+- passive - pure indexing
+  copy risk factor
+- semi-active - enhanced indexing
+  match primary risk factor - duration (int rate risk, yield curve risk, and spread risk)
+- active - alpha
+
+10. bond liquidity
+- government > corporate
+  high credit > low credit
+  frequent > non-frequent
+  larger issues > smaller issues
+  shorter-term > longer-term
+
+- in pricing illiquid, use matrix pricing (linear interpolation)
+- alternative ways to long illiquid FI - future, CDS, ETFs
+
+11. return decompose
+[1] yield income = (coupon + coupon RI)/p0
+[2] rolldown return = (p1 - p0)/p0
+    roll yield = yield income + rolldown return
+[3] from change in int rate = -D*dy + 0.5*conv*dy**2
+[4] expected loss = PD * LGD * EA
+[5] currency gain/loss
+
+12. leverage
+- leveraged return rE = ((B+E)*rA - B*rB)/E = rA + B/E*(rA-rB)
+- ways to leverage
+[1] future contract
+leverage = (notional value - margin)/margin
+[2] swap agreement
+floating-rate has smaller int rate risk than fix-rate, so duration_floating-rate < duration_fixed-rate
+fixed rate payer = long floating + short fixed, duration < 0
+fixed rate receiver = long fixed + short floating, duration > 0
+[3] inverse floater
+- (normal) floater = alpha * L + QM
+  alpha<1, deleveraged  alpha>1, leveraged
+- inverse floater = -alpha * L + QM
+  short int rate
+[4] repo
+dollar interest = principal * repo rate * (term of repo days/360)
+[5] short
+- cons of leverage
+risk of forced liquidation, even higher leverage, fire sale
+
+13. tax
+- only realized income are taxed
+- tax of capital gain < tax of coupon
+- tax-loss harvesting - capital loss can only cut tax on capital gain
+- zero-coupon
+  if held-to-maturity, coupon income tax
+  if for trading purpose, capital gain tax 
+- asset location among 3 a/cs
+[1] taxable
+[2] tax-exempt
+[3] tax-deffered
+
+14. types of liability
+classify by certainty of amount and timing
+[1] type I - known amount/timing
+[2] type II - known amount/ unknown timing
+    callable/putable bond, life insurance
+[3] type III - known timing/ unknown amount
+    floater, TIPS
+[4] type IV - unknown amount/timing
+    property insurance, DB plan
+
+15. managing single liability
+[1] int rate risk immu
+buy a zero-coupon bond
+- no RI risk, no price risk, but zero-coupon bond are not always available
+[2] int rate immu
+buy a coupon bond
+- exposed to RI and price risk, to offset,  PV_A >= PV_L, and MacD_A = MacD_L
+- for yield curve risk and int rate risk, to minimize convexity
+  zero-coupon bond has no yield curve risk(curvature does not matter)
+  low dispersion has low convexity, --  low yield curve risk
+- asset convexity > liability convexity （涨多跌少）
+
+16. derivatives overlay
+DD_L = DD_A + DD_derivative
+to increase duration, you can
+[1] long futures [2] long fixed receiver [3] long fixed receiver swapation
+- futures
+DD_L = DD_A + N*DD_F
+for T-bond, follow the cheapest-to-deliver principle, where P_CTD = P_F * conversion factor(CF)
+DD_F = D_F * P_F = D_CTD * (P_CTD/CF) = DD_CTD/CF
+- swap 
+DD_L = DD_A + NP*DD_swap
+
+- when int rates are low - expected to rise - P_A decrease - higher hedge ratio
+- vice versa
+
+17. AO
+[1] passive
+- mimic credit quality, types of borrowers, maturity, and duration
+- consistent with EMH
+- pros/cons: good diversification, full replication is not attainable
+- other ways to replicate
+  open-ended mutual fund
+  ETF - more liquid than mutual fund
+  total return swap -   index CFs - (LIBOR + spread)
+[2] enhanced indexing
+- mirror primary factors
+- more flexible and efficient than passive
+- stratified sampling
+  process: identify primary characteristic, find similar bonds, choose the best among them
+  enhance: lower cost, issue selection, yield curve, sector/quality, call exposure
+  when int rate rise, more callable (cheap) / putable (safe) bond
+  when int rate fall, less callable (unsafe) / putable (cheap) bond
+- primary indexing
+  int rate risk - effective duration
+  yield curve risk - key rate duration (PVD - pv of distribution)
+  spread risk - spread duration
+  sector and quality
+  optionality
+  issuer exposure
+[3] active
+  
+18. laddered bond portfolio
+pros: diversified / modest convexity / liqudity mgt
+cons: hard to build
+
+
+Notes
+1. strategies to manage taxable account
+   - realize capital losses to offset capital gains
+   - extending holding periods to realized long-term capital gains
+   - consider differentials in income and gain tax
+2. managing liability from lowest risk to highest risk (needs most cash to least)
+   cash flow matching -> horizon matching -> immunization -> contingent immunization
+3. convexity (涨多跌少) -> dispersion -> barbell -> putable
+4. for a 5% per year liability, you need a security with both YTM and RI to be 5%
+5. relative value in bond -> rank expected return by sectors, structures, issuers from mkt
+6. execess return -> return_p - return_treasury with a set of key rate duration across the term structure
+   expected return -> estimate future returns by decomposing historical patterns that are like to recur
+7. (D_target - D_portfolio)*V_portfolio = N * D_future * V_future = N * (D_CTD/CF) * V_CTD
+   BPV_target -  BPV_portoflio = N * BPV_future = N * (BPV_CTD/CF)
+8. income risk is smaller in a portoflio with longer maturities
+9. in inmmunization, aside from D_A = D_L, it requires PV_A >= PV_L, not r_A >= r_L
+10. structure trade -> trade security with and without option
+11. in yield maximization, total return approach is better than relative value
+12. in AO, enhanced indexing uses the sampling method (stratified sampling to match primary risk factors), while pure bond indexing and active mgt do not
+13. inmmunization needs rebalancing, even after one small parallel shift, or just after some time
+14. cushion spread -> active mgt to generate returns - for an incremental difference between min acceptable return and higher immunized rate
+15. spread duration is the key measure of relative sensitivity and tracking error
+16. when int rate rise, callable bond (bond - call) will not execise the option, thus increasing the value
+                        putable bond (bond + put) will execise the option, thus increasing the value
+17. enhanced indexing -> try to earn back admin and other fees, if attain higher return than that, it is likely to be active mgt
+18. to long convexity -> reduce exposure to callable and MBS (issuer's right), long putable (buyer's right), long call and put options (volatility ~ convexity)
+19. positive (right) skewed return -> long tail @ right -> mean > median. 
+    most investment in emerging mkts are negatively (left) skewed
+20. methods of leverage to increase portfolio returns
+    -> futures/ swaps/ structured financial instruments/ repos/ securities lending
+21. zero replication -> D_A = D_L, s.t. the int rate risk has been immunized
+22. investment-grade bond -> spread risk (credit rating migration, measured by spread duration) -> negative relation between credit spread and risk-free rate
+    high-yield -> credit loss -> EL = PD * LGD
+23. Z-spread > OAS -> callable/ Z-spread = OAS -> option-free/ Z-spread < OAS -> putable
+    Z-spread is the benchmark, if you add less yield to match the benchmark, it means the bond is less valuable -> callable
+24. roll-down strategy applies in a upward sloping, static yield curve. It rolls down (right to left) and sell bond at a lower yield
+25. long MBS -> sell prepmt option (bet you will not call) -> sell convexity
+26. bonds with option -> effective duration and effective convexity
+    option-free bond -> modified duration and convexity
+27. Immunization -> minimize the variance in the realized rate of return/ lock in the cash flow yield (internal rate of return) on the portfolio
+28. immunize a single liability -> matched Mac Duration and minimize portfolio convexity
+           multiple liabilities -> larger convexity than liability but minimized in order to minimize dispersion and reduce structural risk
+29. to deal with one-time shift in yield curve -> match Mac Duration -> price effect cancel coupon reinvestment effect
+30. DB plan is a form of type IV liability. timing (you don't know how long to pay) amonut (you don't know the wages before retirement)
+31. In LDI, even if the liability is certain with timing and amount, is still affected by interest rate in the form of discount rate
+32. if an outstanding bond can be retrived with a samll premium, there is no need to long a bond with duration/cash flow matching
+33. Butterfly spread = – (Short-term yield) + (2 x Medium-term yield) – Long-term yield
+34. effective duration can be used in evluating bonds with embeded options
+35. Futures BPV = Note BPV / Conversion Factor
+    Number of contracts = (Asset BPV – Liability BPV) / Futures BPV
+36. bond market exposure -> A total return receiver swap would entitle the investor to receive the cash flows and compensation for the appreciation in the index 
+                            in exchange for paying a floating rate plus a spread
+
+
+
+
+

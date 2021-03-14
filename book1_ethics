@@ -1,0 +1,294 @@
+Reading 1-6
+
+1. proceedings
+principles: fairness of the process/ confidentiality of the proceedings
+professional conduct program(PCP) and disciplinary review committee (DRC) -> enforement of code and standards
+sources -> self-disclosure annual professional conduct statements/ written complaints/ public sources/ violation
+
+2. panel (DRC member + local society)
+sanctions: public censure/ suspension of membership/ revocation
+
+3. AMC (asset manager code)/ Code and Standards
+AMC -> firms   code and standards -> individuals
+
+4. standard I -> professionalism
+[1] knowledge of the law
+guidence
+- must and should know directly pertaining laws
+- adhere to most strict law/code
+- if know the crime -> attempt to stop/notify supervisor or compliance -> dissociate or quit
+- if suspect the crime -> consult -> judge
+- adhere to social culture
+- delegation to asscoiated firms or colleague does not mean duty free
+[2] independence and objectivity
+- reject gifts that could be expected to compromise (best practice)
+- modest and normal gift is OK only if is purpose is not to influence independence
+- gift from clients
+  performance-based gift (tips) -> should disclose
+- buy-side manager try to pressure sell-side analyst
+- custodial relationships (hire outside manager or third party)  
+  -> code/ compliance procedure/ quality/ adhere to stated strategy
+- firewall 
+  separate reporting structures for research-side and IBD-side
+  compensation should not link to IB assignments
+  differenct locations
+- issuer-paid research -> flat fee (disclose)
+- travel funding -> commercial transportation rather than paid travel arrangement (best practice)
+- social activities -> no entertainment
+[3] misrepresentations
+- omission
+  cherry picking performace/ models' risk/limitation/negative scenario
+- misleading
+  past performance/ review third-party/ appropriate benchmark/ disclose info about valuation model
+- plagiarism (reference 1/ no reference 0)
+  common knowledge -> original author 1/  own words 0
+  original idea -> 1
+  data -> authority  raw data 0, processed data 1/  institutions 1
+  media -> 1
+  well-known analyst -> 1, must state the name
+  research ->  internal  for self 1, for company 0/ external 1
+[4] misconduct (mama's rule)
+  anything against integrity/ reputation/ honesty/ misleading/ plagiarism
+- no oral/ private/ non-public
+
+5. integraity of capital mkts
+[1] material nonpublic information
+- material -> reliable source (insiders) + clear impact
+  non-public -> selective group
+- not act or cause others to act, make reasonable effort to make it public
+- mosaic theory -> all other combo of public and material are doable
+- personal trading limitations -> pre-clearance on certain stock/time/amount
+- mkt maker with MNI -> cannot withdraw, remain passive
+- risk-arbitrage trading -> best to stop, long-short is ok
+[2] mkt manipulation
+- info-based
+- transaction-based
+  okay to trade for tax purpose, or to meet minimal trading volume per agreements with futures exchange
+- actions like buy and sell at the same time in a small volume mkt (e.g. emerging)
+          or use limit order in both buy and sell side are considered manipulation
+  
+6. duty to clients
+[1] loyalty, prudence and care
+- fiduciary duty
+- prudent man rule -> higher standard than myself
+- soft dollar(commissions) -> commission to buy research services -> only be used to benefit client
+- directed brokerage -> seek best execution > best price
+- proxy voting policies -> must have voting policies and disclose, may not have to vote due to cost-benefit
+[2] fair dealing
+- fair != equal, as long as better treatment for vip does not disadvantage reduced-form client
+- pro-rata on order size
+- recommend to all clients, may take care of old clients afterwards
+- family account -> not normal fee paying or manager is beneficary owner or under one roof
+[3] suitability
+- personal/institution -> IPS, public fund -> mandate
+- change IPS annually or prior to major changes
+[4] performance presentation (closely related to misrepresentation)
+- fair, accurate, complete
+- composite -> include terminated account/ weighted average/ all strategy/ separate simulation from reality
+- brief + detailed
+[5] perservation of confidentiality
+- current, former, prospective
+- unless illegal activities/ law-required disclosure/ permitted disclosure
+
+7. duty to employers
+[1] loyalty
+- on work
+  no competition on types of services/ time/ effort
+  can prepare and run companies, as long as no business is conduct, unless got consent from employers
+- on leave
+  clients info -> only names, or few private info (phone numbers), or with public source
+  model and reports -> consent from employers, with record or supplement data
+  non-compete agreement
+- employment -> include part-time, writing for journals  
+[2] additional compensation arrangements 
+    -> when you are offered it, you must disclose to employers and get written consent. no need to disclose to clients
+[3] responsibility of supervisors
+- beforehand -> compliance  procedure
+- afterhand -> initiate investigation/ place monitor
+
+8. investment
+[1] diligence and reasonable basis
+- in using third party -> assumption/ rigor of analysis/ timeliness/ independence of recommendation
+- in using quant model -> assumption/ parameter/ limitation  |  in developing quant model -> all technicals/ test/ negetive scenario analysis
+- in selecting external advisors -> code/ compliance/ quality of return/ adherence to stated strategy
+- in signing group research -> may disagree and sign if it had reasonable basis
+[2] communication with clients
+- not all risk and limitation are required, only significant ones
+- material change in investment process
+- brief + detailed
+- distinguish between fact and opinion
+[3] record retention
+- paper and digital
+- no requirement as to where to store the record
+- provide supporting data, may use public source
+- CFA recommends 7 years
+
+9. conflicts of interest
+[1] disclosure of conflicts (in plain language)
+- own stock under research -> disclose/ sell/ assign another analyst
+- personal trading/outside board memberships -> disclose to employers
+- relationship with company on research/ fee arangement -> disclose to clients
+[2] priority of transaction
+- order of transaction -> client > employer > individual (gap a week)
+- aligned interest (client ask manager to invest along) -> can trade along, must not adversely affect client investment
+[3] referral fees
+- any compensation/ benefit received -> disclose to employer, clients
+
+10. responsibility as members
+[1] conduct as members and candidates
+[2] refernce to CFA institute, designation
+CFA -> adj., not n.
+
+11. AMC (asset manager code)
+[1] loyalty to clients
+- cover all employees/ adhere to all laws/ no parital compliance
+[2] investment process and actions
+[3] trading
+[4] risk mgt, compliance, and support
+- appoint a compliance officer/ independent third-party review
+- business-continuity plan (BCP)/ firm-wide risk mgt process
+- disclose all fixed and contingent fees/ gross and net fees return
+  total return - trading expense(commission+spread) = gross profit - invsetment mge fee = net profit
+  disclose actual fees to clients/ expected fees to prospective
+  reports to clients at least quarterly, within 30 days of the end of the quarter
+[5] performance and valuation
+valuation priority -> mkt price/ quoted price/ estimated price with actual input/ estimated price with assumed input
+[6] disclosures
+
+12. GIPS
+-> voluntary, minimum standards for investment performance/ fair representation and full disclosure
+[1] glossary
+- in conflicts of law, comply with law and make full disclosure
+- accural accounting instead of cash-basis
+- carve-out -> create a separate track record 
+- composite -> aggregation of portfolio according to the same mandate
+- internal dispersion -> measure the spread of the annual returns of portoflios within a composite (standard deviation)
+- trade date accounting instead of settlement date accouting
+[2] compliance standards
+- comply with all requirement/ follow law/ make full and fair presentation/ document procedures
+[3] compliance width
+- firm > composite > portfolio (a portflio can be in differenct composite)
+  firm -> minimal level to comply with GIPS
+  composite -> minimal level to performance presentation
+- on firm level,  firm redefine -> disclose the date/ description/ why
+- on composite level, defined by mandate/ include all related portfolio/ 
+  change to composition definition must not be retroactively/ composite definition must be made available upon request
+  descriptions e.g. large cap equity growth/ balanced growth
+  terminated composite must keep showing for 5 years
+- on portfolio level, >2010, carve-out must be managed separately with its own cash balance
+                      2006-2010, present the percentage of carve-out
+  portfolios below minimum asset level must not be included in a composite
+  terminated portfolio must be included up to the last full measurement period
+[4] calculation
+- >2011, valuation -> fair value
+- disclose policies for valuation
+- accural accounting must be used for fixed-income securities or others that earn interest
+- >2011, disclose if different valuation methods applied within same composite
+- external cash flow
+  time-weighted return geometrically linked
+  > 2000, calculate returns at least monthly
+  original dietz -> assume cash flow happens at mid-term
+  return = (emv - bmv - cf)/bmv + 0.5*cf
+  > 2005, adjust for daily-weighted external cash flow
+  modified dietz -> daily-weighted cf
+  return = (emv - bmv - cf)/bmv + cf*(periods afterwards/whole period)
+  if cf is outflow, turn cf into -cf 
+  > 2010, calculate returns on the date of all large cash flows
+  twrr -> split period into samller period on large cash flow
+- composite (asset-weighting)
+  >2010, monthly
+- fees -> actual/conservative, no estimated trading expense
+  disclose percentage of bundled fees and non-fee-paying portfolios
+[5] presentation and disclosure
+- disclose if leverage,derivatives and short positions if use is material
+- returns for periods of less than 1 year must not be annualized
+- if performance of past firm or affiliation must be linked, 
+  then decision makers/ decision-making process should be the same, and should have supporting records
+- internal dispersion -> 3 year annualized ex-post standard deviation of composite and benchmark
+- disclose if change the benchmark:date, desciption, why -> could be retroactively if the benchmark is wrongly chosen in the first place
+- verification -> to assess whether the firm complies with GIPS 
+  independent 3-rd party/ verifying party does not have to comply with GIPS/ calculation and presentation of composite (sampling)/ not ensure accuracy/ report
+- examination -> to assess the accuracy of the composite / after verification
+[6] advertisement
+- no performance -> definition of the firm/ obtain a compliant presentation/ statement
+- with performance -> above + composite description + composite total returns
+  return: period-to-date composite return + 1,3,5 annualized composite return 
+[7] real estate
+> 2011, fair value
+> 2008, valued at least quarterly
+- external valuation -> >2012, at least per year
+> 2011, separate income returns and capital gains, make adjustments to equal the two to total return
+- disclose
+  gross-of-fees or net-of-fees
+  internal dispersion is not required if composite contains <=5
+  percentage of composite under external evaluation
+- RE close-end fund
+  SI-IRR -> since inception internal rates of return, must use quarterly cash flow at least
+  vintage year -> the year the fund was initiated
+  PIC = paid-in capital / committed capital
+  DPI = distribution / paid-in capital
+  RVPI = residual value(total value net of distribution) / paid-in capital
+  TVPI = total value / paid-in capital
+
+
+Notes:
+0. one mistake in the first place does not lead to another
+1. all discretionary and fee-paying account must be in a composite. non-discretionary account cannot be in a composite.
+   accounts assgined to sub-advisor can be in a composite only if the manager has the selection power over investment (discretionary)
+2. sponsor-specific report can only be presented to sponsor
+3. order of preference: mkt price/ quoted price in active mkt/ inactive mkt/ calculation using actual input/ assumed input
+4. info with no specifics can be considered non material
+5. "I believe" is an opinion and can be put in a report
+6. actions on all client could arise suitability issues
+7. rival's report on the same issue is important, therefore under due diligence
+8. big, competent and diligent companies' report can be used without verification
+9. client's order supercedes other part of the Code
+10. no solicitation of clients prior to leaving, after is ok
+11. responsibility of implementation and authority of enforcement cannot be delegated from compliance officer
+12. arrangement to increase trading volume is ok, as long as the purpose is not to deceive investor and is disclosed
+13. market-value weighted return is ok, as long as it is disclosed
+14. "the investment will provide 15% return in the next year" may not be "opinion as fact", may be "invalid guarantee"
+15. keep private clients needs written consent from both the employer, and the client
+16. Code and Ethics is for individuals, but can be part of firm policy. AMC is specificly for firms
+17. report returns in gross/net-of-fees, before/after-tax are all ok. gross and after are recommended
+18. when detecting violations of employees, warning is not enough
+19. disclose any conflict of interest to client, for them to decide its materiality
+20. disclose gifts from client that may impair objectivity to employer, for them to decide its impact, may not have to reject
+21. when disclosing referral fees, details about the fee must be provided
+22. supervisory authority can be delegated, as long as nothing with compliance are implied
+23. 7 years of record retention is only recommended, there is no minimun requirement
+24. GIPS-compliant composite consists of all acutal fee-paying and discretionary portfolios
+25. only direct trading expense (not including mgt and custodial fees) should be deducted in calculating gross-of-fess return
+26. general investment -> valuation monthly/ gross or net-of-fees
+    real estate -> valuation quarterly/ net-of-fees
+    private equity -> valuation annually/ gross and net-of-fees
+27. The code set minimum standards and is meant to allow flexibility to adopt with provisions
+28. portfolio information must be checked by an independent third-party, not another department within the firm
+29. disclose all fees including mgt fee, incentive fee, commissions, custodian fess
+30. The Code does not prohibit the use of proprietary funds for clients
+31. simulated results can be presented but must be clearly noted
+32. compliance officer cannot be investment and operational staff
+33. only people enrolled in exam are called candidate. If you passed level II, and did not enroll for level III, you are not candidate
+34. report investment result at least quarterly
+35. available upon request -> complete list of composite/ valuation, calculation, and prepartion for performance/ verification report
+36. disclose by % -> non-fee paying/ carve-out (accounts with own cash balance after 2010, before->cash allocation policy)/ bundle fee/ external valuation for real estate
+37. terminated composite must stay in composite list for 5 years
+    terminated portfolio must stay in composite forever
+38. composite GIPS-verification is not allowed
+39. 15% mandatory cash is considered non-discretionary
+40. affiliate provide a list of the firms contained within the parent company is recommended, not required
+41. composites should be separated by vintage year and strategy
+42. GIPS recommend verification report cover all years
+43. fair value supercedes mkt values
+44. plagiarism -> 抄袭
+45. annual reserach update is not timely because public firms at least reports semi-annually/ one-year earnings projections is acceptable (too long is not ok)
+46. referral fee arangement must be disclose in writing to clients by the people who refers
+47. put client's interest above the firm when appropriate (there is no "when appropriate")
+48. portfolio information provided to clients should be reviewed by compliance (third-party or in-house)
+49. if an analyst give in to pressure to sign a buy, he violates diligence and reasonable basis, despite the fact he has researched throughly
+50. risks pertaining to the continuity of the operation, such as a warning from regulatory bodies that the lincese may be permanently revoked,
+    are considered serious and have to disclose to clients, s.t. they can make the decision
+51. using overheard information (even true) as a basis on action violates Diligence and reasonable basis
+52. purpose of disclose referral fees -> evaluate partiality in recommendation (conflict of interest) / evaluate full cost of service
+53. you can claim a business line to be GIPS-compliant if you define the business as a distinct business entity
+54. use of the simulated results should be accompanied by full disclosure as to the source of the performance data

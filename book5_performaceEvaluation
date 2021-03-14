@@ -1,0 +1,114 @@
+Reading 35-36
+1. components of performance evaluation
+performance measurement / performance attribution / performance appraisal
+
+2. attributions
+[1] return-based
+- use the total portfolio return
+- easiest and least accurate
+
+[2] holding-based
+- calculate the HPR of each stock
+- more accurate than return-based, do not consider turnover (transaction cost ignored)
+
+[3] transaction-based
+- consider both holding and transaction
+- most accurate and time-consuming
+
+3. approaches to attribution
+[1] arithmetic attribution
+    alpha = return - benchmark
+[2] geometric attribution
+    (1+alpha)*(1+benchmark) = 1+return (multiple periods)
+ 
+ 4. attribution for equity
+ [1] the Brinson Model
+ alpha = selection effect + allocation effect + interaction effect
+       = w_b(r-b) + (w-w_b)b + (w-w_b)(r-b)
+ [2] carhart 4-factor model
+ rp - rf ~ alpha + rm-rf + smb + hml + wml + e
+ factor tilt return = factor sensitivity difference * factor return 
+ 
+ 5. attribution for FI
+ [1] exposure decomposition - duration-based
+ - government/corporate * long/middle/short
+ - alpha = int rate allocation + sector allocation + bond selection
+   int rate allocation = duration effect + curve effect
+           
+ [2] yield curve decomposition - duration-based
+ - alpha = yield + roll + shift + slope + curvature + credit spread + specific
+ 
+ [3] yield curve decomposition - full pricing-based
+ - repricing based on spot rates, most complex and precise
+ 
+ 6. risk attribution
+ bottom-up/top-down/factor-based * relative/absolute
+ 
+ 7. benchmarks
+ specified in advance/appropriate/measureable/unambigous/reflective of current opinion/accountable/investable
+ [1] absolute return
+     simple but not investable
+ [2] broad mkt index
+     manager's style may deviate from the index style
+ [3] style index (recommended)
+     differing definitions of style
+ [4] factor-model-based 
+     not intuitive and investable
+ [5] return-based 
+     factors are style indexes, so it is investable
+     not work if manager changes style (new data incorporated takes a small portion)
+ [6] manager universe (median)
+     not investable or specified in advance, also subject to survivorship bias
+ [7] custom 
+     expensive and complex to build
+ 
+ 8. benchmarking alternatives
+ [1] liquidity - appraisal and smoothing
+ [2] transparency - self reported
+     prone to survivorship bias and backfill bias
+ [3] leverage 
+ 
+ 9. performance appraisal 
+ [1] sharpe ratio - you assume indifferent upside and downside volatility
+ [2] sortino ratio - measure downside risk
+ [3] treynor ratio - measure systematic risk
+ [4] info ratio - measure tracking error
+ [5] appraisal ratio - Jensen's alpha/residual risk
+     J's alpha = rp - rp_capm
+     error of  - rp ~ alpha + rm + error  (unsystematic risk)
+ [6] capture ratio - measure convexity of return
+     upside capture (UC) = Rp/Rb when Rb>0
+     downside capture (DC) = Rp/Rb when Rb<0
+     capture ratio (CR) = UC/DC
+     CR>1 convex (涨多跌少)
+ [7] max drawdown
+ 
+10. manager selection process
+[1] manager universe
+    IPS-based universe
+    hiring a bad manager is type I error, rejecting a good manager is type II error
+[2] qualitative analysis
+    - style analysis
+      return-based (RBSA) - regression using historical data
+      holding-based (HBSA) - using current data
+    - due diligence
+      investment philosophy/ investment personnel/ decision-making process/ operational due diligence
+[3] quantitative analysis
+    - performance-based fees
+      symmetrical structure: base + sharing of performance
+      bonus fully exposed to upside: max (base, base + sharing of positive performance)
+      bonus not fully: max (base, base + sharing of postive performance, upper limit)
+      
+Note:
+1. Performance appraisal = performance measurement + performance attribution 
+   -> determines whether the performance was affected primarily by investment decisions, by the overall market, or by chance
+2. return = M(mkt) + S(style alpha) + A(alpha)
+   style alpha = benchmark - mkt
+   alpha = portfolio return - benchmark
+3. capture ratio = Rp/Rb (when Rb>0) / Rp/Rb (when Rb<0)
+4. to measusre evaluate hedge fund, 
+   -> long/short may cause initial mkt value to be 0, rendering it difficult to calculatet the return
+   -> hard to find benchmark, may use factor-based method and historical data
+   -> the unsysmetric return distribution makes it inappropriate to use sharpe ratio (which prefer symmetric return distribution), could use sortino ratio
+5. window dressing -> Value-based funds heavily position small-cap stocks and adjust positions during the reporting period, pretending to be value-> holding-based 
+6. return-based -> regressed on style indexes, easier to implement (the attribution) than holding-based because of the data, is less accurate than holding based
