@@ -4,7 +4,7 @@ Reading 10-11
 [1] limitations to economic data
     time lag/ revision/ rebase
 [2] data measurement errors and biases
-    survivorship bias/ appraisal data - under-estimated variance and correlation with other
+    survivorship bias/ appraisal data - underestimated variance and correlation with other
 [3] limitations of historical estimates
     non-stationary data comes from regime changes
 [4] ex post risk is a biased risk measure of ex ante risk
@@ -24,7 +24,7 @@ Reading 10-11
 Y = A * K^alpha * L^beta (alpha + beta = 1)
 A: total factor productivity
 K: capital per worker
-L: labor input
+L: labour input
 
 4. anchoring asset returns to trend growth
 mkt value of equity V = GDP * (earnings/GDP) * PE
@@ -54,12 +54,12 @@ d_V% = d_GDP% + d_S% + d_PE% + d_dividend%
    0 output gap, increasing inflation, bond yield rise, stock price peaks
    [4] slowdown
    increasing inflation, bond yield peaks (possible inverting yield curve), stock price falls
-   inverting yield curve because of tightening monetary policy (rising short-term) and fisical policy (decrease long-term)
+   inverting yield curve because of tightening monetary policy (rising short-term) and fiscal policy (decrease long-term)
    [5] recession
    inflation peaks and falls, bond yield falls, stock price may rise in the end
 
 7. monetary policy
-goal - long-run sustainable growth - balance between growth and inflation
+goal = long-run sustainable growth - balance between growth and inflation
 neutral rate - equilibrium interest rate = real-growth + inflation
 Taylor rule
 target = (real_neutral rate + inflation) + 

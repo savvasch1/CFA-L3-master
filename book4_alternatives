@@ -2,7 +2,7 @@ Reading 26-27
 1. Hedge Funds
 - key features
   low regulatory constraints/ flexible mandates/ aggressive exposure/ larger investment universe
-  free use of leverage/ liquidity constaints/ higher costs/ lock-up period/ notice period
+  free use of leverage/ liquidity constraints/ higher costs/ lock-up period/ notice period
 
 2. Equity 
 [1] long/short - (net long pos)
@@ -32,8 +32,8 @@ by leverage: short bias < long/short < equity mkt neutral
   [2] stock-for-stock
   Acquiring company buy target company with stock
   - so you should long T and short A
-- distressed scurities
-  bad competiveness/high leverage/poor governance/fraud and irregularities
+- distressed securities
+  bad competitiveness/high leverage/poor governance/fraud and irregularities
 
 4. relative-value (FI)
 [1] fixed-income arbitrage
@@ -70,9 +70,9 @@ return of HF ~ alpha + risk factor + dummy variable (0 if normal, 1 if distress)
 - risk measure
   [1] sharpe ratio/ sortino ratio (downside risk)
   good: managed futures/ equity mkt netural/ global macro/ event-driven
-  not so good: fof/ multi-strategy (diversification effect overvalued)
+  not so good: FoF/ multi-strategy (diversification effect overvalued)
   [2] standard deviation
-  good: short-biased/ mkt neutral/ managed future/ fof
+  good: short-biased/ mkt neutral/ managed future/ FoF
   not so good: event-driven/ relative value
   [3] drawdown
   good: global macro/ managed futures/ merger arbitrage/ mkt neutral
@@ -81,11 +81,11 @@ return of HF ~ alpha + risk factor + dummy variable (0 if normal, 1 if distress)
 9. roles of alternatives
 - capital growth/ income generation/ risk diversification/ safety
 - diversification
-  apprisal value are often used in alternatives, so diversification may be over-estimated
+  appraisal value are often used in alternatives, so diversification may be over-estimated
   
 10. investment opportunity set
 [1] traditional approach
-- by liqudity
+- by liquidity
   FI: cash - bond - private equity
   equity: public - equity HF - private equity
   other: commodity - REIT - private real estate - private real asset
@@ -117,7 +117,7 @@ return of HF ~ alpha + risk factor + dummy variable (0 if normal, 1 if distress)
 - limited partnership - LP + GP
 - SMA (separately managed accounts)
 - open-ended mutual funds
-[4] liqudiity
+[4] liquidity
 - drawdown structure
   calldown period - distribution period - termination
 [5] expense and fees
@@ -163,7 +163,7 @@ Note:
 3. asset valuations for many alternative investments are based on appraisals, returns data are likely to be artificially smoothed and are often stale
    If serial correlation is present, statistical techniques exist that can be used to unsmooth the data
    relatively short history of alternative investments, which may result in small-sample and time-period biases
-   One method for modeling a distribution with fat tails (positive excess kurtosis) is to define risk and return properties for two or more distinct market environments, 
+   One method for modelling a distribution with fat tails (positive excess kurtosis) is to define risk and return properties for two or more distinct market environments, 
    for example, a normal period and a high-volatility period. Returns for each of these can be described with a normal distribution with its own assumed mean and variance, 
    Combining the distributions, using an assumed probability of each environment occurring, results in a non-normal distribution.
 4. to achieve a target allocation to alternative investments, an investor needs to account for the expected growth rate of the portfolio
@@ -173,12 +173,12 @@ Note:
 7. in CFA, equity or distressed debt is not thought to have specific inflation-hedging function
 8. drawback of risk-factor based approach: risk factors may change, and the model is sensitive to inputs
    drawback of traditional MVO: over-estimation of diversification effect
-9. custom index proxy is unlikely to have the same risk-return characteritic of actual investment
+9. custom index proxy is unlikely to have the same risk-return characteristic of actual investment
    providers of peer group benchmark use very different construction rules
 10. due to the high correlation between private equity and public-traded equities, the diversification effect is limited
     you can expect higher returns from the portfolio
-11. clawback provison -> in private equity, to return incentive fees from profitable investment sold earlier and if later investment sold at a loss
+11. clawback provision -> in private equity, to return incentive fees from profitable investment sold earlier and if later investment sold at a loss
 12. limited partnership are used in hedge fund and managed futures 
-13. benefits of fof -> selection skill/ diversification (not useful if you have a lot of money)/ access to closed funds (that fof has invested)
-14. mgt fees in PE often scales down in later years to reflect a lower workload as the fund becomes fully invested
+13. benefits of FoF -> selection skill/ diversification (not useful if you have a lot of money)/ access to closed funds (that FoF has invested)
+14. mgmt fees in PE often scales down in later years to reflect a lower workload as the fund becomes fully invested
 15. for distress debt -> overstated sharpe ratio because of the stale valuation/ high due diligence cost/ liquidity risk greater than mkt risk
