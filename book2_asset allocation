@@ -7,12 +7,12 @@ Reading 12 - 14
   third-party resources - consult
 - governance models 
   
-2. enonomic balance sheet
+2. economic balance sheet
 - asset
   domestic equity + PV of expected future income
-- libility
+- liability
   short-term borrowing + PV of expected future consumption
-- equtiy
+- equity
   economic net worth
   
 3. approaches to asset allocation
@@ -41,7 +41,7 @@ criteria: homogeneous (within)/ mutually exclusive/ diversifying/ largely exhaus
 - credit spread
   long high-spread bond, short Treasuries
 - duration
-  long 10-year Treasuies, short 1-year Treasuries
+  long 10-year Treasuries, short 1-year Treasuries
  
 6. strategic asset allocation
  - TAA (tactical)
@@ -53,7 +53,7 @@ criteria: homogeneous (within)/ mutually exclusive/ diversifying/ largely exhaus
  - calendar/ percent-range (trigger points or range)
  - range are affected by (wider range - less likely to rebalance)
    core -> prob(deviation from SAA)/ do less rebalancing
-   pos relative -> transanction cost/ risk tolerance/ asset class correlation/ belief in momentum
+   pos relative -> transaction cost/ risk tolerance/ asset class correlation/ belief in momentum
    neg relative -> volatility(not quite intuitive)/ taxes (rebalance with loss can create a tax shield)/ belief in mean-reversion
  - effects
    better diversification/ short volatility
@@ -67,12 +67,12 @@ MVO
   choose a portfolio on the frontier, with which it forms the highest sharpe ratio
 cons:  
 - highly concentrated   (add constraints)
-- highly sensitive to inputs (resamplesd MVO, reversed MVO, BL)
+- highly sensitive to inputs (resampled MVO, reversed MVO, BL)
   resampled MVO = MVO + MCS - run many frontiers, then average
-  cons: could have concave bumps/ over-diversifed/ inherit the estimation errors/ no foundation in theory
-  reversed MVO: use global portfolio wgts to reversely calculate implied risk and return
+  cons: could have concave bumps/ over-diversified/ inherit the estimation errors/ no foundation in theory
+  reversed MVO: use global portfolio weights to reversely calculate implied risk and return
                 global -> include all investable asset, minimizes diversifiable risk
-- not account for skewness and kurtosis (non-normal optimization)
+- does not account for skewness and kurtosis (non-normal optimization)
   mean-semivariance/ mean-conditional VaR/ mean-variance-skewness-kurtosis
 - liquidity
   exclude less liquid asset/ replace with liquid similar asset
@@ -95,15 +95,15 @@ may require an over-funded status
 [1] determine discount rate
     time horizon/ required probability of success
 [2] allocate capital to sub-portfolios
-    calculate the lowest initally required capital for each goal
+    calculate the lowest initially required capital for each goal
 [3] if have excess capital
-    bring forward the timing or raise the sucess probability of current goals/ get additional goals
+    bring forward the timing or raise the success probability of current goals/ get additional goals
 
 11. heuristic approaches
 120 - age% to stocks
 60/40 stock/bond
 Yale model - higher allocations to non-traditional assets (liquidity premium)
-1/N - naive diversification
+1/N - naïve diversification
 
 12. risk budgeting and risk parity
 risk budgeting
@@ -147,10 +147,10 @@ Sharpe ratio or info ratio/ t-stat of difference/ plot risk and return on SAA fr
 
 
 Note:
-1. a young women with no debt and expected inheritence starting a job is considered high capacity for risk and no financial capital
+1. a young women with no debt and expected inheritance starting a job is considered high capacity for risk and no financial capital
 2. for preexistent positions of a client
    [1] ignoring the positions and running MVO for the rest of the client’s portfolio
-   [2] modeling the specific characteristics of what that client actually owns
+   [2] modelling the specific characteristics of what that client actually owns
    [3] using data on public funds but realizing that such data will not reflect the specific characteristics of the client’s positions
 3. for incorporating client risk preferences into asset allocations
    [1] specifying additional constraints
@@ -165,7 +165,7 @@ Note:
 6. within the same goal's layer, investment horizon affect the risk tolerance level of each goal
    education/medical is not necessarily more risk-averse than charity
 7. max sharpe ratio given a range of volatility -> AO, use law of large numbers to decide liability -> ALM
-8. insurance companies often segement their general acconut asset into sub-portfolios with specific lines of business or liabilities,
+8. insurance companies often segment their general account asset into sub-portfolios with specific lines of business or liabilities,
    each with its own return objective
 9. low pairwise correlations with other asset classes is not enough
 10. rf_AO -> cash or asset that has low correlation with other assets
@@ -173,13 +173,13 @@ Note:
     benchmark_ALM -> liability
 11. to mimic the liability of DB plan
     inactive - inflation-hedged -> TIPS, not hedged -> nominal bonds
-    active - accured -> TIPS or nominal bonds, future wage growth -> TIPS (inflation) + equities
+    active - accrued -> TIPS or nominal bonds, future wage growth -> TIPS (inflation) + equities
 12. pre-tax range -> a, tax rate -> t, after-tax range?
     higher tax rate -> higher transaction cost -> wider range -> a/(1-t)
 13. range increase with higher cost, lower prob of deviation
     -> asset correlation (one rise, others may rise after a period of time -> less likely to deviate)
     -> illiquidity -> higher transaction cost
     -> belief in momentum, A rise, rebalancing requires to reduce the position, but you believe it would rise more 
-                           A down, rebalacning requires to add the position, but you believe it would down more
+                           A down, rebalancing requires to add the position, but you believe it would down more
 14. when credit spreads are high -> corporate bond YTM are high -> corporate bond prices are low -> long corporate bond
     GDP growth ok -> equities will be ok
