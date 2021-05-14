@@ -163,11 +163,11 @@ valuation priority -> mkt price/ quoted price/ estimated price with actual input
 - carve-out -> create a separate track record 
 - composite -> aggregation of portfolio according to the same mandate
 - internal dispersion -> measure the spread of the annual returns of portoflios within a composite (standard deviation)
-- trade date accounting instead of settlement date accouting
+- trade date accounting instead of settlement date accounting
 [2] compliance standards
 - comply with all requirement/ follow law/ make full and fair presentation/ document procedures
 [3] compliance width
-- firm > composite > portfolio (a portflio can be in differenct composite)
+- firm > composite > portfolio (a portfolio can be in different composite)
   firm -> minimal level to comply with GIPS
   composite -> minimal level to performance presentation
 - on firm level,  firm redefine -> disclose the date/ description/ why
@@ -182,7 +182,7 @@ valuation priority -> mkt price/ quoted price/ estimated price with actual input
 [4] calculation
 - >2011, valuation -> fair value
 - disclose policies for valuation
-- accural accounting must be used for fixed-income securities or others that earn interest
+- accrual accounting must be used for fixed-income securities or others that earn interest
 - >2011, disclose if different valuation methods applied within same composite
 - external cash flow
   time-weighted return geometrically linked

@@ -64,7 +64,7 @@ MVO
   i.e. not negative weights, some points on the frontier are not attainable
   interpolation may be used to synthesize the target return
 - with risk-free asset
-  choose a portfolio on the frontier, with which it forms the highest sharpe ratio
+  choose a portfolio on the frontier, with which it forms the highest Sharpe ratio
 cons:  
 - highly concentrated   (add constraints)
 - highly sensitive to inputs (resampled MVO, reversed MVO, BL)
