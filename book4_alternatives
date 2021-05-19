@@ -155,13 +155,13 @@ Reading 26-27
         distribution_t = rate of distribution_t * (NAV_t-1 * (1 + growth rate))
 
     [2] handle capital calls
-    invest in liquid securities
+        invest in liquid securities
 
     [3] plan for the unexpected
-    do stress-test
+        do stress-test
 
 14. monitoring
-    - key persons/ interest aligned with investors' interest/ style drift/ risk mgmt/ client and asset turnover
+    - key persons/ interest aligned with investors interest/ style drift/ risk mgmt/ client and asset turnover
 
 15. evaluation
     IRR - affected by the timing of CFs
