@@ -1,131 +1,132 @@
 Reading 7-9
-1. traditional finance v. behavioral finance
-- traditional
-  people are risk-averse, self-interested, utility maximizers (rational)
-  people make decisions with utility theory, revise expectations with Bayes' formula
-  people have access to perfect info, and can process it in an unbiased way
-  price reflect all available and relevant info
-- behavioral
-  people are loss-averse, satisfying, with bounded rationality
+
+1. traditional finance v. behavioural finance
+    - traditional
+        people are risk-averse, self-interested, utility maximizers (rational)
+        people make decisions with utility theory, revise expectations with Bayes' formula
+        people have access to perfect info, and can process it in an unbiased way
+        price reflect all available and relevant info
+    - behavioural
+        people are loss-averse, satisfying, with bounded rationality
 
 2. decision-making process
-[1] normative analysis
-    rational solution - traditional 
-[2] descriptive analysis 
-    real people work - behavioral 
-[3] prescriptive analysis
-    predict results - behavioral
+    [1] normative analysis
+        rational solution - traditional 
+    [2] descriptive analysis 
+        real people work - behavioural 
+    [3] prescriptive analysis
+        predict results - behavioural
     
 3. utility theory - traditional
-four axioms of utility
-- completeness 
-  known choices and preferences
-- transitivity
-  consistent rankings
-- independence
-  additive and divisible utilities
-- continuity
-  smooth and unbroken indifference curves
+    four axioms of utility
+    - completeness 
+        known choices and preferences
+    - transitivity
+        consistent rankings
+    - independence
+        additive and divisible utilities
+    - continuity
+        smooth and unbroken indifference curves
   
 4. challenges to traditional finance
-- bounded rationality/ difficulty prioritizing short-term goals/ not perfect info
-  not constantly risk-averse (lottery and insurance)
-  Friedman-Savage double-inflection utility function: concave (risk-averse) at sides, convex (risk-seeking) in the middle
+    - bounded rationality/ difficulty prioritizing short-term goals/ not perfect info
+        not constantly risk-averse (lottery and insurance)
+        Friedman-Savage double-inflection utility function: concave (risk-averse) at sides, convex (risk-seeking) in the middle
   
 5. prospect theory
-- risk-averse gain, risk-seeking loss (people are loss-aversion)
-- editing process (early phase) + evaluation process (later phase)
-- editing process
-  codification/ combination/ segregation/ cancellation/ simplification/ detection of dominace
+    - risk-averse gain, risk-seeking loss (people are loss-aversion)
+    - editing process (early phase) + evaluation process (later phase)
+    - editing process
+        codification/ combination/ segregation/ cancellation/ simplification/ detection of dominace
 
 6. EMH
-- weak-form
-  mkt info are assumed, technical analysis do not work
-- semi-strong form
-  mkt and fundamental info are assumed, fundamental analysis do not work
-- strong form  
-  all info are assumed, nothing will work
-  
-7. mkt anomalies
-- fundamental - size effect/ value effect
-- tech - moving averages/ support and resistance
-- calendar - January effect
+    - weak-form
+        mkt info are assumed, technical analysis do not work
+    - semi-strong form
+        mkt and fundamental info are assumed, fundamental analysis do not work
+    - strong form  
+        all info are assumed, nothing will work
 
-8. four behavioral finance models
-[1] consumption and savings
-- framing (how do you say sth.)
-- self-control (short-term spending)
-- mental accounting (salary and bonus)
-[2] behavioral asset pricing
-discount rate on security = risk-free rate + fundamental risk premium + sentiment premium
-[3] behavioral portfolio theory (BPT)
-construct portfolios in layers by expectations of the performance (goal-based/pyramid/mental accouting)
-[4] adaptive mkts hypothesis
-success is survival, rather than maximizing utility (because things change)
+7. mkt anomalies
+    - fundamental - size effect/ value effect
+    - tech - moving averages/ support and resistance
+    - calendar - January effect
+
+8. four behavioural finance models
+    [1] consumption and savings
+        - framing (how do you say something)
+        - self-control (short-term spending)
+        - mental accounting (salary and bonus)
+    [2] behavioural asset pricing
+        discount rate on security = risk-free rate + fundamental risk premium + sentiment premium
+    [3] behavioural portfolio theory (BPT)
+        construct portfolios in layers by expectations of the performance (goal-based/pyramid/mental accouting)
+    [4] adaptive markets hypothesis
+        success is survival, rather than maximizing utility (because things change)
 
 9. cognitive errors
-[1] belief perservance (RICCH)
-- conservatism bias (not consider new info)
-- confirmation bias (ignore contradicting info)
-- representativeness bias (judge new info using past experience/ base rate neglect + sample size neglect)
-- illusion of control
-- hindsight bias
+    [1] belief perservance (RICCH)
+        - conservatism bias (not consider new info)
+        - confirmation bias (ignore contradicting info)
+        - representativeness bias (judge new info using past experience/ base rate neglect + sample size neglect)
+        - illusion of control
+        - hindsight bias
 
-[2] info-processing biases (FAMA)
-- anchoring and adjustment
-- mental accounting bias
-- framing bias
-- availability bias (estimate the probability based on availability)
+    [2] info-processing biases (FAMA)
+        - anchoring and adjustment
+        - mental accounting bias
+        - framing bias
+        - availability bias (estimate the probability based on availability)
 
 10. emotional biases (harder to correct) (LOSSER)
-- loss aversion bias
-- overconfidence bias 
-  illusion of knowledge = prediction overconfidence + certainty overconfidence
-  self-attribution = self-enhancing + self-protective (take credit for success and throw mistakes away)
-- self-control bias
-- status quo bias
-- endowment bias
-- regret-aversion bias (do nothing out of fear)
+    - loss aversion bias
+    - overconfidence bias 
+        illusion of knowledge = prediction overconfidence + certainty overconfidence
+        self-attribution = self-enhancing + self-protective (take credit for success and throw mistakes away)
+    - self-control bias
+    - status quo bias
+    - endowment bias
+    - regret-aversion bias (do nothing out of fear)
 
-11. behaviorally modified asset allocation
-SLR - standard pf living risk (to maintain current life style)
-suggested deviation from rational portfolio
-higher to lower: emotional - cognitive/ low SLR - high SLR
+11. behaviourally modified asset allocation
+    SLR - standard pf living risk (to maintain current life style)
+    suggested deviation from rational portfolio
+    higher to lower: emotional - cognitive/ low SLR - high SLR
 
 12. classifying investors
-[1] Barnewall 2-way
-    passive (salary) / active (creation)
-[2] BB&K
-    careful & confident - individualist
-    careful & anxious - guardian
-    impetuous & confident - adventure
-    impetuous & anxious - celebrity
-[3] Pompian
-    by risk tolerance up
-    PP - passive perserver 
-    FF - freiendly follower
-    II - independent individualist
-    AA - active accumulator
-    emotional bias - PP AA, cognitive bias - FF II
-    
-13. behavioral problems with DC plan
-- status quo bias - target date funds
-- naive diversification (equal weight)
-- familiarity and over-confidence
-- naive extrapolation of past futures
-- financial incentives - buy stock @ discount
+    [1] Barnewall 2-way
+        passive (salary) / active (creation)
+    [2] BB&K
+        careful & confident - individualist
+        careful & anxious - guardian
+        impetuous & confident - adventure
+        impetuous & anxious - celebrity
+    [3] Pompian
+        by risk tolerance up
+        PP - passive perserver 
+        FF - freiendly follower
+        II - independent individualist
+        AA - active accumulator
+        emotional bias - PP AA, cognitive bias - FF II
+        
+13. behavioural problems with DC plan
+    - status quo bias - target date funds
+    - naive diversification (equal weight)
+    - familiarity and over-confidence
+    - naive extrapolation of past futures
+    - financial incentives - buy stock @ discount
 
-14. behavioral problems with excess trading
-- disposition effect (sell winners and hold on to losers)
-- home bias (availablity bias)
+14. behavioural problems with excess trading
+    - disposition effect (sell winners and hold on to losers)
+    - home bias (availability bias)
 
 15. other biases
-gamblers' fallacy (10 white, the 11th must be red)
-social proof (peer pressure)
-momentum effect
-herding (herd of sheep)
-trend-chasing effect (regret)
-halo effect (good company = good investment?)
+    gamblers' fallacy (10 white, the 11th must be red)
+    social proof (peer pressure)
+    momentum effect
+    herding (herd of sheep)
+    trend-chasing effect (regret)
+    halo effect (good company = good investment?)
 
 
 Note:
@@ -136,7 +137,7 @@ Note:
 4. errors that cause momentum effect
    -> overconfidence/ confirmation/ herding/ regretion/ availability/ hindsight
 5. limitations in classifying investors
-   exhibit characteristics of multiple investor/ exhibit both emotional and cognitive/ behavioral changes as aging
+   exhibit characteristics of multiple investor/ exhibit both emotional and cognitive/ behavioural changes as aging
 6. mental accounting = BPT = constructed in layers = goal-based -> inefficient
 7. behaviroal asset pricing -> add sentiment premium to discount rate
    adaptive mkt hypothesis (AMH) -> apply heuristics until they no long work, and then adjust

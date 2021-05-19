@@ -1,95 +1,104 @@
 Reading 12 - 14
 
 1. investment governance
-- governance hierarchy
-  investment committee - approve, delegate, oversight, audit
-  investment staff - draft, research, evaluate, create, assess
-  third-party resources - consult
-- governance models 
+	- governance hierarchy
+		investment committee - approve, delegate, oversight, audit
+		investment staff - draft, research, evaluate, create, assess
+		third-party resources - consult
+	- governance models 
   
 2. economic balance sheet
-- asset
-  domestic equity + PV of expected future income
-- liability
-  short-term borrowing + PV of expected future consumption
-- equity
-  economic net worth
+	- asset
+		domestic equity + PV of expected future income
+	- liability
+		short-term borrowing + PV of expected future consumption
+	- equity
+		economic net worth
   
 3. approaches to asset allocation
-- asset-only
-  for ones without debts
-  risk measure: volatility/tracking error/max drawdown/VaR
-- ALM
-  for most institutional investors
-  risk measure: shortfall risk
-- goal-based
-  for individual
-  risk measure: prob(not achieve goal)
+	- asset-only
+		for ones without debts
+		risk measure: volatility/tracking error/max drawdown/VaR
+	- ALM
+		for most institutional investors
+		risk measure: shortfall risk
+	- goal-based
+		for individual
+		risk measure: prob(not achieve goal)
   
-4. asset classes
-criteria: homogeneous (within)/ mutually exclusive/ diversifying/ largely exhaustive
+4. asset classes - definition
+	- homogeneous (within)
+	- mutually exclusive
+	- diversifying
+	- largely exhaustive
+	- investable for client
 
 5. isolate risk factor (pure-factor portfolio)
-- inflation
-  long nominal Treasuries, short inflation-linked bond
-  -> TIPS is a kind of inflation-linked bond, whose value is only affected by real int rate, and not affected by inflation
-  -> inflation factor = nominal Treasuries (real int rate + inflation) - inflation-linked bond (real int rate)
-- real int rates
-  inflation-linked bond
-- US volatility
-  VIX future
-- credit spread
-  long high-spread bond, short Treasuries
-- duration
-  long 10-year Treasuries, short 1-year Treasuries
+	- inflation
+		long nominal Treasuries, short inflation-linked bond
+		-> TIPS is a kind of inflation-linked bond, whose value is only affected by real int rate, and not affected by inflation
+		-> inflation factor = nominal Treasuries (real int rate + inflation) - inflation-linked bond (real int rate)
+	- real int rates
+		inflation-linked bond
+	- US volatility
+		VIX future
+	- credit spread
+		long high-spread bond, short Treasuries
+	- duration
+		long 10-year Treasuries, short 1-year Treasuries
  
 6. strategic asset allocation
- - TAA (tactical)
-   short-term deviation
- - DAA (dynamic)
-   long-term changes due to changes in CME
+	- TAA (tactical)
+		short-term deviation
+	- DAA (dynamic)
+		long-term changes due to changes in CME
    
 7. rebalancing
- - calendar/ percent-range (trigger points or range)
- - range are affected by (wider range - less likely to rebalance)
-   core -> prob(deviation from SAA)/ do less rebalancing
-   pos relative -> transaction cost/ risk tolerance/ asset class correlation/ belief in momentum
-   neg relative -> volatility(not quite intuitive)/ taxes (rebalance with loss can create a tax shield)/ belief in mean-reversion
- - effects
-   better diversification/ short volatility
+	- calendar/ percent-range (trigger points or range)
+	- range are affected by (wider range - less likely to rebalance)
+		core -> prob(deviation from SAA)/ do less rebalancing
+		pos relative -> transaction cost/ risk tolerance/ asset class correlation/ belief in momentum
+		neg relative -> volatility(not quite intuitive)/ taxes (rebalance with loss can create a tax shield)/ belief in mean-reversion
+	- effects
+		better diversification/ short volatility
 
 8. asset-only
-MVO
-- no short selling
-  i.e. not negative weights, some points on the frontier are not attainable
-  interpolation may be used to synthesize the target return
-- with risk-free asset
-  choose a portfolio on the frontier, with which it forms the highest Sharpe ratio
-cons:  
-- highly concentrated   (add constraints)
-- highly sensitive to inputs (resampled MVO, reversed MVO, BL)
-  resampled MVO = MVO + MCS - run many frontiers, then average
-  cons: could have concave bumps/ over-diversified/ inherit the estimation errors/ no foundation in theory
-  reversed MVO: use global portfolio weights to reversely calculate implied risk and return
-                global -> include all investable asset, minimizes diversifiable risk
-- does not account for skewness and kurtosis (non-normal optimization)
-  mean-semivariance/ mean-conditional VaR/ mean-variance-skewness-kurtosis
-- liquidity
-  exclude less liquid asset/ replace with liquid similar asset
-- risk factor may not be diversified (risk-budgeting and factor-based model)
-  factor—based model - construct the frontier of risk factors, run the optimized combo, then map back to assets
-- single-period framework (MCS method)
-  cons: frequent rebalancing/ path dependent (next path depends on previous path)
-- not account for liability or consumption
+	MVO
+	- no short selling
+		i.e. not negative weights, some points on the frontier are not attainable
+		interpolation may be used to synthesize the target return
+	- with risk-free asset
+		choose a portfolio on the frontier, with which it forms the highest Sharpe ratio
+	cons:
+		- highly concentrated   
+			add constraints 
+			e.g. if HY is giving you a nice risk adjusted return add a max constrain because during market stress it will fail
+		- highly sensitive to inputs (resampled MVO, reversed MVO, BL)
+			resampled MVO = MVO + MCS - run many frontiers, then average
+				cons: could have concave bumps/ over-diversified/ inherit the estimation errors/ no foundation in theory
+			reversed MVO: use global portfolio weights to reversely calculate implied risk and return
+							global -> include all investable asset, minimizes diversifiable risk
+			BL: take the excess returns (returns over the risk free rate) from reversed MVO and optimize	
+		- does not account for skewness and kurtosis (non-normal optimization)
+			mean-semivariance/ mean-conditional VaR/ mean-variance-skewness-kurtosis
+		- liquidity
+			exclude less liquid asset/ replace with liquid similar asset
+		- risk factor may not be diversified (risk-budgeting and factor-based model)
+			factor—based model - construct the frontier of risk factors, run the optimized combo, then map back to assets
+		- single-period framework (MCS method)
+			cons: frequent rebalancing/ path dependent (next path depends on previous path)
+		- not account for liability or consumption
 
 9. ALM
-[1] surplus optimization
-surplus return = (d_asset - d_liability)/asset
-- return of liability use corporate bond as proxy
-- compare to AO, ALM could have negative-value frontier, risk-free asset is corporate bond
-[2] hedging/return-seeking portfolio approach
-hedging covers liability, return-seeking is managed separately
-may require an over-funded status
+	[1] surplus optimization
+		surplus return = (d_asset - d_liability)/asset
+			- return of liability use corporate bond as proxy
+			- compare to AO, ALM could have negative-value frontier, risk-free asset is corporate bond
+			- surplus return is used by people with LOW RISK AVERSION. 
+	[2] hedging/return-seeking portfolio approach
+		hedging covers liability, return-seeking is managed separately
+		may require an over-funded status
+		- surplus return is used by risk 
 
 10. goal-based
 [1] determine discount rate
@@ -148,7 +157,7 @@ Sharpe ratio or info ratio/ t-stat of difference/ plot risk and return on SAA fr
 
 Note:
 1. a young women with no debt and expected inheritance starting a job is considered high capacity for risk and no financial capital
-2. for preexistent positions of a client
+2. for pre existent positions of a client
    [1] ignoring the positions and running MVO for the rest of the client’s portfolio
    [2] modelling the specific characteristics of what that client actually owns
    [3] using data on public funds but realizing that such data will not reflect the specific characteristics of the client’s positions

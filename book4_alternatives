@@ -81,7 +81,7 @@ Reading 26-27
         equity risk/ currency risk/ credit risk/ volatility risk(VIX)/ liquidity risk
     - risk measure
         [1] sharpe ratio/ sortino ratio (downside risk)
-            good: managed futures/ equity mkt netural/ global macro/ event-driven
+            good: managed futures/ equity mkt neutral/ global macro/ event-driven
             not so good: FoF/ multi-strategy (diversification effect overvalued)
         [2] standard deviation
             good: short-biased/ mkt neutral/ managed future/ FoF
