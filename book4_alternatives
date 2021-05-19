@@ -73,7 +73,7 @@ Reading 26-27
     [1] FOF
         diversification/ small investments/ low tail risk/ high mgt fee/ high leverage/double layer of fees
     [2] multi-strategy
-        low mgt fee/ efficient TAA/ transparent/ high op risk/ high tail risk
+        low mgmt fee/ efficient TAA/ transparent/ high op risk/ high tail risk
 
 8. conditional factor risk model (like barra)
     return of HF ~ alpha + risk factor + dummy variable (0 if normal, 1 if distress) + error
@@ -168,29 +168,29 @@ Reading 26-27
     MOIC(multiple on invested capital) - (NAV + distribution)/total invested capital
 
 Note:
-1. long bias means net long position overall
-2. Assets that are not subject to a fund’s redemption terms are said to be held in a side pocket
-   A gate is a maximum amount an investor may redeem at one time
-   A lock-up is a restriction on redemptions during a period of time
-3. asset valuations for many alternative investments are based on appraisals, returns data are likely to be artificially smoothed and are often stale
-   If serial correlation is present, statistical techniques exist that can be used to unsmooth the data
-   relatively short history of alternative investments, which may result in small-sample and time-period biases
-   One method for modelling a distribution with fat tails (positive excess kurtosis) is to define risk and return properties for two or more distinct market environments, 
-   for example, a normal period and a high-volatility period. Returns for each of these can be described with a normal distribution with its own assumed mean and variance, 
-   Combining the distributions, using an assumed probability of each environment occurring, results in a non-normal distribution.
-4. to achieve a target allocation to alternative investments, an investor needs to account for the expected growth rate of the portfolio
-5. Because some alternative investments have relatively short histories of returns data, 
-   use of historical data (even unsmoothed data) alone may introduce time-period and small-sample biases
-6. right-tail return/ right-tailed skewness -> crisis alpha, performs good when bad economy
-7. in CFA, equity or distressed debt is not thought to have specific inflation-hedging function
-8. drawback of risk-factor based approach: risk factors may change, and the model is sensitive to inputs
-   drawback of traditional MVO: over-estimation of diversification effect
-9. custom index proxy is unlikely to have the same risk-return characteristic of actual investment
-   providers of peer group benchmark use very different construction rules
-10. due to the high correlation between private equity and public-traded equities, the diversification effect is limited
-    you can expect higher returns from the portfolio
-11. clawback provision -> in private equity, to return incentive fees from profitable investment sold earlier and if later investment sold at a loss
-12. limited partnership are used in hedge fund and managed futures 
-13. benefits of FoF -> selection skill/ diversification (not useful if you have a lot of money)/ access to closed funds (that FoF has invested)
-14. mgmt fees in PE often scales down in later years to reflect a lower workload as the fund becomes fully invested
-15. for distress debt -> overstated sharpe ratio because of the stale valuation/ high due diligence cost/ liquidity risk greater than mkt risk
+    1.  long bias means net long position overall
+    2.  Assets that are not subject to a fund’s redemption terms are said to be held in a side pocket
+        A gate is a maximum amount an investor may redeem at one time
+        A lock-up is a restriction on redemptions during a period of time
+    3.  asset valuations for many alternative investments are based on appraisals, returns data are likely to be artificially smoothed and are often stale
+        If serial correlation is present, statistical techniques exist that can be used to unsmooth the data
+        relatively short history of alternative investments, which may result in small-sample and time-period biases
+        One method for modelling a distribution with fat tails (positive excess kurtosis) is to define risk and return properties for two or more distinct market environments, 
+        for example, a normal period and a high-volatility period. Returns for each of these can be described with a normal distribution with its own assumed mean and variance, 
+        Combining the distributions, using an assumed probability of each environment occurring, results in a non-normal distribution.
+    4.  to achieve a target allocation to alternative investments, an investor needs to account for the expected growth rate of the portfolio
+    5.  Because some alternative investments have relatively short histories of returns data, 
+        use of historical data (even unsmoothed data) alone may introduce time-period and small-sample biases
+    6.  right-tail return/ right-tailed skewness -> crisis alpha, performs good when bad economy
+    7.  in CFA, equity or distressed debt is not thought to have specific inflation-hedging function
+    8.  drawback of risk-factor based approach: risk factors may change, and the model is sensitive to inputs
+        drawback of traditional MVO: over-estimation of diversification effect
+    9.  custom index proxy is unlikely to have the same risk-return characteristic of actual investment
+        providers of peer group benchmark use very different construction rules
+    10. due to the high correlation between private equity and public-traded equities, the diversification effect is limited
+        you can expect higher returns from the portfolio
+    11. clawback provision -> in private equity, to return incentive fees from profitable investment sold earlier and if later investment sold at a loss
+    12. limited partnership are used in hedge fund and managed futures 
+    13. benefits of FoF -> selection skill/ diversification (not useful if you have a lot of money)/ access to closed funds (that FoF has invested)
+    14. mgmt fees in PE often scales down in later years to reflect a lower workload as the fund becomes fully invested
+    15. for distress debt -> overstated sharpe ratio because of the stale valuation/ high due diligence cost/ liquidity risk greater than mkt risk
