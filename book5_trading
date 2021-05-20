@@ -1,131 +1,132 @@
 Reading 34
 
 1. motivations to trade
-[1] profit seeking
-- trade urgency/alpha decay
-[2] risk mgt/hedging
-[3] cash flow needs 
-- to minimize cash drag, use equitization (long futures to gain stock exposure)
-[4] corporate actions
+    [1] profit seeking
+        - trade urgency/alpha decay
+    [2] risk mgmt/hedging
+    [3] cash flow needs 
+        - to minimize cash drag, use equitization (long futures to gain stock exposure)
+        - IGNORE interest rates when computing equitization
+    [4] corporate actions
 
 2. inputs
-[1] order characteristic
-- side/ size/ relative size
-[2] security characteristic
-- security type/ short-term alpha/ price volatility
-[3] mkt condition
-- liquidity crises
-- volatility and liquidity are negatively related
-[4] trading cost risk aversion
-- high risk aversion - shorter horizon - greater urgency
-[5] mkt impact and execution risk
-- trader's dilemma
-  if you trade fast, high price impact
-               slow, high execution risk (adverse mkt movement)
+    [1] order characteristic
+        - side/ size/ relative size
+    [2] security characteristic
+        - security type/ short-term alpha/ price volatility
+    [3] mkt condition
+        - liquidity crises
+        - volatility and liquidity are negatively related
+    [4] trading cost risk aversion
+        - high risk aversion - shorter horizon - greater urgency
+    [5] mkt impact and execution risk
+        - trader's dilemma
+    if you trade fast, high price impact
+                 slow, high execution risk (adverse mkt movement)
                
 3. reference price
-[1] pre-trade benchmarks 
-- decision price/ prev close/ open (no overnight risk)/ arrival risk (latest)
-[2] intraday benchmarks
-- vwap
-  rebalance over the day, have both buy and sell orders
-- twap
-  exclude potential trade outliers
-[3] post-trade benchmarks
-- close
-  to minimize tracking error
-[4] price target benchmarks
-- self-defined
-  support and resistance
+    [1] pre-trade benchmarks 
+        - decision price/ prev close/ open (no overnight risk)/ arrival risk (latest)
+    [2] intraday benchmarks
+        - vwap
+            rebalance over the day, have both buy and sell orders
+        - twap
+            excludes potential trade outliers
+    [3] post-trade benchmarks
+        - close price e.g. to measure fund NAV
+            to minimize tracking error
+    [4] price target benchmarks
+        - self-defined
+            support and resistance
 
 4. trading strategies
-- short-term alpha - high urgency
-- long-term alpha - low urgency
-- risk rebalance
-- client redemption (cash outflow)
-- new client mandate (cash inflow)
+    - short-term alpha - high urgency
+    - long-term alpha - low urgency
+    - risk rebalance
+    - client redemption (cash outflow)
+    - new client mandate (cash inflow)
 
 5. trade implementation choice
-[1] higher-touch approach (with human)
-- principal trade  (dealer)
-- agency trade (broker)
-- OTC/ RFQ(request for quotes -> mostly used in illiquid mkt, e.g. fixed-income)
-[2] low-touch approach (automated)
-- alternatice tradinig systems (ATS)
-  non-exchange
-- direct mkt access (DMA) 
-  for derivatices and currency
-- dark pools
+    [1] higher-touch approach (with human)
+        - principal trade  (dealer)
+        - agency trade (broker)
+        - OTC/ RFQ(request for quotes -> mostly used in illiquid mkt, e.g. fixed-income)
+    [2] low-touch approach (automated)
+        - alternative trading systems (ATS)
+            non-exchange
+        - direct mkt access (DMA) 
+            for derivatives and currency
+        - dark pools
 
 6. algo trading
-[1] execution algo - to reduce trading cost
-    - scheduled POV (percent of volume) 
-      pro: can automatically take advantage of increased liqudity
-      con: higher trading cost/ may not complete
-    - scheduled VWAP 
-      time_slicing: based on estimated trading volume distribution by hour
-      u-shape (high volume in open and close)
-    - scheduled TWAP (equal-weighted time schedule)
-      pro: time-slicing schedule: equal volume
-      con: not take advantage of liqudity condition
-    - liquidity seeking
-      trade faster @ favorable price
-    - arrival price
-      trade close to latest price, large amount at first
-    - dark pools
-    - smart order routers (SORs)
-      highest probability of executing/best mkt price / small trade
-[2] profit-seeking algo- to get alpha
+    [1] execution algo - to reduce trading cost
+        - scheduled POV (percent of volume) 
+            pro: can automatically take advantage of increased liquidity
+            con: higher trading cost/ may not complete
+        - scheduled VWAP 
+            time_slicing: based on estimated trading volume distribution by hour
+            u-shape (high volume in open and close)
+        - scheduled TWAP (equal-weighted time schedule)
+            pro: time-slicing schedule: equal volume
+            con: not take advantage of liquidity condition
+        - liquidity seeking
+            trade faster @ favourable price
+        - arrival price
+            trade close to latest price, large amount at first
+        - dark pools
+        - smart order routers (SORs)
+            highest probability of executing/best mkt price / small trade
+    [2] profit-seeking algo to get alpha
 
-7. comparison of mkts
-[1] equity
-large order - high-touch (human) / small order - low-touch (electronic)
-urgent order - dealer / non-urgent order - broker
-[2] FI 
-traded in a bilateral, dealer-centric mkt structure, mostly high-touch
-[3] derivatives - exchange
-large urgent - sweep the book/ large non-urgent - electronic
-small - direct mkt access (DMA)
-[4] derivatives - OTC
-high-touch, dealer for urgent, broker for non-urgent
-[5] spot FX
-large urgent - dealer (RFQ), large non-urgent - broker
-samll - direct mkt access (DMA)
+7. comparison of markets
+    [1] equity
+        large order - high-touch (human) / small order - low-touch (electronic)
+        urgent order - dealer / non-urgent order - broker
+    [2] FI 
+        traded in a bilateral, dealer-centric mkt structure, mostly high-touch
+    [3] derivatives - exchange
+        large urgent - sweep the book/ large non-urgent - electronic
+        small - direct mkt access (DMA)
+    [4] derivatives - OTC
+        high-touch, dealer for urgent, broker for non-urgent
+    [5] spot FX
+        large urgent - dealer (RFQ), large non-urgent - broker
+        small - direct mkt access (DMA)
 
 8. trade cost measurement
-implmentation shortfall IS = paper return(relative to close) - actual return
-both paper and actual return are -1+close/price_t
+    implementation shortfall IS = paper return(relative to close) - actual return
+    both paper and actual return are -1+close/price_t
 
-IS = execution cost + opportunity cost + fees
-execution cost = (exec price - decision price)*exec volume
-opportunity cost = (close - decision price)*(decision volume - exec volume)
-execution cost = delay cost + trading cost 
-               = (arrival - decision) + (exec - arrival)
+    IS = execution cost + opportunity cost + fees
+    execution cost = (exec price - decision price)*exec volume
+    opportunity cost = (close - decision price)*(decision volume - exec volume)
+    execution cost = delay cost + trading cost 
+                = (arrival - decision) + (exec - arrival)
 9. trade evaluation
-- cost in dollar per share
-  (exec price - ref price) * side
-- cost in total dollar
-  (exec price - ref price) * side * shares
-- cost in basis point
-  (exec price - ref price)/decision * side * 10000bps
-4 benchmarks for ref price
-  arrival price/ vwap/ twap/ close
+    - cost in dollar per share
+        (exec price - ref price) * side
+    - cost in total dollar
+        (exec price - ref price) * side * shares
+    - cost in basis point
+        (exec price - ref price)/decision * side * 10000bps
+    4 benchmarks for ref price
+        arrival price/ vwap/ twap/ close
   
-- mkt-adjusted cost
-  to separate the trading cost due to mkt movement
-  mkt-adjusted cost(bps) = arrival cost - beta * index cost
-  arrival cost = (exec - arrival)/arrival * side * 10000bps
-  index cost = (index vwap - index arrival price)/index arrival price * side * 10000bps
+    - mkt-adjusted cost
+        to separate the trading cost due to mkt movement
+        mkt-adjusted cost(bps) = arrival cost - beta * index cost
+        arrival cost = (exec - arrival)/arrival * side * 10000bps
+        index cost = (index vwap - index arrival price)/index arrival price * side * 10000bps
 
-- added value
-  to compare the arrival cost with estimated pre-trade cost
-  added value = arrival cost - est. pre-trade cost
-  
+    - added value
+        to compare the arrival cost with estimated pre-trade cost
+        added value = arrival cost - est. pre-trade cost
+    
 10. trade governance
-- best order execution is a tradeoff among
-  execution price/ trading cost/ speed/ likelihood of settlement/ order size
-- process to monitor execution arrangements
-  checkpoints / trading records/ regular reviews
+    - best order execution is a tradeoff among
+        execution price/ trading cost/ speed/ likelihood of settlement/ order size
+    - process to monitor execution arrangements
+        checkpoints / trading records/ regular reviews
 
 Note:
 1. increased liquidity can decrease mkt impact and execution risk
