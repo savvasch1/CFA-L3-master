@@ -1,230 +1,238 @@
 Reading 10-11
 
 1. challenges in forecasting
-[1] limitations to economic data
-    time lag/ revision/ rebase
-[2] data measurement errors and biases
-    survivorship bias/ appraisal data - underestimated variance and correlation with other
-[3] limitations of historical estimates
-    non-stationary data comes from regime changes
-[4] ex post risk is a biased risk measure of ex ante risk
-[5] biases in analysts method
-    data-mining/ time-period bias (specific period)
-[6] failure to account for conditioning info
-[7] misinterpretation of correlations
-[8] psychological biases
-[9] model uncertainty
+    [1] limitations to economic data
+        time lag/ revision/ rebase
+    [2] data measurement errors and biases
+        survivorship bias/ appraisal data - underestimated variance and correlation with other
+    [3] limitations of historical estimates
+        non-stationary data comes from regime changes
+    [4] ex post risk is a biased risk measure of ex ante risk
+    [5] biases in analysts method
+        data-mining/ time-period bias (specific period)
+    [6] failure to account for conditioning info
+    [7] misinterpretation of correlations
+    [8] psychological biases
+    [9] model uncertainty
 
 2. analysis of economic growth
-- exogenous shocks
-  unanticipated, can cause regime changes
-  can be caused by government policy/political event/technology/natural disaster/natural resources/GFC
-  
+    - exogenous shocks
+      unanticipated, can cause regime changes
+      can be caused by government policy/political event/technology/natural disaster/natural resources/GFC
+
 3. decomposition of GDP growth
-Y = A * K^alpha * L^beta (alpha + beta = 1)
-A: total factor productivity
-K: capital per worker
-L: labour input
+    Y = A * K^alpha * L^beta (alpha + beta = 1)
+    A: total factor productivity
+    K: capital per worker
+    L: labour input
+    
+    alternatively:
+    Y = growth from labour inputs + growth from labor productiveity
+        
 
 4. anchoring asset returns to trend growth
-mkt value of equity V = GDP * (earnings/GDP) * PE
-d_V% = d_GDP% + d_S% + d_PE% + d_dividend%
+    mkt value of equity V = GDP * (earnings/GDP) * PE
+    d_V% = d_GDP% + d_S% + d_PE% + d_dividend%
 
 5. approaches to economic forecasting
-[1] econometric modelling
-    structural models / reduced-form models
-    pros: many variables/ reusable models/ quantified
-    cons: complex and time-consuming/ relationship can change/ open to interpretation
-[2] economic indicators
-    leading (monetary supply, PMI) / coincident (GDP)/ lagging (inflation)
-    pros: simple and intuitive/ available
-    cons: inconsistent indicators/ false signals
-[3] checklist approach
-    pros' opinion
-    pros: less complex/ flexible
-    cons: subjective/ time-consuming
+    [1] econometric modelling
+        structural models / reduced-form models
+        pros: many variables/ reusable models/ quantified
+        cons: complex and time-consuming/ relationship can change/ open to interpretation
+    [2] economic indicators
+        leading (monetary supply, PMI) / coincident (GDP)/ lagging (inflation)
+        pros: simple and intuitive/ available
+        cons: inconsistent indicators/ false signals
+    [3] checklist approach
+        pros' opinion
+        pros: less complex/ flexible
+        cons: subjective/ time-consuming
     
 6. business cycle
-   output gap = potential GDP - actual GDP
-   [1] initial recovery
-   falling inflation, large output gap, bond yields bottom out, stock price rise
-   [2] early expansion
-   low inflation, bond yield rise a little, stock price rise
-   [3] late expansion
-   0 output gap, increasing inflation, bond yield rise, stock price peaks
-   [4] slowdown
-   increasing inflation, bond yield peaks (possible inverting yield curve), stock price falls
-   inverting yield curve because of tightening monetary policy (rising short-term) and fiscal policy (decrease long-term)
-   [5] recession
-   inflation peaks and falls, bond yield falls, stock price may rise in the end
+    output gap = potential GDP - actual GDP
+    [1] initial recovery
+        falling inflation, large output gap, bond yields bottom out, stock price rise
+    [2] early expansion
+        low inflation, bond yield rise a little, stock price rise
+    [3] late expansion
+        0 output gap, increasing inflation, bond yield rise, stock price peaks
+    [4] slowdown
+        increasing inflation, bond yield peaks (possible inverting yield curve), stock price falls
+        inverting yield curve because of tightening monetary policy (rising short-term) and fiscal policy (decrease long-term)
+    [5] recession
+        inflation peaks and falls, bond yield falls, stock price may rise in the end
 
 7. monetary policy
-goal = long-run sustainable growth - balance between growth and inflation
-neutral rate - equilibrium interest rate = real-growth + inflation
-Taylor rule
-target = (real_neutral rate + inflation) + 
-         0.5*(expected real growth - target real growth) + 
-         0.5*(expected inflation - target inflation)
+    goal = long-run sustainable growth - balance between growth and inflation
+    neutral rate - equilibrium interest rate = real-growth + inflation
+    Taylor rule
+    target = (real_neutral rate + inflation) + 
+             0.5*(expected real growth - target real growth) + 
+             0.5*(expected inflation - target inflation)
          
 8. fiscal policy
-tax and government spending
-budget deficit = fiscal policy + business cycle
-- on interest rate (after the policy has taken effect)
-monetary affects inflation, fiscal affects real rate
-loose monetary - 
-inflation, loose fiscal - high real rates
-- on yield curve (during the policy)
-monetary affects short-term yield largely, fiscal affects long-term yield mildly
-loose monetary - lower short-term yield, loose fiscal - high long-term rate
+    tax and government spending
+    budget deficit = fiscal policy + business cycle
+    - on interest rate (after the policy has taken effect)
+    monetary affects inflation, fiscal affects real rate
+    loose monetary - 
+    inflation, loose fiscal - high real rates
+    - on yield curve (during the policy)
+    monetary affects short-term yield largely, fiscal affects long-term yield mildly
+    loose monetary - lower short-term yield, loose fiscal - high long-term rate
 
 9. forecast risk and return
-- sample stat
-- shrinkage estimate (weighted between historical VAR and analyst VAR)
-  same method in de-smoothing
-  Rt = (1-lambda)rt_observed + rt_unobserved
-  VAR(r) = (1+lambda/1-lambda)*VAR(R)
-- time-series estimate (ARCH/GARCH)
-  sigma_t = alpha*sigma_t-1 + beta*epsilon(unexpected component) + gamma
-- multi-factor
-  forecasting portfolio volatility (Barra risk model)
-  sigma_i^2 = beta(i,m)*beta(i,n)*corr(m,n) (cov mat) + res_i^2
-- DCF
-- risk premium
+    - sample stat
+    - shrinkage estimate (weighted between historical VAR and analyst VAR)
+      same method in de-smoothing
+      Rt = (1-lambda)rt_observed + rt_unobserved
+      VAR(r) = (1+lambda/1-lambda)*VAR(R)
+    - time-series estimate (ARCH/GARCH)
+      sigma_t = alpha*sigma_t-1 + beta*epsilon(unexpected component) + gamma
+    - multi-factor
+      forecasting portfolio volatility (Barra risk model)
+      sigma_i^2 = beta(i,m)*beta(i,n)*corr(m,n) (cov mat) + res_i^2
+    - DCF
+    - risk premium
 
 10. forecast FI return
-[1] DCF
-may fail to achieve YTM
-sell bond prior to maturity/ changing reinvestment return/ IH > MacDuration (reinvestment risk > price risk, not immunized)
+    [1] DCF
+    may fail to achieve YTM
+    sell bond prior to maturity/ changing reinvestment return/ IH > MacDuration (reinvestment risk > price risk, not immunized)
 
 [2] risk premium
-r = rf + term premium + credit premium + liquidity premium
-- term premium (positively related to duration)
-  inflation uncertainty 
-  recession hedge (demand-driven inflation:good/ supply-driven inflation:bad)
-  supply and demand
-  business cycle
-- credit premium
-  expected default loss
-- liquidity premium
+    r = rf + term premium + credit premium + liquidity premium
+    - term premium (positively related to duration)
+      inflation uncertainty 
+      recession hedge (demand-driven inflation:good/ supply-driven inflation:bad)
+      supply and demand
+      business cycle
+    - credit premium
+      expected default loss
+    - liquidity premium
 
 11. forecast equity return
-[1] DCF - Grinold and Kroner 
-originally, r = (D1/P0) + g
-after revision, r = (D1/P0 - d%Shares) + d%Earnings + d%P/E
-income return: dividend + sales (as repurchase)
-earnings growth return: d%Earnings
-repricing return: d%P/E
+    [1] DCF - Grinold and Kroner 
+    originally, r = (D1/P0) + g
+    after revision, r = (D1/P0 - d%Shares) + d%Earnings + d%P/E
+    income return: dividend + sales (as repurchase)
+    earnings growth return: d%Earnings
+    repricing return: d%P/E
 
 [2] risk premium - Singer-Terhaar model
-originally, risk premium RP_i = beta(i,m)*RP_mkt
-fully global, RP_(i,glb) = beta(i,glb)*RP_glb
-fully segmented, RP_(i,sgm) = beta(i,sgm)*RP_sgm
-                            = cor(i,sgm)*(std(i)/std(sgm))*RP_sgm
-                            = std(i)*(RP_glb/std(glb))
-combine, RP_i = phi*RP_(i,glb) + (1-phi)*RP_(i,sgm)
+    originally, risk premium RP_i = beta(i,m)*RP_mkt
+    fully global, RP_(i,glb) = beta(i,glb)*RP_glb
+    fully segmented, RP_(i,sgm) = beta(i,sgm)*RP_sgm
+                                = cor(i,sgm)*(std(i)/std(sgm))*RP_sgm
+                                = std(i)*(RP_glb/std(glb))
+    combine, RP_i = phi*RP_(i,glb) + (1-phi)*RP_(i,sgm)
 
 12. forecast real estate
-higher quality properties are less cyclical
-[1] DCF
-P0 = NOI1(net operating income)/(r-g)
-cap rate: NOI1/P0  or  r-g
-r = (NOI1/P0) + g = cap rate + NOI growth rate
-in finite period
-r = cap rate + NOI growth rate - d%cap rate
-(- d%cap rate) - capital gain, as P0 increase if cap rate decrease
-cap rate - positively related to int rate (r-g) and vacancy (higher risk, higher discount rate)
-           inversely related to availability of debt (P0) (lower int rate, lower r-g)
+    higher quality properties are less cyclical
+    [1] DCF
+        P0 = NOI1(net operating income)/(r-g)
+        cap rate: NOI1/P0  or  r-g
+        r = (NOI1/P0) + g = cap rate + NOI growth rate
+        in finite period
+        r = cap rate + NOI growth rate - d%cap rate
+        (- d%cap rate) - capital gain, as P0 increase if cap rate decrease
+        cap rate - positively related to int rate (r-g) and vacancy (higher risk, higher discount rate)
+                   inversely related to availability of debt (P0) (lower int rate, lower r-g)
 
-[2] risk premium
-r = rf + term premium + credit premium + equity risk premium + liquidity premium
+    [2] risk premium
+        r = rf + term premium + credit premium + equity risk premium + liquidity premium
 
 13. forecasting FX
-affected by trade flows/ purchasing power parity/ current account and exchange rate
-capital mobility
-d%S(d,f) = (rd-rf) + (term_d - term_f) + (credit_d - credit_f) + (equity_d - equity_f) + (liquid_d - liquid_f)
-         = (risk-premium defined) int rate_d - int rate_f
-uncovered int rate parity (UIP)
-d%S(d,f) = rf(d) - rf(f)
+    affected by trade flows/ purchasing power parity/ current account and exchange rate
+    capital mobility
+    d%S(d,f) = (rd - rf) 
+               + (term_d - term_f)  
+               + (credit_d - credit_f) 
+               + (equity_d - equity_f) 
+               + (liquid_d - liquid_f)
+             = (risk-premium defined) int rate_d - int rate_f
+    uncovered int rate parity (UIP)
+    d%S(d,f) = rf(d) - rf(f)
 
-Note:
-1. Y = A * K^alpha * L^beta (alpha + beta = 1)
-   (Y/L) = A * (K/L)^alpha
-   -> d(Y/L)/(Y/L) = dA/A + alpha * d(K/L)/(K/L)
-   Y = (Y/L) * L
-   -> dY/Y = d(Y/L)/(Y/L) + dL/L
-   -> dY/Y = dA/A + dL/L + alpha * d(K/L)/(K/L)
+Notes:
+    1. Y = A * K^alpha * L^beta (alpha + beta = 1)
+       (Y/L) = A * (K/L)^alpha
+       -> d(Y/L)/(Y/L) = dA/A + alpha * d(K/L)/(K/L)
+       Y = (Y/L) * L
+       -> dY/Y = d(Y/L)/(Y/L) + dL/L
+       -> dY/Y = dA/A + dL/L + alpha * d(K/L)/(K/L)
 
-alternative deduction
-Y = A * K^alpha * L^(1-alpha)
-logY = logA + alpha*logK + (1-alpha)*logL
-     = logA + logL + alpha*log(K/L)
-dlogY = dlogA + dlogL + alpha*dlog(K/L)
-where dlogX = logX_t - logX_t-1 = log(X_t/X_t-1) = log(1+(X_t - X_t-1)/X_t-1) = (X_t - X_t-1)/X_t-1 = dX/X
--> dY/Y = dA/A + dL/L + alpha*d(K/L)/(K/L)
+    alternative deduction
+    Y = A * K^alpha * L^(1-alpha)
+    logY = logA + alpha*logK + (1-alpha)*logL
+         = logA + logL + alpha*log(K/L)
+    dlogY = dlogA + dlogL + alpha*dlog(K/L)
+    where dlogX = logX_t - logX_t-1 = log(X_t/X_t-1) = log(1+(X_t - X_t-1)/X_t-1) = (X_t - X_t-1)/X_t-1 = dX/X
+    -> dY/Y = dA/A + dL/L + alpha*d(K/L)/(K/L)
 
-the same goes to mkt value of equity V = GDP * (earnings/GDP) * PE
-dV/V = dGDP/GDP + d(earnings/GDP)/(earnings/GDP) + dPE/PE + dDiv/Div
+    the same goes to mkt value of equity V = GDP * (earnings/GDP) * PE
+    dV/V = dGDP/GDP + d(earnings/GDP)/(earnings/GDP) + dPE/PE + dDiv/Div
 
-2. monetary policy -> inflation / big impact on short-term rate
-   fiscal policy -> real int rate/ small impact on long-term rate
-   restrictive monetary policy + restrictive fiscal policy -> higher short-term + lower long-term -> inverted
-   restrictive monetary policy + loose/stable fiscal policy -> higher short-term + higher/stable long-term -> flat
-3. in business cycle, leading order: stock (money supply, PMI) -> economy (GDP->benchmark) -> bond -> inflation
-   initial recovery: low or falling int rate, bond yields bottom out
-   early expansion: rising int rate, stable or rising bond yields
-   recession: inflations peaks, bond yields falls, stock price may rise in the end
-4. risk premium RP_(i,glb) = beta(i, glb)*RP_glb
-   (set cor(i,m)=1, you get seg)  RP_(i,sgm) = (std(i)/std(glb))*RP_glb
-   RP_i = phi*RP_(i,glb) + (1-phi)*RP_(i,sgm)
-   
-   alternative
-   RP = phi * beta_i * sigma_i * SharpeRatio_m + (1-phi) * sigma_i * SharpeRatio_m
-   
-5. Mac D. = modified D. * (1+YTM)
-   when investment horizon>Mac D. -> reinvestment yield > fall in bond price -> a rise in bond yields will result in a return higher than YTM
-6. for emerging mkt, signs of potential trouble
-   deficit/GDP > 4%, debt/GDP > 70%, foreign debt/GDP > 50%
-   real growth rate < 4%, current a/c deficit > 4%, foreign debt / current a/c > 200%, foreign exchange reserve/short-term debt < 100%
-7. when estimating the risk premiums using equilibrium models
-   (1) remove the impact of smoothing from the data (2) adjust for illiquidity using a liquidity premium
-8. when sample size of sample VCV matrix > number of asset, you can do it. But to be proper, you need at least 10*number of asset
-   best practice: use shrinkage estimation of the weighted averages of the sample and factor-based VCV matrices
-9. The downward sloping yield curve indicates that the economy is likely to contract in the future
-   In recessions, bonds outperform stocks because inflation and interest rates decrease and economic growth is slow
-10. in real estate, lease ususally locks in longer terms, regardless of economic cycle
-    -> in recession, lease remian, value goes down -> lease rate goes up
-11. for stock -> r = d1/p0 + g = d1/p0 - d%S + d%Earnings + d%P/E
-    for real estate -> r = cap rate + g = cap rate + d%NOI - d%cap rate (capital gain, cap rate decrease -> P0 increase)
-12. high-frequency (daily) data -> subject to async problem (time-lag) -> lower correlation biases
-13. prudence trap -> overly cautious in forecasts
-    e.g. give more weight to historical data as a safety measure to manage client's expectations
-14. indicators approach -> because relationship between inputs are not static, it has not consistently worked
-    econometric approach -> cannot predict turning points, but can provide quantitative estimates of effect of exogenous variable
-    checklist approach -> subjective
-15. top-down approach -> needs historical data to find relations, therefore can be slow at detecting cyclical returns
-                      -> more optimistic facing a recession compared with bottom-up
-16. long-term government bond yield is directly linked to trend rate of growth in an economy
-    equity capital gains (not dividend yield) is directly linked to GDP
-17. projected long-term total domestic equity return = capital gains + dividend yield
-    capital gains = d%nominal GDP + d%profits/GDP + d%PE
-    nominal GDP growth = real GDP growth + inflation
-    labor-based method GDP growth = employment + labour productivity
-                                  = (growth in potential labour force + growth in labour force participation) + growth in labour productivity
-                                  (labour productivity is a sub-component of total labour productivity)
-    G-K on stock return = (D1/P0 - d%Shares) + d%Earnings + d%P/E
-18. Dornbusch overshooting -> countries with higher investment return will attract capital with higher expectation, s.t. it will overshoot can depreciate a little in the end
-    F/S = (1+r_dc)/(1+r_fc) -> quote in dc/fc
-    F -> unbiased estimate of spot 
-    (F-S)/S = (r_dc - r_fc)/(1+r_fc) = r_dc - r_fc
-    r_dc here is not the risk-free rate of dc, 
-    but r = rf + term premium + credit premium + equity risk premium + liquidity premium
-19. when regressing GDP against labour and capital, the intercept is the total factor productivity
-    when asked which factor has the greatest impact, multiply the beta with the actual growth rate of both labor and capital, and compare them with the intercept
-20. H-model -> (D/r-g)*[(1+long-term g) + (N/2)*(short-term g - long-term g)]
-    fed model -> forward earnings yield = long-term treasury yield. if >, then undervalued
-21. high frequency data  are more sensitive to asynchronism across variables -> tend to produce lower correlation estimates
-22. in GK model, r = d1/p0 + g = d1/p0 - d%S + d%Earnings + d%P/E -> if there is inflation data, add inflation to return
-23. i* = rneutral + πe +0.5*(Ye–Ytrend) + 0.5* (πe– πtarget) (Add INFLATION!)
-24. Var(r_portoflio) = {(1+λ)/(1- λ)}*var(R_proxy)
-25. Expected return E(Re) = Cap rate + NOI growth rate (nominal) – %ΔCap rate
-    d%Cap rate = (end CapRate - beg CapRate)/beg CapRate
+    2. monetary policy -> inflation / big impact on short-term rate
+       fiscal policy -> real int rate/ small impact on long-term rate
+       restrictive monetary policy + restrictive fiscal policy -> higher short-term + lower long-term -> inverted
+       restrictive monetary policy + loose/stable fiscal policy -> higher short-term + higher/stable long-term -> flat
+    3. in business cycle, leading order: stock (money supply, PMI) -> economy (GDP->benchmark) -> bond -> inflation
+       initial recovery: low or falling int rate, bond yields bottom out
+       early expansion: rising int rate, stable or rising bond yields
+       recession: inflations peaks, bond yields falls, stock price may rise in the end
+    4. risk premium RP_(i,glb) = beta(i, glb)*RP_glb
+       (set cor(i,m)=1, you get seg)  RP_(i,sgm) = (std(i)/std(glb))*RP_glb
+       RP_i = phi*RP_(i,glb) + (1-phi)*RP_(i,sgm)
+
+       alternative
+       RP = phi * beta_i * sigma_i * SharpeRatio_m + (1-phi) * sigma_i * SharpeRatio_m
+
+    5. Mac D. = modified D. * (1+YTM)
+       when investment horizon>Mac D. -> reinvestment yield > fall in bond price -> a rise in bond yields will result in a return higher than YTM
+    6. for emerging mkt, signs of potential trouble
+       deficit/GDP > 4%, debt/GDP > 70%, foreign debt/GDP > 50%
+       real growth rate < 4%, current a/c deficit > 4%, foreign debt / current a/c > 200%, foreign exchange reserve/short-term debt < 100%
+    7. when estimating the risk premiums using equilibrium models
+       (1) remove the impact of smoothing from the data (2) adjust for illiquidity using a liquidity premium
+    8. when sample size of sample VCV matrix > number of asset, you can do it. But to be proper, you need at least 10*number of asset
+       best practice: use shrinkage estimation of the weighted averages of the sample and factor-based VCV matrices
+    9. The downward sloping yield curve indicates that the economy is likely to contract in the future
+       In recessions, bonds outperform stocks because inflation and interest rates decrease and economic growth is slow
+    10. in real estate, lease ususally locks in longer terms, regardless of economic cycle
+        -> in recession, lease remian, value goes down -> lease rate goes up
+    11. for stock -> r = d1/p0 + g = d1/p0 - d%S + d%Earnings + d%P/E
+        for real estate -> r = cap rate + g = cap rate + d%NOI - d%cap rate (capital gain, cap rate decrease -> P0 increase)
+    12. high-frequency (daily) data -> subject to async problem (time-lag) -> lower correlation biases
+    13. prudence trap -> overly cautious in forecasts
+        e.g. give more weight to historical data as a safety measure to manage client's expectations
+    14. indicators approach -> because relationship between inputs are not static, it has not consistently worked
+        econometric approach -> cannot predict turning points, but can provide quantitative estimates of effect of exogenous variable
+        checklist approach -> subjective
+    15. top-down approach -> needs historical data to find relations, therefore can be slow at detecting cyclical returns
+                          -> more optimistic facing a recession compared with bottom-up
+    16. long-term government bond yield is directly linked to trend rate of growth in an economy
+        equity capital gains (not dividend yield) is directly linked to GDP
+    17. projected long-term total domestic equity return = capital gains + dividend yield
+        capital gains = d%nominal GDP + d%profits/GDP + d%PE
+        nominal GDP growth = real GDP growth + inflation
+        labor-based method GDP growth = employment + labour productivity
+                                      = (growth in potential labour force + growth in labour force participation) + growth in labour productivity
+                                      (labour productivity is a sub-component of total labour productivity)
+        G-K on stock return = (D1/P0 - d%Shares) + d%Earnings + d%P/E
+    18. Dornbusch overshooting -> countries with higher investment return will attract capital with higher expectation, s.t. it will overshoot can depreciate a little in the end
+        F/S = (1+r_dc)/(1+r_fc) -> quote in dc/fc
+        F -> unbiased estimate of spot 
+        (F-S)/S = (r_dc - r_fc)/(1+r_fc) = r_dc - r_fc
+        r_dc here is not the risk-free rate of dc, 
+        but r = rf + term premium + credit premium + equity risk premium + liquidity premium
+    19. when regressing GDP against labour and capital, the intercept is the total factor productivity
+        when asked which factor has the greatest impact, multiply the beta with the actual growth rate of both labor and capital, and compare them with the intercept
+    20. H-model -> (D/r-g)*[(1+long-term g) + (N/2)*(short-term g - long-term g)]
+        fed model -> forward earnings yield = long-term treasury yield. if >, then undervalued
+    21. high frequency data  are more sensitive to asynchronism across variables -> tend to produce lower correlation estimates
+    22. in GK model, r = d1/p0 + g = d1/p0 - d%S + d%Earnings + d%P/E -> if there is inflation data, add inflation to return
+    23. i* = rneutral + πe +0.5*(Ye–Ytrend) + 0.5* (πe– πtarget) (Add INFLATION!)
+    24. Var(r_portoflio) = {(1+λ)/(1- λ)}*var(R_proxy)
+    25. Expected return E(Re) = Cap rate + NOI growth rate (nominal) – %ΔCap rate
+        d%Cap rate = (end CapRate - beg CapRate)/beg CapRate
