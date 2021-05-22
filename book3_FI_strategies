@@ -1,170 +1,170 @@
 Reading 20-21
 
 1. changes in yield curve
-[1] parallel shift (level)
-[2] slope
-    spread = yield_long - yield_short
-[3] curvature
-    butterfly spread = 2 * yield_mid - yield_short - yield_long
-- short-term rates are more volatile than long-term
-  upward - flattens + less curved
-  downward - steepens + more curved
+    [1] parallel shift (level)
+    [2] slope
+        spread = yield_long - yield_short
+    [3] curvature
+        butterfly spread = 2 * yield_mid - yield_short - yield_long
+    - short-term rates are more volatile than long-term
+      upward - flattens + less curved
+      downward - steepens + more curved
 
 2. strategy - stable yield curve
-[1] buy and hold
-    in a upward slope, extend maturity to have a higher expected return
-[2] riding the yield curve
-    in a upward slope, buy long-term and sell it later
-                   or, short short-term and long long-term
-[3] sell convexity
-    if no expected change in yield curve, then convexity is useless
-    short bonds with high convexity, long bonds with low convexity
-    high: putable
-    low: callable, MBS(can prepay)
-[4] carry trade (buy duration)
-    if no expected change in yield curve, then duration is no harm
-    long a long-term bond with low financing cost (issuing a low-yield bond)
-    buy bond with repo/ receive fixed, pay float/ long future
+    [1] buy and hold
+        in a upward slope, extend maturity to have a higher expected return
+    [2] riding the yield curve
+        in a upward slope, buy long-term and sell it later
+                       or, short short-term and long long-term
+    [3] sell convexity
+        if no expected change in yield curve, then convexity is useless
+        short bonds with high convexity, long bonds with low convexity
+        high: putable
+        low: callable, MBS(can prepay)
+    [4] carry trade (buy duration)
+        if no expected change in yield curve, then duration is no harm
+        long a long-term bond with low financing cost (issuing a low-yield bond)
+        buy bond with repo/ receive fixed, pay float/ long future
 
 3. strategy - yield curve movement
-[1] duration mgt
-    decrease duration if int rate expected to rise
-    increasee duration if int rate expected to fall
-[2] buy convexity
-    - 涨多跌少
-    - methods (keeping duration-neutral)
-      by pure bond - long high convexity bond, short low convexity bond
-      by embedded option - long putable, short callable
-      by portfolios - long barbell, short bullet
-      by options - long call/put on bond
-      call/put are both convex derivatives
-      V_callable = V_pure - V_call
-      V_putable = V_pure + V_put
-[3] butterfly
-    butterfly - long short and long(barbell), short middle(bullet)
+    [1] duration mgt
+        decrease duration if int rate expected to rise
+        increasee duration if int rate expected to fall
+    [2] buy convexity
+        - 涨多跌少
+        - methods (keeping duration-neutral)
+          by pure bond - long high convexity bond, short low convexity bond
+          by embedded option - long putable, short callable
+          by portfolios - long barbell, short bullet
+          by options - long call/put on bond
+          call/put are both convex derivatives
+          V_callable = V_pure - V_call
+          V_putable = V_pure + V_put
+    [3] butterfly
+        butterfly - long short and long(barbell), short middle(bullet)
     
 
 4. changes - yield curve movement
-[1] level change
-    - choose the highest return
-    total return = TYM_beg + delta_pricePer
-    where duration = - delta_pricePer / delta_int
-    so, total return = YTM_beg + [-ED_end * delta_int]
-                     = YTM_beg + [-ED_end * (YTM_end - YTM_beg)]
-                     = (yield income + rolldown return) + delta_pricePer
-    - alter convexity
-    by the methods above
-[2] slope change
-    - flattens (short term increase, long term remain or decrease)
-      barbell outperforms bullet
-      (short-term affects little, long-term remain the same, so barbell is hardly affected)
-      so, long barbell, short bullet
-    - stepeens (short term decrease, long term remain or increase)
-      barbell underperforms bullet
-      (basically the same as above, barbell is hardly affected in both case)
-      so, long bullet, short barbell
-[3] curvature change
-    - more curvature
-      barbell outperforms bullet
-      (mid-term up -> bullet down, long-term down -> barbell up)
-      so, long barbell, short bullet
-    - less curvature
-      barbell underperforms bullet
-      (mid-term down -> bullet up, long-term up -> barbell down)
-      so, long bullet, short barbell
-[4] volatility change
-    - volatility increase
-      long convexity
-    - volatility decrease
-      short convexity
+    [1] level change
+        - choose the highest return
+        total return = TYM_beg + delta_pricePer
+        where duration = - delta_pricePer / delta_int
+        so, total return = YTM_beg + [-ED_end * delta_int]
+                         = YTM_beg + [-ED_end * (YTM_end - YTM_beg)]
+                         = (yield income + rolldown return) + delta_pricePer
+        - alter convexity
+        by the methods above
+    [2] slope change
+        - flattens (short term increase, long term remain or decrease)
+          barbell outperforms bullet
+          (short-term affects little, long-term remain the same, so barbell is hardly affected)
+          so, long barbell, short bullet
+        - stepeens (short term decrease, long term remain or increase)
+          barbell underperforms bullet
+          (basically the same as above, barbell is hardly affected in both case)
+          so, long bullet, short barbell
+    [3] curvature change
+        - more curvature
+          barbell outperforms bullet
+          (mid-term up -> bullet down, long-term down -> barbell up)
+          so, long barbell, short bullet
+        - less curvature
+          barbell underperforms bullet
+          (mid-term down -> bullet up, long-term up -> barbell down)
+          so, long bullet, short barbell
+    [4] volatility change
+        - volatility increase
+          long convexity
+        - volatility decrease
+          short convexity
 
 5. inter-mkt carry trade
-[1] with currency risk
-- borrow low int rate currency, lend high int rate currency
-- currency swap, receive high int rate currency
-- borrow low int rate currency, change into fx and invest, also sign a fx forward contract to repay later
+    [1] with currency risk
+        - borrow low int rate currency, lend high int rate currency
+        - currency swap, receive high int rate currency
+        - borrow low int rate currency, change into fx and invest, also sign a fx forward contract to repay later
 
-[2] without currency risk
-no fx risk because you borrow and invest in the same country, profit comes from yield curve steepness
-- receive fixed (long-term) in steep mkt, receive floating (short-term) in flat mkt
-- long future in steep mkt, short future in flat mkt
+    [2] without currency risk
+        no fx risk because you borrow and invest in the same country, profit comes from yield curve steepness
+        - receive fixed (long-term) in steep mkt, receive floating (short-term) in flat mkt
+        - long future in steep mkt, short future in flat mkt
 
-[3] covered int rate parity (CIRP)
-invest in base = change into fx(on S) + invest in fx + change back to base(on F)
-1 + r_DC = (F/S) * (1 + r_FC)
-hedge benefit - comes from using F instead of S_t
-(F - S)/S = (F/S) - 1 = r_DC - r_FC
+    [3] covered int rate parity (CIRP)
+        invest in base = change into fx(on S) + invest in fx + change back to base(on F)
+        1 + r_DC = (F/S) * (1 + r_FC)
+        hedge benefit - comes from using F instead of S_t
+        (F - S)/S = (F/S) - 1 = r_DC - r_FC
 
 hedged benefit = bond's local mkt return + hedge cost/benefit
 
 6. credit risk
-[1] risk decomposition
-investment grade - more concerned about credit migration (downgrade) risk, int rate risk, spread risk
-high-yield bond - more concerned about default risk
+    [1] risk decomposition
+        investment grade - more concerned about credit migration (downgrade) risk, int rate risk, spread risk
+        high-yield bond - more concerned about default risk
 
-y_corporate = y_treasury + spread
-int rate risk measured by d y_t,  - d p_c/d y_c
-spread risk - d spread, - d p_c/ d y_c
-for a junk bond, spread risk is much more concerned with than int rate risk (empirical duration)
-as bond deteriorate from Aaa to Ccc, empirical duration gets smaller 
+        y_corporate = y_treasury + spread
+        int rate risk measured by d y_t,  - d p_c/d y_c
+        spread risk - d spread, - d p_c/ d y_c
+        for a junk bond, spread risk is much more concerned with than int rate risk (empirical duration)
+        as bond deteriorate from Aaa to Ccc, empirical duration gets smaller 
 
-[2] quotes
-investment-grade - spread over benchmark government bond (as you care more about spread risk)
-high-yield - price terms (as the whole price may gone)
+    [2] quotes
+        investment-grade - spread over benchmark government bond (as you care more about spread risk)
+        high-yield - price terms (as the whole price may gone)
 
-[3] credit spread
-benchmark spread = yield on a credit security - yield on a benchmark bond with similar duration
-- G-spread (government bond as benchmark)
-  same maturity
-- I-spread (swap rate as benchmark)
-- Z-spread (like IRR)
-- OAS (option-adjusted spread) 
-  When a portfolio includes bonds with and without embedded options, market value weighted average OAS is the best measure of credit exposure
+    [3] credit spread
+        benchmark spread = yield on a credit security - yield on a benchmark bond with similar duration
+        - G-spread (government bond as benchmark)
+          same maturity
+        - I-spread (swap rate as benchmark)
+        - Z-spread (like IRR)
+        - OAS (option-adjusted spread) 
+          When a portfolio includes bonds with and without embedded options, market value weighted average OAS is the best measure of credit exposure
 
 [4] excess return
-- holding-period excess return
-  XR = spread_beg*t + spread_duration*delta_spread
-- expected excess return
-  EXR = XR - expected loss(t*PD*LGD)
-  
+    - holding-period excess return
+      XR = spread_beg*t + spread_duration*delta_spread
+    - expected excess return
+      EXR = XR - expected loss(t*PD*LGD)
+
 7. credit analysis approach
-[1] bottom-up approach
-    choose the best relative value from bonds with similar features
-    - divide the credit universe
-    - identify the best relative bond
-      best means highest [expected excess return/credit risk (duration)] bond's sharpe ratio
-[2] top-down approach
-steps (1) macro factors
-      (2) desired credit quality determination
-          - credit cycle/ credit spread changes
-      (3) assess the credit quality of portfolio
-          - average credit rating (S&P over-estimate ratings)
-          - average OAS
-      (4) industry sector allocation
-      (5) expected excess return
-risks (1) int rate measurement and mgt
-      (2) country and fx exposure
-      (3) spread curve
+    [1] bottom-up approach
+        choose the best relative value from bonds with similar features
+        - divide the credit universe
+        - identify the best relative bond
+          best means highest [expected excess return/credit risk (duration)] bond's sharpe ratio
+    [2] top-down approach
+    steps (1) macro factors
+          (2) desired credit quality determination
+              - credit cycle/ credit spread changes
+          (3) assess the credit quality of portfolio
+              - average credit rating (S&P over-estimate ratings)
+              - average OAS
+          (4) industry sector allocation
+          (5) expected excess return
+    risks (1) int rate measurement and mgt
+          (2) country and fx exposure
+          (3) spread curve
 
 8. others
-[1] liqudity risk
-- measures of secondary mkt liquidity risk
-  trading vol./ spread sensitivity to fund outflows/ bid-ask spread
-[2] tail risk
-- portfolio diversification/ tail risk hedge
-[3] international credit mkt
-- credit cycle/ credit quality/ sector decomposition
-- emerging mkt credit
-  concentration in commodities and banking
-  government ownership
-  credit quality (sovereign ceiling)
-[4] structured financial instruments
-- MBS (mortgage)
-  high liquidity/ less default risk/ exposure to real estate/ exposure to expcted changes in int rate volatility
-- ABS (non-mortgage)
-  more liquid/ diversification
-- CDO (debt)
-  senior/mezz/junior values change with correlation in default
+    [1] liqudity risk
+    - measures of secondary mkt liquidity risk
+      trading vol./ spread sensitivity to fund outflows/ bid-ask spread
+    [2] tail risk
+    - portfolio diversification/ tail risk hedge
+    [3] international credit mkt
+    - credit cycle/ credit quality/ sector decomposition
+    - emerging mkt credit
+      concentration in commodities and banking
+      government ownership
+      credit quality (sovereign ceiling)
+    [4] structured financial instruments
+    - MBS (mortgage)
+      high liquidity/ less default risk/ exposure to real estate/ exposure to expcted changes in int rate volatility
+    - ABS (non-mortgage)
+      more liquid/ diversification
+    - CDO (debt)
+      senior/mezz/junior values change with correlation in default
 
 
 Notes
