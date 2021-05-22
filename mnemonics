@@ -54,7 +54,18 @@ Make sure you know these formulas:
         delay: #shares_bought * ( S_Arrival - S_delay)
         trading= #shares_bought * (S_execution - S_arrival)
     
+    Taylor rule
+    target = (real_neutral rate + inflation) + 
+             0.5*(expected real growth - target real growth) + 
+             0.5*(expected inflation - target inflation)
     
+    Real Estate prediction
+    r = cap rate + NOI growth rate - d%cap rate
+        why negative? (- d%cap rate) - capital gain, as P0 increase if cap rate decrease
+        cap rate - positively related to int rate (r-g) and vacancy (higher risk, higher discount rate)
+                   inversely related to availability of debt (P0) (lower int rate, lower r-g)
+           
+           
     Bond return calculation
         yield income + rolling return = 
         current yield + rolldown yield + changes due to yield curve change - expected losses +- FX gains
