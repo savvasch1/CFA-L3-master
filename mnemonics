@@ -1,0 +1,83 @@
+Mmemonics:
+
+CCIHR MAAF LOSSER
+    CONGNITIVE - mitigate/modify
+    Conservatism
+    Confirmation
+    Illusion of Constrol
+    Hindsight
+    Representativeness
+    
+    Mental accounting
+    Availability
+    Anchoring
+    Framing
+    
+    EMOTIONAL = accomodate
+    Loss Aversion
+    Overconfidence
+    Self Control
+    Status Quo
+    Endowment
+    Regret aversion
+    
+Biases by investor
+    II FF AA PP
+    independend individualist - cognitive
+    friendly follower - cognitive
+
+    active - emotional
+    passive preserver -emotional
+
+Make sure you know these formulas:
+
+    Grinold Kroner
+        Change in the value of Equity = Div Yield + (%Delta_EPS - %Delta_new_Shares) + %Delta_PE
+
+    Singer Terhaar
+        1*sigma_*world_sharpe_ratio + rho_sigma_sharpe_ratio
+        where rho is the integration coefficient 
+
+    Implementation shortfall
+        4 prices:S_decision S_Arrival S_Execution S_T
+        
+        IS = paper return - actual return
+        paper return = #shares_wanted * (S_T - S_decision)
+        actual return= #shares_bought * (S_T - S_Execution) - fees
+        
+        
+        three costs
+        opportunity cost= (#shares_wanted - #shares_bought) * (S_T - S_0)
+        fees = #shares_bought * fee per share
+        
+        execution cost
+        delay: #shares_bought * ( S_Arrival - S_delay)
+        trading= #shares_bought * (S_execution - S_arrival)
+    
+    
+    Bond return calculation
+        yield income + rolling return = 
+        current yield + rolldown yield + changes due to yield curve change - expected losses +- FX gains
+    
+    Futures contracts # calculations for duration change, Beta change
+        Notional *  required beta/product beta
+
+    Notional amount calculation for swaps + Swap duration
+
+    Taxes + Estate vs Gift (do not skip these ones)
+    
+    PV of a investment for a goal based approach with % probabilities
+
+    R DC vs RFC / RFX
+
+    MCTR/ACTR
+
+    Selection/Allocation
+
+    Active share
+
+    Sortino/Sharpe/Information Ratio
+        treynor = divide by beta
+        sortino = divide by downside deviation
+        information ratio = active return/active risk
+        appraisal ratio = alpha/non systematic risk
