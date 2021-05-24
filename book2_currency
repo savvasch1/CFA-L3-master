@@ -1,70 +1,70 @@
 1. currency swaps
-[1] cross-currency basis swap
-    - you need a loan in fx - you borrow local, then swap it with fx
-    - principals switched at the begining, int pmt not netted
-    - basis stands for financial cost for using swap
-[2] synthetic borrowing
-    - you receice fx, change it into local - you swap it with local
-    - no principals switched
-    - swapRate_A = 3%, swapRate_B = 5% - NP_A * 3% = NP_B * 5%
+    [1] cross-currency basis swap
+        - you need a loan in fx - you borrow local, then swap it with fx
+        - principals switched at the begining, int pmt not netted
+        - basis stands for financial cost for using swap
+    [2] synthetic borrowing
+        - you receice fx, change it into local - you swap it with local
+        - no principals switched
+        - swapRate_A = 3%, swapRate_B = 5% - NP_A * 3% = NP_B * 5%
     
 2. currency forward and future 
-- you need to exchange currency A to B @ pre-specified rate
-- hedge ratio = amount of currency to be exchanged/future contract size
+    - you need to exchange currency A to B @ pre-specified rate
+    - hedge ratio = amount of currency to be exchanged/future contract size
 
 3. volatility derivatives
-VIX - implied volatility in S&P 500 for 30 days
-VIX return negatively correlates with equity return
-- VIX futures - cannot buy spot VIX, buy futures
-- variance swap
-  fixed exchange for implied volatility^2
-  settlement amt = notional variance * (sigma^2 - K^2)
-  MtM variance valuation
-  - expected variance = realized var*t/T + K^2*(T-t)/T  (time-wighted variance)
-  - expected payoff = notional variance * (expected variance - K^2)
-                    = notional variance * (Var_realized^2 - K^2) * t/T
-  - discount with rf
+    VIX - implied volatility in S&P 500 for 30 days
+    VIX return negatively correlates with equity return
+    - VIX futures - cannot buy spot VIX, buy futures
+    - variance swap
+      fixed exchange for implied volatility^2
+      settlement amt = notional variance * (sigma^2 - K^2)
+      MtM variance valuation
+      - expected variance = realized var*t/T + K^2*(T-t)/T  (time-wighted variance)
+      - expected payoff = notional variance * (expected variance - K^2)
+                        = notional variance * (Var_realized^2 - K^2) * t/T
+      - discount with rf
   
 4. other derivatives
-[1] fed funds futures
-    contract price = 100 - expected FFE rate
-[2] eurodollar futures
-    contract price = 100 - future int rate
-[3] CPI swaps
+    [1] fed funds futures
+        contract price = 100 - expected FFE rate
+    [2] eurodollar futures
+        contract price = 100 - future int rate
+    [3] CPI swaps
      
 5. currency basics
-- MtM value of a forward
-  @ maturity - Vt = (St - FP) * contract size
-  @ t - Vt = (FPt - FP0)*contract size/(1 + rf*(days/360))
-- FX swap
-  close the forward contract, open another one - roll forwards
-- retuen decompose
-  r_FC - foreign-currency return
-  r_FX - change in currency pair
-  r_DC - return in domestic perspective
-  
-  r_DC = (1+r_FC)(1+r_FX) - 1
-  on portfolio, r_DC = sum over wi*(1+r_FCi)*(1+r_FXi) - 1
-- variance decompose  (assume r_DC = r_FC + r_FX)
-  var_DC = var_FC + var_FX + 2*sigma_FC*sigma_FX*correlation(FC, FX)
+    - MtM value of a forward
+          @ maturity - Vt = (St - FP) * contract size
+          @ t - Vt = (FPt - FP0)*contract size/(1 + rf*(days/360))
+    - FX swap
+          close the forward contract, open another one - roll forwards
+    - return decompose
+          r_FC - foreign-currency return
+          r_FX - change in currency pair
+          r_DC - return in domestic perspective
+
+          r_DC = (1+r_FC)(1+r_FX) - 1
+          on portfolio, r_DC = sum over wi*(1+r_FCi)*(1+r_FXi) - 1
+    - variance decompose  (assume r_DC = r_FC + r_FX)
+        var_DC = var_FC + var_FX + 2*sigma_FC*sigma_FX*correlation(FC, FX)
   
 6. should you hedge FX risk?
-[1] no hedge
-    mean-reverting fundamental values
-    zero-sum game
-    management and transaction cost
-[2] short-term: hedge, long-term: no hedge
-    pricing inefficiencies in short term
-    affected by international trade and capital flows in short term
-    may be operated by central banks
+    [1] no hedge
+        mean-reverting fundamental values
+        zero-sum game
+        management and transaction cost
+    [2] short-term: hedge, long-term: no hedge
+        pricing inefficiencies in short term
+        affected by international trade and capital flows in short term
+        may be operated by central banks
 
 7. IPS-related currency mgt are ignored
 
 8. carry trade
-- borrow low-yield currencies and invest in high-yield currencies
-- covered int rate parity (CIRP)
-  (F - S)/S = (i_P - i_B)/(1 + i_B) = i_P - i_B
-  uncovered int rate parity (UIRP)
+    - borrow low-yield currencies and invest in high-yield currencies
+    - covered int rate parity (CIRP)
+      (F - S)/S = (i_P - i_B)/(1 + i_B) = i_P - i_B
+      uncovered int rate parity (UIRP)
   
 Note:
 1. manager’s market views -> TAA
