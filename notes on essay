@@ -1,53 +1,49 @@
 Behavioural finance
-0. when given the name of bias to decide client's possible action, place more weight in the meaning of bias than which category it belongs to
-   e.g. people with availability bias are harder to change, despite it is a cognitive error
-1. heuristics/rule of thumb -> when you do something from hearsay or easy rule
-2. herding -> actions often caused by regret aversion
-3. state a cognitive bias to belief perservance (RICCH) or information-processing (FAMA)
-4. to overcome behavioural bias -> seek contrary viewpoints/ look for new info/ do not rely on past/ use Bayes' theorem to incorporate new info
+   0. when given the name of bias to decide client's possible action, place more weight in the meaning of bias than which category it belongs to
+      e.g. people with availability bias are harder to change, despite it is a cognitive error
+   1. heuristics/rule of thumb -> when you do something from hearsay or easy rule
+   2. herding -> actions often caused by regret aversion
+   3. state a cognitive bias to belief preservice (CCIHR) or information-processing (MAAF)
+   4. to overcome behavioural bias -> seek contrary viewpoints/ look for new info/ do not rely on past/ use Bayes' theorem to incorporate new info
 
 
 Economics
-1. permanent income hypothesis 
-   consumer spending is based on long-term predictions of income, short-term deviations (GDP decrease) does not affect the spending
-2. G-K model (alternative)
-   d%Y = d%A + alpha*d%K + (1-alpha)*d%L
-   A -> total factor productivity / K -> growth in capital stock / L -> growth in labor input
-   alpha -> output elasticity of capital / 1-alpha -> output elasticity of labor
-3. factors may positively affect inflation
-   consumer confidence index / inventory/sales / GDP output gap (actual GDP - potential GDP)/potential GDP
+   1. permanent income hypothesis 
+      consumer spending is based on long-term predictions of income, short-term deviations (GDP decrease) does not affect the spending
+   2. G-K model (alternative)
+      d%Y = d%A + alpha*d%K + (1-alpha)*d%L
+      A -> total factor productivity / K -> growth in capital stock / L -> growth in labor input
+      alpha -> output elasticity of capital / 1-alpha -> output elasticity of labor
+   3. factors may positively affect inflation
+      consumer confidence index / inventory/sales / GDP output gap (actual GDP - potential GDP)/potential GDP
    
 Individual
-1. life-insurance, trust and charity can reduce total estate, resulting in a lower future estate tax
-2. factors that increase ability to take risk
-   -> long horizon(10 yrs or longer)/ stable income and expense (net savers)/ mortgage-free house/ fully vested pension plan
-   factors that decrease ability to take risk
-   -> short horizon/ concentrated position/ reduced human capital (disability)/ donation (or other cash outflow)/ small asset base
-   with passage of time, factors that may have changed
-   -> shorter horizon/ larger asset base/ accomplished cash outflow
-3. accural equivalent tax rate
-   -> calculate after-tax return r_at = (FV_at/PV) xexp (1/T) - 1
-   -> calculate equivalent tax rate ->  T_ae = 1 - (r_at/r_pt)
-4. tax liability = tax base * tax rate
-5. pay attention to the timing of cash flow (coming year, then inflation not considered) 
-                and the nature of cash flow (if it is taxable)
-6. IPS for time-horizon 
-   long/short, how many stages
-7. IPS for uniqueness
-   personal investment outside advisor-managed portfolio
-8. shortfall risk = pre-tax nominal return - 2*nominal standard deviation
-9. CFA calculator can input PV and PMT
-10. pro of MCS -> simulate the probaility of distribution, allowing the client to determine the likelihood of accomplishing his goals
-                  can consider multi-period effect of tax changes (if there is any)
-    con of MCS -> does not reflect expection/ long period data subject to regime changes
-11. conversion from DB to DC shifts risk to employees, therefore increasing their longevity risk
-12. mortgage financing. net proceeds =  asset value * LTV
-13. a retired man does not need disability insurance
-    a rich man with no dependents or testamentary intentions does not need life insurance
-14. establish a collar/ sell a forward/ buy a put will not eliminate the whole mkt risk, so it would not trigger tax
-15. you have 3 mil, can gift or estate, both @ 50% tax
-    if gift can you pay tax -> gift 2 mil, tax 1 mil
-    if estate -> total 3 min, tax 1.5 mil
+   1. life-insurance, trust and charity can reduce total estate, resulting in a lower future estate tax
+   2. factors that increase ability to take risk
+      -> long horizon(10 yrs or longer)/ stable income and expense (net savers)/ mortgage-free house/ fully vested pension plan
+      factors that decrease ability to take risk
+      -> short horizon/ concentrated position/ reduced human capital (disability)/ donation (or other cash outflow)/ small asset base
+      with passage of time, factors that may have changed
+      -> shorter horizon/ larger asset base/ accomplished cash outflow
+   3. tax liability = tax base * tax rate
+   4. pay attention to the timing of cash flow (coming year, then inflation not considered) 
+                  and the nature of cash flow (if it is taxable)
+   5. IPS for time-horizon 
+      long/short, how many stages
+   6. IPS for uniqueness
+      personal investment outside advisor-managed portfolio
+   7. shortfall risk = pre-tax nominal return - 2*nominal standard deviation
+   9. pro of MCS -> simulate the probability of distribution, allowing the client to determine the likelihood of accomplishing his goals
+                     can consider multi-period effect of tax changes (if there is any)
+      con of MCS -> does not reflect expectation/ long period data subject to regime changes
+   11. conversion from DB to DC shifts risk to employees, therefore increasing their longevity risk
+   12. mortgage financing. net proceeds =  asset value * LTV
+   13. a retired man does not need disability insurance
+       a rich man with no dependents or testamentary intentions does not need life insurance
+   14. establish a collar/ sell a forward/ buy a put will not eliminate the whole mkt risk, so it would not trigger tax
+   15. you have 3 mil, can gift or estate, both @ 50% tax
+      if gift can you pay tax -> gift 2 mil, tax 1 mil
+      if estate -> total 3 min, tax 1.5 mil
 
 
 
@@ -69,7 +65,7 @@ Asset allocation
    not to -> floting-amt(5%) not considered as liability/ willingness to operate in perpetuity by investing in higher return
 2. to MCS or MVO
    to MCS -> multi-period framework considering a lot of variables
-             rebalacning policy can be incorporated
+             rebalancing policy can be incorporated
              non-normal distribution properties like skewness can incorporated
 
 Equity
