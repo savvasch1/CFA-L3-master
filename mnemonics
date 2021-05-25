@@ -92,3 +92,12 @@ Make sure you know these formulas:
         sortino = divide by downside deviation
         information ratio = active return/active risk
         appraisal ratio = alpha/non systematic risk
+        
+    information coefficient (higher is better)
+        E(R} = information_coefficient * sqrt(breadth) * sigma * Transfer coefficient
+        
+    Variance/Vega notional
+        if they give you VEGA NOTIONAL in the exam you have to divide by 2K
+        e.g. 
+            normal:     payoff = N*(sigma^2 - K^2)
+            adjusted:   payodd = N_vega / 2K *(sigma^2 - K^2)
